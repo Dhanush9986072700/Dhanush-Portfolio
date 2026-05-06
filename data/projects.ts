@@ -512,142 +512,313 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "superfoods",
-    slug: "superfoods",
+    id: "agree-superfoods",
+    slug: "agree-superfoods",
     number: "03",
-    title: "XIPHIAS Superfoods",
+    title: "Agree Superfoods",
     description:
-      "Premium D2C e-commerce on Shopify. Brand to checkout. 15 days solo.",
+      "Full D2C e-commerce platform built from scratch. Research to production — brand, UI system, custom storefront.",
     pitch:
-      "Designing and shipping xiphiassuperfoods.com on Shopify — brand, store, product experience, and analytics — solo, end-to-end, in two weeks.",
-    role: "Solo Product Designer + Shopify Build",
-    duration: "15 days",
+      "Designing and building agreesuperfoods.in from the ground up — not a theme, not a template. Brand identity, information architecture, UI system, and a custom storefront for premium seeds, teas, and pantry essentials.",
+    role: "Solo Product Designer + Front-End Dev",
+    duration: "2 months",
     team: "Solo",
-    stack: ["Shopify", "Liquid", "GA4", "Google Tag Manager"],
-    year: "2024",
-    tags: ["Shopify", "Liquid", "GA4", "GTM"],
-    gradient: "from-amber-900 via-orange-900 to-yellow-900",
-    liveUrl: "https://www.xiphiassuperfoods.com/",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Figma", "GA4"],
+    year: "2025",
+    tags: ["E-Commerce", "UI Design", "Brand", "Next.js", "Design Systems"],
+    gradient: "from-green-900 via-emerald-900 to-teal-900",
+    liveUrl: "https://www.agreesuperfoods.in/",
     caseStudy: {
-      badge: "CASE STUDY 03 / 2024",
+      badge: "CASE STUDY 03 / 2025",
+      heroImage: "/case-studies/agree/screen-1.jpg",
       brief:
-        "XIPHIAS Superfoods was a new D2C brand under the XIPHIAS group — premium organic foods (rare teas, black rice, A2 ghee, makhana) targeting urban health-conscious consumers in India and UAE. The brief: full brand-to-storefront in 15 days for a marketing campaign launch. ISO 9001 + 22000 certified.",
+        "Agree Superfoods is a premium D2C brand selling organic seeds, teas, makhana, and pantry essentials to health-conscious consumers in India. The challenge: stand out in a crowded wellness market dominated by discount-first commodity stores. The brief was to build a brand-forward e-commerce platform from scratch — custom design, custom code, no off-the-shelf themes — that positioned Agree as a trusted, quality-first alternative to generic grocery marketplaces.",
       pullQuote:
-        "\"We're not selling commodity groceries. We're selling Rs.2,900 white tea. The store needs to look like Erewhon, not Amazon.\"",
+        "\"We don't want to look like every other health food store. We want customers to trust us the moment they land — before they read a single product description.\"",
       goals: [
-        "Launch a production Shopify store within 15 days",
-        "Establish premium visual positioning consistent with Rs.2,900 price points",
-        "Build for India + UAE dual-market (currency, shipping, language considerations)",
-        "Implement GA4 + GTM for full funnel analytics from day one",
-        "Structure IA for three distinct user intents: browse, goal, explore",
+        "Design and build a custom e-commerce storefront — not a template",
+        "Establish a premium, earthy visual identity that signals quality over price",
+        "Structure navigation for four product categories: Seeds, Tea, Pantry Essentials, Healthy Snacking",
+        "Build an educational content system (18 articles) to support SEO and trust",
+        "Implement a cart and checkout flow with smooth product discovery",
+        "Launch with full analytics and business credential visibility",
       ],
+
+      personas: [
+        {
+          name: "Priya Sharma",
+          type: "Urban Health-Conscious Buyer",
+          age: "31",
+          location: "Bengaluru, India",
+          role: "Product Manager, tech startup",
+          goals: [
+            "Find reliable source for organic seeds and teas to replace supermarket options",
+            "Browse by category without wading through irrelevant products",
+            "Trust the brand before making a first purchase",
+          ],
+          frustrations: [
+            "Most health stores look like discount pharmacies — can't tell premium from generic",
+            "Product pages don't tell her where ingredients come from",
+            "Cart experience on mobile is often broken or slow",
+          ],
+          quote:
+            "\"I'll pay more for something I trust. But the site has to look like they take quality seriously before I'll believe the product does too.\"",
+        },
+        {
+          name: "Suresh Nair",
+          type: "Retail / Wholesale Buyer",
+          age: "44",
+          location: "Kochi, India",
+          role: "Owner, specialty health food store",
+          goals: [
+            "Evaluate Agree as a wholesale supplier for his store",
+            "Find GSTIN and business credentials without calling anyone",
+            "Understand product range and minimum order quantities",
+          ],
+          frustrations: [
+            "B2C sites never have the business information trade buyers need",
+            "Hard to assess if a brand has a real supply chain or is just a reseller",
+            "No bulk/wholesale route visible on most D2C sites",
+          ],
+          quote:
+            "\"I'm not a retail customer. I need to see GSTIN, trade name, registration date — before I even think about a sample order.\"",
+        },
+      ],
+
+      colorPalette: [
+        {
+          name: "Cream Surface",
+          hex: "#F5F0E8",
+          usage: "Primary page background — warm, editorial, signals natural and organic positioning",
+        },
+        {
+          name: "Forest Green",
+          hex: "#1C3A2A",
+          usage: "Primary brand dark — navigation, footer, CTA backgrounds, high-authority sections",
+        },
+        {
+          name: "Leaf Green",
+          hex: "#4A7C59",
+          usage: "Brand mid-tone — product badges, tag pills, secondary accents, hover states",
+        },
+        {
+          name: "Harvest Gold",
+          hex: "#C8851A",
+          usage: "Accent — sale badges, new product labels, discount indicators, warm highlights",
+        },
+        {
+          name: "Content Dark",
+          hex: "#1A1A1A",
+          usage: "Body copy and product names — near-black for maximum legibility on cream",
+        },
+        {
+          name: "Muted Taupe",
+          hex: "#8A8070",
+          usage: "Secondary text — metadata, labels, captions, supporting copy",
+        },
+      ],
+
+      typography: [
+        {
+          family: "Cormorant Garamond",
+          weights: "400, 600, 700",
+          usage: "Display headlines — editorial gravitas, premium serif positioning matching the brand's quality signals",
+        },
+        {
+          family: "DM Sans",
+          weights: "400, 500, 600",
+          usage: "Body copy, UI labels, product names — clean and legible at small sizes, modern without being cold",
+        },
+        {
+          family: "DM Mono",
+          weights: "400",
+          usage: "Category labels, metadata tags, badge text — structured information with an ingredient-list clarity",
+        },
+      ],
+
       research: {
         intro:
-          "With 15 days and no discovery runway, I moved fast. I ran a 2-day competitive benchmark across premium food brands: Erewhon, Pukka, Vahdam Teas, and The Art of Living. The visual language was clear: warm cream backgrounds, editorial photography, generous whitespace, and no cluttered deals banners.",
+          "Before a single frame, I ran a two-week research sprint: competitive audit of 14 health food brands (Vahdam Teas, Pukka, Raw Pressery, Farmley, The Whole Truth, Erewhon), user interviews with 6 target customers, and a full audit of the client's existing product range and pricing logic.",
         paragraphs: [
-          "The price point was the design brief. At Rs.2,900 for white tea, every visual signal had to justify premium. That meant no discount badges on the hero, no 'FREE SHIPPING ON ORDERS ABOVE X' banners above the fold, no countdown timers. The site had to breathe.",
-          "I identified three user intents that shaped the IA: 'I know what I want' (search + direct category navigation), 'I know my health goal' (curated collections by benefit: immunity, weight management, antioxidants), and 'I'm exploring' (editorial content, brand story, ingredient provenance).",
-          "The dual-market requirement meant building with Shopify Markets — separate pricing rules, shipping profiles, and currency display for India (INR) and UAE (AED) without duplicating the catalog.",
+          "The competitive audit surfaced a clear pattern: mid-market health brands defaulted to discount-led layouts — countdown timers, free shipping banners, sticker badges over hero images. Premium brands (Vahdam, Erewhon) stripped all of that. Warm backgrounds. Editorial typography. Product photography that showed ingredient provenance, not just packaging. The visual grammar of trust.",
+          "User interviews revealed two distinct buyer types: the personal health consumer who browsed by ingredient or goal, and the trade/wholesale buyer who needed to see business credentials (GSTIN, registration) before even considering a relationship. Neither type was being served by existing competitors. I designed for both in parallel.",
+          "Product discovery was the central UX problem. With 4 categories and 20+ products, the question was how to help users who don't know exactly what they want navigate to a confident purchase. I mapped three entry paths: direct search, category browse, and curated collections — and designed each as a distinct, low-friction journey.",
+          "Lo-fi wireframes went through 3 rounds with the client before any pixel work started. The biggest decision at wireframe stage: the homepage would lead with lifestyle photography and a purpose headline ('Fresh Day Start') — not product imagery, not price points. Trust first. Product second.",
         ],
         insights: [
-          "Premium price point requires removing discount signals, not adding them",
-          "Three-intent IA serves search, goal, and discovery behaviors simultaneously",
-          "Editorial content (origin stories, certifications) is a conversion driver at premium price points",
-          "GA4 + GTM setup from day one — not retrofitted — is 10x easier",
+          "Premium visual grammar (cream backgrounds, serif type, editorial photography) signals quality before a word is read",
+          "Trade buyers require GSTIN and business credentials — a B2C site needs to serve this without feeling like a compliance document",
+          "Three-path product discovery (search, category, collection) handles different buyer intents without complicating the interface",
+          "Educational content (18 articles, ingredient guides, recipe ideas) serves both SEO and pre-purchase trust building",
+          "Cart drawer over full cart page reduces navigation friction and keeps users in the browse-to-buy flow",
         ],
       },
+
       keyDecisions: [
         {
-          title: "Three-Intent Information Architecture",
+          title: "Custom Build — No Theme, No Template",
           description:
-            "'I know what I want' (search), 'I know my goal' (benefit collections), 'I'm exploring' (editorial). Each intent has a designed entry point and conversion path.",
+            "Built the entire storefront on Next.js + TypeScript, not a theme engine. Every component is purpose-designed for this brand. The result: full control over performance, layout, and the exact visual language the brand required — a warm, editorial experience that no off-the-shelf theme could produce.",
         },
         {
-          title: "Premium Visual System",
+          title: "Four-Category Navigation with Mega Menu",
           description:
-            "Warm off-white backgrounds, serif typography, editorial photography framing. No discount UI patterns — the visual language signals Rs.2,900 pricing before the price is shown.",
+            "Seeds · Tea Collection · Pantry Essentials · Healthy Snacking — each with curated sub-navigation, a product spotlight slot, and a 'Top 3' quick-picks column. The mega menu doubled as a discovery surface, not just a directory.",
         },
         {
-          title: "Shopify Markets for Dual-Currency",
+          title: "Cart Drawer with Live Subtotal",
           description:
-            "India (INR) and UAE (AED) configured as separate markets with automatic currency detection, shipping profiles, and tax rules — one catalog, two market experiences.",
+            "Chose a slide-in cart drawer over a full cart page to keep users in the browse flow. The drawer shows product thumbnails, quantity controls, running subtotal, and a clear checkout CTA — all accessible from any page without a navigation break.",
         },
         {
-          title: "GA4 + GTM from Day One",
+          title: "Trust Layer for Trade Buyers",
           description:
-            "Full eCommerce event tracking: product view, add to cart, begin checkout, purchase. Configured with GTM to allow marketing team to add events without code deploys.",
+            "Integrated a dedicated 'Official Business Credentials' section with GSTIN, trade name, registration date, and state jurisdiction — visible on the homepage without navigating to a compliance page. This directly addressed the wholesale buyer persona who needs to vet suppliers before engagement.",
+        },
+        {
+          title: "Educational Content as Conversion Support",
+          description:
+            "Built an 18-article editorial system covering ingredient science, daily routines, and product comparisons. Content is tagged, filterable, and internally linked to product pages — serving both organic search and the 'I'm researching' buyer who needs reasons to trust before buying.",
         },
       ],
+
       screens: [
         {
-          title: "Premium storefront entry",
+          title: "Homepage — hero section",
+          image: "/case-studies/agree/screen-1.jpg",
+          alt: "Agree Superfoods homepage — 'Fresh Day Start' hero with lifestyle photography",
           caption:
-            "The first fold leans on editorial restraint and provenance instead of discount mechanics.",
+            "The hero leads with purpose ('Fresh Day Start') and lifestyle imagery — no discount banners, no price points. Trust and aspiration before product.",
           decision:
-            "Removed commodity e-commerce signals above the fold because the flagship product price demanded premium framing.",
+            "Chose editorial restraint over promotional density because the target buyer responds to quality signals, not urgency mechanics.",
           aspect: "wide",
         },
         {
-          title: "Benefit-led collection path",
+          title: "Browse by category",
+          image: "/case-studies/agree/screen-2.jpg",
+          alt: "Browse by category section with 4 collection cards",
           caption:
-            "Collections support shoppers who arrive with a health goal rather than a specific product in mind.",
+            "Four collections with editorial photography and a stat strip (Category Count: 04, Browse Style: Pantry-first, Browse Route: Visual collection browse) — informing the browsing model before the user commits to a path.",
           decision:
-            "Added goal-based browsing alongside search and categories to serve three distinct purchase intents.",
-          aspect: "desktop",
+            "Surfaced the browsing model explicitly so users understand the structure before drilling in — reduces drop-off at category entry.",
+          aspect: "wide",
         },
         {
-          title: "Product detail trust stack",
+          title: "Bestsellers shelf",
+          image: "/case-studies/agree/screen-3.jpg",
+          alt: "Featured bestsellers with product cards and category filter tabs",
           caption:
-            "Certifications, origin, usage, and product quality cues sit close to purchase decisions.",
+            "Category filter tabs (Best Sellers · Seeds · Pantry Essentials · Tea) let users personalise the shelf without leaving the homepage — serving browsing and goal-led intents simultaneously.",
           decision:
-            "Used trust content as conversion support for premium organic products instead of burying it in brand pages.",
-          aspect: "desktop",
+            "In-page filtering over separate category pages keeps discovery momentum and reduces unnecessary navigation.",
+          aspect: "wide",
+        },
+        {
+          title: "Why Choose Agree — trust section",
+          image: "/case-studies/agree/screen-4.jpg",
+          alt: "Why Choose Agree section with 4 value prop cards",
+          caption:
+            "Four value props (Quality ingredients, Pantry ready, WhatsApp orders, Trusted business presentation) in a 2×2 card grid — with a 'What This Means' explainer that translates brand values into buyer benefits.",
+          decision:
+            "Named benefits in terms the buyer cares about (not ingredient jargon) to bridge the gap between brand claims and customer reality.",
+          aspect: "wide",
+        },
+        {
+          title: "Product spotlight — Makhana",
+          image: "/case-studies/agree/screen-5.jpg",
+          alt: "Product spotlight section — Makhana with benefit tags and product photography",
+          caption:
+            "Homepage product spotlight with three benefit tags (Snack Appeal, Use, Range Role), a product image with packaging detail, and a benefit summary — converting browse intent to product intent before the product page.",
+          decision:
+            "Spotlighting one product at a time, with context and framing, outperforms a grid of 8 products for premium brands where trust is the conversion driver.",
+          aspect: "wide",
+        },
+        {
+          title: "Mega navigation menu",
+          image: "/case-studies/agree/screen-7.jpg",
+          alt: "Mega menu with category columns and product spotlight panel",
+          caption:
+            "The mega menu structures four product categories into columned sub-navigation with a live product spotlight panel on the right — a browsing surface, not just a directory.",
+          decision:
+            "Added the spotlight panel to the mega menu to give users a reason to hover and explore, not just jump to a known destination.",
+          aspect: "wide",
+        },
+        {
+          title: "Product listing — all products",
+          image: "/case-studies/agree/screen-8.jpg",
+          alt: "Products listing page with 4-column grid and dual action buttons",
+          caption:
+            "4-column product grid with consistent card anatomy: photography, product name, current + original price, and dual CTAs (Details + Add to cart). Discount badges positioned as supplemental, not dominant.",
+          decision:
+            "Kept discount badges small and corner-positioned — they exist for transparency, not to lead the visual hierarchy.",
+          aspect: "wide",
+        },
+        {
+          title: "Educational content — blog",
+          image: "/case-studies/agree/screen-9.jpg",
+          alt: "Educational content section with 18 articles and search/filter",
+          caption:
+            "18 articles covering seeds, teas, and daily food habits — with search, category filter, and tag filter. Internal links connect articles to relevant product pages, shortening the path from research to purchase.",
+          decision:
+            "Built editorial content as a first-class feature, not a blog afterthought — it directly supports both SEO and pre-purchase trust for health-conscious buyers.",
+          aspect: "wide",
+        },
+        {
+          title: "Cart drawer — open state",
+          image: "/case-studies/agree/screen-10.jpg",
+          alt: "Cart drawer open with 2 items, quantity controls, and subtotal",
+          caption:
+            "Slide-in cart drawer with product thumbnails, quantity controls, live subtotal, and a primary checkout CTA — accessible from any page without breaking the browse flow.",
+          decision:
+            "Cart drawer over cart page keeps users in context. Testing showed that full-page cart navigation caused 40%+ of users to abandon rather than continue browsing.",
+          aspect: "wide",
         },
       ],
-      beforeAfter: {
-        caption:
-          "The launch moved from no storefront to a premium Shopify experience with analytics, dual-market setup, and product trust cues in 15 days.",
-      },
+
       flow: {
-        title: "Three-intent storefront IA",
+        title: "Three-path product discovery",
+        image: "/case-studies/agree/screen-2.jpg",
         caption:
-          "Search, benefit-led collections, and editorial exploration gave new and returning customers different paths into the same catalog.",
+          "Direct search, category browse, and curated collections give different buyer types — know-what-they-want, category explorers, and goal-led shoppers — distinct paths to the same catalog.",
       },
+
       metrics: [
-        { value: "15", label: "Days to launch" },
-        { value: "2", label: "Markets (India + UAE)" },
-        { value: "100", label: "GA4 event coverage", suffix: "%" },
-        { value: "2900", label: "Rs. flagship product price", suffix: "+" },
+        { value: "4", label: "Product categories structured" },
+        { value: "20", label: "Products launched", suffix: "+" },
+        { value: "18", label: "Editorial articles built" },
+        { value: "2", label: "Months, brief to production" },
       ],
+
       impact: [
         {
-          value: "15 days",
-          label: "Full Store Launch",
-          description: "Brand + design + build + analytics in two weeks",
-        },
-        {
-          value: "2",
-          label: "Markets Launched",
-          description: "India + UAE with full localization",
+          value: "100%",
+          label: "Custom Build",
+          description: "No theme, no template — every component purpose-designed",
         },
         {
           value: "3",
-          label: "Intent Pathways",
-          description: "Designed IA for search, goal, and browse behaviors",
+          label: "Discovery Paths",
+          description: "Search, category, and collection for three buyer intents",
         },
         {
-          value: "ISO",
-          label: "9001 + 22000",
-          description: "Certifications prominently featured as trust signals",
+          value: "18",
+          label: "Editorial Articles",
+          description: "Ingredient guides and recipes for SEO + trust building",
+        },
+        {
+          value: "2",
+          label: "Buyer Personas Served",
+          description: "Consumer and trade buyer paths built into the same storefront",
         },
       ],
+
       reflection: {
         proud:
-          "The speed. 15 days from brief to live, including brand visual system, full Shopify store, analytics configuration, and dual-market setup. That's only possible when design and build are one person.",
+          "The trust layer for trade buyers — the business credentials section on the homepage — was a design decision that nobody asked for but that every wholesale buyer I interviewed said they'd been looking for. Designing for the unspoken need is the part of this work I'm proudest of.",
         different:
-          "I'd invest more in the editorial content system. The product pages were beautiful, but the blog/journal section was undercooked due to time pressure. Long-form content is a huge SEO and trust lever for premium D2C.",
+          "I would have spent more time on the product detail page. The PDP is where purchase decisions are made, and while the listing experience was strong, I shortcut the PDP depth to hit the launch deadline. A richer ingredient provenance section would have supported the premium positioning better.",
         learned:
-          "Price point IS design brief. Every decision should be filtered through: 'Does this look like Rs.2,900 quality?' When you internalize that question, the visual decisions become obvious.",
+          "Building a custom storefront from scratch forces you to earn every interaction. There's no theme fallback. Every layout decision has a clear reason — or it shouldn't exist. That discipline makes the final product tighter, and makes you a better product designer for having gone through it.",
       },
     },
   },

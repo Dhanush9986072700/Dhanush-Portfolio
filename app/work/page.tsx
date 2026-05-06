@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const accentColors: Record<string, string> = {
   "xiphias-immigration": "#c9ff6a",
   "resort-app": "#f3a841",
-  superfoods: "#c9ff6a",
+  "agree-superfoods": "#4A7C59",
 };
 
 function MetricCard({ project }: { project: Project }) {

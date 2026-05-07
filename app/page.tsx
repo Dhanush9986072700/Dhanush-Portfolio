@@ -15,7 +15,7 @@ import Footer from "@/components/sections/Footer";
 export const metadata: Metadata = {
   title: "Dhanush N - Product Designer",
   description:
-    "Product Designer with 4+ years building real products: immigration platforms, booking systems, D2C storefronts. Solo, end to end. Based in Bangalore, India.",
+    "Product Designer with 4+ years building real products: immigration platforms, booking systems, D2C storefronts, clinical AI platforms, SaaS dashboards, and static healthcare websites. Solo, end to end. Based in Bangalore, India.",
 };
 
 export default function HomePage() {

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" font-family="-apple-system,'SF Pro Display',system-ui,sans-serif">
+  <defs>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C6EF8"/>
+      <stop offset="100%" stop-color="#4A3DB0"/>
+    </linearGradient>
+    <linearGradient id="incomeChip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#50D896" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#50D896" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="spentChip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F87171" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#F87171" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="savedChip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9A74B" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#F9A74B" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="390" height="844" fill="#0A0A1C"/>
+  <!-- Status bar -->
+  <text x="24" y="30" font-size="15" font-weight="600" fill="white">9:41</text>
+  <text x="340" y="30" font-size="13" font-weight="500" fill="rgba(255,255,255,0.6)">100%</text>
+  <!-- Header -->
+  <text x="24" y="68" font-size="14" fill="rgba(255,255,255,0.4)" font-weight="400">Good morning 👋</text>
+  <text x="24" y="90" font-size="24" font-weight="800" fill="white" letter-spacing="-0.3">Dhanush</text>
+  <!-- Bell icon -->
+  <rect x="334" y="62" width="36" height="36" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="352" y="85" text-anchor="middle" font-size="17">🔔</text>
+  <!-- Balance card -->
+  <rect x="20" y="108" width="350" height="180" rx="20" fill="url(#card)"/>
+  <!-- Card pattern overlay -->
+  <circle cx="320" cy="140" r="80" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="350" cy="200" r="60" fill="rgba(255,255,255,0.04)"/>
+  <text x="40" y="138" font-size="11" font-weight="500" letter-spacing="1.5" fill="rgba(255,255,255,0.65)">TOTAL BALANCE</text>
+  <text x="40" y="178" font-size="40" font-weight="800" fill="white" letter-spacing="-1">₹1,24,580</text>
+  <text x="40" y="202" font-size="13" fill="rgba(255,255,255,0.6)">↑ +₹4,820 · 12.4% this month</text>
+  <!-- Progress bar -->
+  <rect x="40" y="226" width="282" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+  <rect x="40" y="226" width="196" height="6" rx="3" fill="rgba(255,255,255,0.8)"/>
+  <text x="40" y="256" font-size="11" fill="rgba(255,255,255,0.5)">May budget</text>
+  <text x="322" y="256" text-anchor="end" font-size="11" fill="rgba(255,255,255,0.5)" font-weight="600">₹42,000 left</text>
+  <!-- Stat chips -->
+  <rect x="20" y="304" width="110" height="68" rx="14" fill="url(#incomeChip)" stroke="rgba(80,216,150,0.2)" stroke-width="1"/>
+  <rect x="140" y="304" width="110" height="68" rx="14" fill="url(#spentChip)" stroke="rgba(248,113,113,0.2)" stroke-width="1"/>
+  <rect x="260" y="304" width="110" height="68" rx="14" fill="url(#savedChip)" stroke="rgba(249,167,75,0.2)" stroke-width="1"/>
+  <text x="75" y="326" text-anchor="middle" font-size="10" font-weight="600" letter-spacing="0.5" fill="rgba(80,216,150,0.8)">INCOME</text>
+  <text x="75" y="350" text-anchor="middle" font-size="18" font-weight="800" fill="#50D896">₹42,000</text>
+  <text x="195" y="326" text-anchor="middle" font-size="10" font-weight="600" letter-spacing="0.5" fill="rgba(248,113,113,0.8)">SPENT</text>
+  <text x="195" y="350" text-anchor="middle" font-size="18" font-weight="800" fill="#F87171">₹18,420</text>
+  <text x="315" y="326" text-anchor="middle" font-size="10" font-weight="600" letter-spacing="0.5" fill="rgba(249,167,75,0.8)">SAVED</text>
+  <text x="315" y="350" text-anchor="middle" font-size="18" font-weight="800" fill="#F9A74B">₹23,580</text>
+  <!-- Section header -->
+  <text x="20" y="400" font-size="16" font-weight="700" fill="white">Recent transactions</text>
+  <text x="370" y="400" text-anchor="end" font-size="14" font-weight="500" fill="#7C6EF8">See all</text>
+  <!-- Transaction rows -->
+  <!-- Swiggy -->
+  <rect x="20" y="416" width="350" height="60" rx="14" fill="rgba(255,255,255,0.04)"/>
+  <rect x="32" y="428" width="36" height="36" rx="18" fill="rgba(249,167,75,0.15)"/>
+  <text x="50" y="451" text-anchor="middle" font-size="18">🍕</text>
+  <text x="80" y="440" font-size="14" font-weight="600" fill="white">Swiggy</text>
+  <text x="80" y="458" font-size="12" fill="rgba(255,255,255,0.4)">Food · Today 7:30 PM</text>
+  <text x="358" y="440" text-anchor="end" font-size="14" font-weight="700" fill="#F87171">-₹840</text>
+  <!-- Rent -->
+  <rect x="20" y="484" width="350" height="60" rx="14" fill="rgba(255,255,255,0.04)"/>
+  <rect x="32" y="496" width="36" height="36" rx="18" fill="rgba(124,110,248,0.15)"/>
+  <text x="50" y="519" text-anchor="middle" font-size="18">🏠</text>
+  <text x="80" y="508" font-size="14" font-weight="600" fill="white">House Rent</text>
+  <text x="80" y="526" font-size="12" fill="rgba(255,255,255,0.4)">Housing · 1 May</text>
+  <text x="358" y="508" text-anchor="end" font-size="14" font-weight="700" fill="#F87171">-₹12,000</text>
+  <!-- Salary -->
+  <rect x="20" y="552" width="350" height="60" rx="14" fill="rgba(255,255,255,0.04)"/>
+  <rect x="32" y="564" width="36" height="36" rx="18" fill="rgba(80,216,150,0.15)"/>
+  <text x="50" y="587" text-anchor="middle" font-size="18">💼</text>
+  <text x="80" y="576" font-size="14" font-weight="600" fill="white">Salary Credit</text>
+  <text x="80" y="594" font-size="12" fill="rgba(255,255,255,0.4)">Income · 1 May</text>
+  <text x="358" y="576" text-anchor="end" font-size="14" font-weight="700" fill="#50D896">+₹42,000</text>
+  <!-- Amazon -->
+  <rect x="20" y="620" width="350" height="60" rx="14" fill="rgba(255,255,255,0.04)"/>
+  <rect x="32" y="632" width="36" height="36" rx="18" fill="rgba(249,167,75,0.1)"/>
+  <text x="50" y="655" text-anchor="middle" font-size="18">📦</text>
+  <text x="80" y="644" font-size="14" font-weight="600" fill="white">Amazon</text>
+  <text x="80" y="662" font-size="12" fill="rgba(255,255,255,0.4)">Shopping · 29 Apr</text>
+  <text x="358" y="644" text-anchor="end" font-size="14" font-weight="700" fill="#F87171">-₹2,340</text>
+  <!-- Bottom nav -->
+  <rect x="0" y="726" width="390" height="1" fill="rgba(255,255,255,0.08)"/>
+  <rect x="0" y="727" width="390" height="117" fill="#0A0A1C"/>
+  <!-- Nav items -->
+  <rect x="22" y="748" width="54" height="38" rx="12" fill="rgba(124,110,248,0.15)"/>
+  <text x="49" y="773" text-anchor="middle" font-size="20">⊞</text>
+  <text x="49" y="795" text-anchor="middle" font-size="9" font-weight="600" fill="#7C6EF8" letter-spacing="0.3">HOME</text>
+  <text x="124" y="773" text-anchor="middle" font-size="20">📊</text>
+  <text x="124" y="795" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)" letter-spacing="0.3">STATS</text>
+  <!-- Add button -->
+  <rect x="168" y="744" width="54" height="46" rx="16" fill="#7C6EF8"/>
+  <text x="195" y="773" text-anchor="middle" font-size="26" font-weight="300" fill="white">+</text>
+  <text x="266" y="773" text-anchor="middle" font-size="20">💳</text>
+  <text x="266" y="795" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)" letter-spacing="0.3">CARDS</text>
+  <text x="341" y="773" text-anchor="middle" font-size="20">👤</text>
+  <text x="341" y="795" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)" letter-spacing="0.3">PROFILE</text>
+  <!-- Home indicator -->
+  <rect x="150" y="830" width="90" height="5" rx="2.5" fill="rgba(255,255,255,0.2)"/>
+</svg>

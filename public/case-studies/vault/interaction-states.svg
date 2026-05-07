@@ -1,0 +1,340 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 820" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+
+  <rect width="1440" height="820" fill="#F0F0EB"/>
+
+  <!-- ── HEADER ── -->
+  <rect width="1440" height="56" fill="#0A0A1C"/>
+  <text x="24" y="24" font-size="10" font-weight="700" fill="#7C6EF8" letter-spacing="2.5" font-family="'Courier New',monospace">VAULT</text>
+  <text x="80" y="24" font-size="9" fill="rgba(255,255,255,0.22)" letter-spacing="1">·</text>
+  <text x="92" y="24" font-size="9" fill="rgba(255,255,255,0.4)" letter-spacing="1.5">INTERACTION DESIGN · ADD TRANSACTION FLOW · ALL STATES</text>
+  <text x="24" y="43" font-size="9" fill="rgba(255,255,255,0.25)">5 states · empty → entry → error handling → category → success · 3-tap maximum from any state</text>
+  <text x="1416" y="32" font-size="8" fill="rgba(255,255,255,0.18)" text-anchor="end">INTERACTION SPEC · DHANUSH N.</text>
+
+  <!-- ── COLUMN LAYOUT: 5 CARDS ──
+       Each card: x= 40 / 320 / 600 / 880 / 1160, width=240, height=368, y=72
+  -->
+
+  <!-- ══ CARD 1: EMPTY STATE ══ -->
+  <rect x="40"  y="72"  width="240" height="368" rx="14" fill="#0D0D20"/>
+  <!-- Status bar simulation -->
+  <rect x="40"  y="72"  width="240" height="24" rx="14" fill="#111128"/>
+  <rect x="40"  y="82"  width="240" height="14" fill="#111128"/>
+  <text x="56"  y="88"  font-size="7" fill="rgba(255,255,255,0.35)">9:41</text>
+  <text x="264" y="88"  font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="end">●●● WiFi</text>
+
+  <!-- App header -->
+  <text x="160" y="114" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">My Wallet</text>
+  <text x="160" y="128" font-size="7"  fill="rgba(255,255,255,0.35)" text-anchor="middle">Wednesday, 15 Jan</text>
+
+  <!-- Balance card (placeholder) -->
+  <rect x="56" y="136" width="208" height="72" rx="10" fill="#18184A"/>
+  <text x="160" y="158" font-size="7"  fill="rgba(255,255,255,0.35)" text-anchor="middle">Total Balance</text>
+  <text x="160" y="178" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">₹ 0.00</text>
+  <text x="160" y="196" font-size="7"  fill="rgba(255,255,255,0.25)" text-anchor="middle">No transactions recorded</text>
+
+  <!-- Empty state illustration -->
+  <!-- Simple wallet icon -->
+  <rect x="130" y="222" width="60" height="44" rx="8" fill="#1E1E48" stroke="#2A2A5A" stroke-width="1.5"/>
+  <rect x="143" y="216" width="34" height="10" rx="5" fill="#1E1E48" stroke="#2A2A5A" stroke-width="1.5"/>
+  <rect x="164" y="232" width="16" height="10" rx="5" fill="#7C6EF8" opacity="0.5"/>
+
+  <text x="160" y="284" font-size="9" fill="rgba(255,255,255,0.5)" text-anchor="middle">No transactions yet</text>
+  <text x="160" y="298" font-size="8" fill="rgba(255,255,255,0.3)" text-anchor="middle">Add your first one to start</text>
+  <text x="160" y="311" font-size="8" fill="rgba(255,255,255,0.3)" text-anchor="middle">tracking your money</text>
+
+  <!-- CTA button -->
+  <rect x="72" y="322" width="176" height="38" rx="10" fill="#7C6EF8"/>
+  <text x="160" y="345" font-size="10" font-weight="600" fill="#FFFFFF" text-anchor="middle">+ Add Transaction</text>
+
+  <!-- Bottom nav placeholder -->
+  <rect x="40" y="396" width="240" height="44" fill="#0D0D20"/>
+  <rect x="40" y="396" width="240" height="1" fill="rgba(255,255,255,0.06)"/>
+  <text x="80"  y="422" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="middle">Home</text>
+  <text x="120" y="422" font-size="7" fill="rgba(255,255,255,0.20)" text-anchor="middle">Insights</text>
+  <text x="160" y="415" font-size="16" fill="#7C6EF8" text-anchor="middle">⊕</text>
+  <text x="200" y="422" font-size="7" fill="rgba(255,255,255,0.20)" text-anchor="middle">Cards</text>
+  <text x="240" y="422" font-size="7" fill="rgba(255,255,255,0.20)" text-anchor="middle">Profile</text>
+
+  <!-- State label below card -->
+  <text x="160" y="458" font-size="9" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="1">STATE 01</text>
+  <text x="160" y="472" font-size="11" font-weight="700" fill="#111827" text-anchor="middle">Empty State</text>
+
+  <!-- ── ARROW 1→2 ── -->
+  <line x1="282" y1="255" x2="317" y2="255" stroke="#7C6EF8" stroke-width="1.5"/>
+  <polygon points="317,250 328,255 317,260" fill="#7C6EF8"/>
+  <text x="305" y="246" font-size="7" fill="#9CA3AF" text-anchor="middle">tap +</text>
+
+  <!-- ══ CARD 2: AMOUNT ENTRY ══ -->
+  <rect x="320" y="72"  width="240" height="368" rx="14" fill="#0D0D20"/>
+  <rect x="320" y="72"  width="240" height="24" rx="14" fill="#111128"/>
+  <rect x="320" y="82"  width="240" height="14" fill="#111128"/>
+  <text x="336" y="88"  font-size="7" fill="rgba(255,255,255,0.35)">9:41</text>
+  <text x="544" y="88"  font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="end">●●● WiFi</text>
+
+  <!-- Header -->
+  <text x="440" y="114" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Add Transaction</text>
+  <text x="341" y="114" font-size="9" fill="rgba(255,255,255,0.3)">✕</text>
+
+  <!-- Expense/Income toggle -->
+  <rect x="356" y="122" width="168" height="26" rx="13" fill="#18184A"/>
+  <rect x="356" y="122" width="84"  height="26" rx="13" fill="#EF4444"/>
+  <text x="398" y="139" font-size="9" font-weight="600" fill="#FFFFFF" text-anchor="middle">Expense</text>
+  <text x="482" y="139" font-size="9" fill="rgba(255,255,255,0.4)" text-anchor="middle">Income</text>
+
+  <!-- Large amount display -->
+  <text x="440" y="195" font-size="32" font-weight="700" fill="rgba(255,255,255,0.25)" text-anchor="middle">₹ 0.00</text>
+  <rect x="432" y="198" width="2" height="18" rx="1" fill="#7C6EF8" opacity="0.7"/>
+
+  <!-- Category grid (disabled/muted) -->
+  <text x="440" y="226" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">CHOOSE CATEGORY</text>
+  <!-- 3x2 grid (6 cells), muted -->
+  <rect x="336" y="232" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="364" y="252" font-size="13" text-anchor="middle" opacity="0.3">🍕</text>
+  <text x="364" y="270" font-size="6" fill="rgba(255,255,255,0.2)" text-anchor="middle">Food</text>
+  <rect x="400" y="232" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="428" y="252" font-size="13" text-anchor="middle" opacity="0.3">🚌</text>
+  <text x="428" y="270" font-size="6" fill="rgba(255,255,255,0.2)" text-anchor="middle">Transport</text>
+  <rect x="464" y="232" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="492" y="252" font-size="13" text-anchor="middle" opacity="0.3">🛍</text>
+  <text x="492" y="270" font-size="6" fill="rgba(255,255,255,0.2)" text-anchor="middle">Shopping</text>
+
+  <rect x="336" y="282" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="364" y="302" font-size="13" text-anchor="middle" opacity="0.3">💊</text>
+  <text x="364" y="318" font-size="6" fill="rgba(255,255,255,0.2)" text-anchor="middle">Health</text>
+  <rect x="400" y="282" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="428" y="302" font-size="13" text-anchor="middle" opacity="0.3">🏠</text>
+  <text x="428" y="318" font-size="6" fill="rgba(255,255,255,0.2)" text-anchor="middle">Bills</text>
+  <rect x="464" y="282" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="492" y="302" font-size="13" text-anchor="middle" opacity="0.3">✦</text>
+  <text x="492" y="318" font-size="6" fill="rgba(255,255,255,0.2)" text-anchor="middle">Other</text>
+
+  <!-- Keyboard hint (simplified) -->
+  <rect x="336" y="334" width="184" height="36" rx="6" fill="#16162E" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="440" y="356" font-size="7" fill="rgba(255,255,255,0.18)" text-anchor="middle">1  2  3  4  5  6  7  8  9  ⌫  0  .</text>
+
+  <!-- State label -->
+  <text x="440" y="458" font-size="9" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="1">STATE 02</text>
+  <text x="440" y="472" font-size="11" font-weight="700" fill="#111827" text-anchor="middle">Amount Entry</text>
+
+  <!-- ── ARROW 2→3 ── -->
+  <line x1="562" y1="255" x2="597" y2="255" stroke="#EF4444" stroke-width="1.5"/>
+  <polygon points="597,250 608,255 597,260" fill="#EF4444"/>
+  <text x="585" y="246" font-size="7" fill="#EF4444" text-anchor="middle">tap Save</text>
+  <text x="585" y="268" font-size="7" fill="#EF4444" text-anchor="middle">at ₹0.00</text>
+
+  <!-- ══ CARD 3: VALIDATION ERROR ══ -->
+  <rect x="600" y="72"  width="240" height="368" rx="14" fill="#0D0D20"/>
+  <rect x="600" y="72"  width="240" height="24" rx="14" fill="#111128"/>
+  <rect x="600" y="82"  width="240" height="14" fill="#111128"/>
+  <text x="616" y="88"  font-size="7" fill="rgba(255,255,255,0.35)">9:41</text>
+  <text x="824" y="88"  font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="end">●●● WiFi</text>
+
+  <text x="720" y="114" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Add Transaction</text>
+  <text x="621" y="114" font-size="9" fill="rgba(255,255,255,0.3)">✕</text>
+
+  <!-- Expense/Income toggle (same) -->
+  <rect x="636" y="122" width="168" height="26" rx="13" fill="#18184A"/>
+  <rect x="636" y="122" width="84"  height="26" rx="13" fill="#EF4444"/>
+  <text x="678" y="139" font-size="9" font-weight="600" fill="#FFFFFF" text-anchor="middle">Expense</text>
+  <text x="762" y="139" font-size="9" fill="rgba(255,255,255,0.4)" text-anchor="middle">Income</text>
+
+  <!-- Amount display with ERROR state -->
+  <rect x="616" y="158" width="208" height="44" rx="8" fill="rgba(239,68,68,0.06)" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="720" y="185" font-size="26" font-weight="700" fill="#EF4444" text-anchor="middle">₹ 0.00</text>
+
+  <!-- Error message -->
+  <text x="720" y="213" font-size="9" fill="#EF4444" text-anchor="middle">⚠ Amount must be greater than ₹ 0</text>
+
+  <!-- Category grid (still disabled) -->
+  <text x="720" y="234" font-size="7" fill="rgba(255,255,255,0.15)" text-anchor="middle">CHOOSE CATEGORY — enter amount first</text>
+
+  <rect x="616" y="240" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="644" y="260" font-size="13" text-anchor="middle" opacity="0.2">🍕</text>
+  <rect x="680" y="240" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="708" y="260" font-size="13" text-anchor="middle" opacity="0.2">🚌</text>
+  <rect x="744" y="240" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="772" y="260" font-size="13" text-anchor="middle" opacity="0.2">🛍</text>
+  <rect x="616" y="290" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="644" y="310" font-size="13" text-anchor="middle" opacity="0.2">💊</text>
+  <rect x="680" y="290" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="708" y="310" font-size="13" text-anchor="middle" opacity="0.2">🏠</text>
+  <rect x="744" y="290" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="772" y="310" font-size="13" text-anchor="middle" opacity="0.2">✦</text>
+
+  <!-- Keyboard hint -->
+  <rect x="616" y="342" width="184" height="36" rx="6" fill="#16162E" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="720" y="364" font-size="7" fill="rgba(255,255,255,0.18)" text-anchor="middle">1  2  3  4  5  6  7  8  9  ⌫  0  .</text>
+
+  <text x="720" y="458" font-size="9" font-weight="600" fill="#EF4444" text-anchor="middle" letter-spacing="1">STATE 03</text>
+  <text x="720" y="472" font-size="11" font-weight="700" fill="#111827" text-anchor="middle">Validation Error</text>
+
+  <!-- ── ARROW 3→4 ── -->
+  <line x1="842" y1="255" x2="877" y2="255" stroke="#7C6EF8" stroke-width="1.5"/>
+  <polygon points="877,250 888,255 877,260" fill="#7C6EF8"/>
+  <text x="865" y="246" font-size="7" fill="#9CA3AF" text-anchor="middle">enter ₹850</text>
+  <text x="865" y="268" font-size="7" fill="#9CA3AF" text-anchor="middle">→ pick cat.</text>
+
+  <!-- ══ CARD 4: CATEGORY SELECTED ══ -->
+  <rect x="880"  y="72"  width="240" height="368" rx="14" fill="#0D0D20"/>
+  <rect x="880"  y="72"  width="240" height="24" rx="14" fill="#111128"/>
+  <rect x="880"  y="82"  width="240" height="14" fill="#111128"/>
+  <text x="896"  y="88"  font-size="7" fill="rgba(255,255,255,0.35)">9:42</text>
+  <text x="1104" y="88"  font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="end">●●● WiFi</text>
+
+  <text x="1000" y="114" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Add Transaction</text>
+
+  <!-- Toggle -->
+  <rect x="916" y="122" width="168" height="26" rx="13" fill="#18184A"/>
+  <rect x="916" y="122" width="84"  height="26" rx="13" fill="#EF4444"/>
+  <text x="958" y="139" font-size="9" font-weight="600" fill="#FFFFFF" text-anchor="middle">Expense</text>
+  <text x="1042" y="139" font-size="9" fill="rgba(255,255,255,0.4)" text-anchor="middle">Income</text>
+
+  <!-- Amount (confirmed, valid) -->
+  <text x="1000" y="195" font-size="32" font-weight="700" fill="#FFFFFF" text-anchor="middle">₹ 850</text>
+  <text x="1000" y="213" font-size="8"  fill="rgba(255,255,255,0.3)" text-anchor="middle">tap amount to edit</text>
+
+  <!-- Category grid (ACTIVE, Food selected) -->
+  <text x="1000" y="234" font-size="7" font-weight="600" fill="rgba(255,255,255,0.5)" text-anchor="middle" letter-spacing="1">CHOOSE CATEGORY</text>
+
+  <!-- Food selected (violet highlight) -->
+  <rect x="896" y="240" width="56" height="44" rx="8" fill="#7C6EF8" stroke="#9D8DFF" stroke-width="1.5"/>
+  <text x="924" y="260" font-size="13" text-anchor="middle">🍕</text>
+  <text x="924" y="278" font-size="6" fill="#FFFFFF" text-anchor="middle">Food</text>
+
+  <!-- Other categories active -->
+  <rect x="960" y="240" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="988" y="260" font-size="13" text-anchor="middle">🚌</text>
+  <text x="988" y="278" font-size="6" fill="rgba(255,255,255,0.5)" text-anchor="middle">Transport</text>
+  <rect x="1024" y="240" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="1052" y="260" font-size="13" text-anchor="middle">🛍</text>
+  <text x="1052" y="278" font-size="6" fill="rgba(255,255,255,0.5)" text-anchor="middle">Shopping</text>
+
+  <rect x="896" y="290" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="924" y="310" font-size="13" text-anchor="middle">💊</text>
+  <text x="924" y="326" font-size="6" fill="rgba(255,255,255,0.5)" text-anchor="middle">Health</text>
+  <rect x="960" y="290" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="988" y="310" font-size="13" text-anchor="middle">🏠</text>
+  <text x="988" y="326" font-size="6" fill="rgba(255,255,255,0.5)" text-anchor="middle">Bills</text>
+  <rect x="1024" y="290" width="56" height="44" rx="8" fill="#181830" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="1052" y="310" font-size="13" text-anchor="middle">✦</text>
+  <text x="1052" y="326" font-size="6" fill="rgba(255,255,255,0.5)" text-anchor="middle">Other</text>
+
+  <!-- Save button (active) -->
+  <rect x="896" y="346" width="184" height="36" rx="10" fill="#7C6EF8"/>
+  <text x="988" y="369" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">Save Transaction ✓</text>
+
+  <text x="1000" y="458" font-size="9" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="1">STATE 04</text>
+  <text x="1000" y="472" font-size="11" font-weight="700" fill="#111827" text-anchor="middle">Category Selected</text>
+
+  <!-- ── ARROW 4→5 ── -->
+  <line x1="1122" y1="255" x2="1157" y2="255" stroke="#10B981" stroke-width="1.5"/>
+  <polygon points="1157,250 1168,255 1157,260" fill="#10B981"/>
+  <text x="1145" y="246" font-size="7" fill="#10B981" text-anchor="middle">tap Save</text>
+
+  <!-- ══ CARD 5: SUCCESS STATE ══ -->
+  <rect x="1160" y="72"  width="240" height="368" rx="14" fill="#0D0D20"/>
+  <rect x="1160" y="72"  width="240" height="24" rx="14" fill="#111128"/>
+  <rect x="1160" y="82"  width="240" height="14" fill="#111128"/>
+  <text x="1176" y="88"  font-size="7" fill="rgba(255,255,255,0.35)">9:42</text>
+  <text x="1384" y="88"  font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="end">●●● WiFi</text>
+
+  <!-- Success overlay (full screen) -->
+  <rect x="1160" y="96" width="240" height="344" fill="#0D0D20"/>
+
+  <!-- Large success icon -->
+  <circle cx="1280" cy="200" r="38" fill="rgba(16,185,129,0.15)" stroke="#10B981" stroke-width="2"/>
+  <circle cx="1280" cy="200" r="28" fill="#10B981"/>
+  <text x="1280" y="208" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">✓</text>
+
+  <!-- Amount confirmation -->
+  <text x="1280" y="262" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">₹ 850.00</text>
+  <text x="1280" y="280" font-size="9"  fill="rgba(255,255,255,0.5)" text-anchor="middle">Expense · Food</text>
+  <text x="1280" y="295" font-size="8"  fill="rgba(255,255,255,0.3)" text-anchor="middle">Today, 2:42 PM</text>
+
+  <!-- Balance update signal -->
+  <rect x="1192" y="306" width="176" height="24" rx="6" fill="#18184A"/>
+  <text x="1280" y="322" font-size="8" fill="rgba(255,255,255,0.4)" text-anchor="middle">Balance updated → ₹ 22,150.00</text>
+
+  <!-- Action buttons -->
+  <rect x="1176" y="340" width="100" height="32" rx="8" fill="#181830" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="1226" y="360" font-size="9" fill="rgba(255,255,255,0.6)" text-anchor="middle">Add Another</text>
+  <rect x="1284" y="340" width="100" height="32" rx="8" fill="#7C6EF8"/>
+  <text x="1334" y="360" font-size="9" font-weight="600" fill="#FFFFFF" text-anchor="middle">Dashboard →</text>
+
+  <text x="1280" y="458" font-size="9" font-weight="600" fill="#10B981" text-anchor="middle" letter-spacing="1">STATE 05</text>
+  <text x="1280" y="472" font-size="11" font-weight="700" fill="#111827" text-anchor="middle">Success State</text>
+
+  <!-- ══ ANNOTATION ROW ══ (y=490–636) -->
+
+  <!-- Card 1 annotation -->
+  <rect x="40" y="490" width="240" height="88" rx="8" fill="#FFFFFF" stroke="#E0E0D8" stroke-width="1"/>
+  <rect x="40" y="490" width="4" height="88" rx="2" fill="#7C6EF8" opacity="0.5"/>
+  <text x="54" y="508" font-size="9" font-weight="700" fill="#374151">Design the empty state first.</text>
+  <text x="54" y="522" font-size="9" fill="#6B7280">If it looks like a broken product,</text>
+  <text x="54" y="536" font-size="9" fill="#6B7280">users won't trust what comes next.</text>
+  <text x="54" y="554" font-size="9" fill="#6B7280">The wallet icon + balance card at ₹0</text>
+  <text x="54" y="568" font-size="9" fill="#6B7280">shows the app is working, just empty.</text>
+
+  <!-- Card 2 annotation -->
+  <rect x="320" y="490" width="240" height="88" rx="8" fill="#FFFFFF" stroke="#E0E0D8" stroke-width="1"/>
+  <rect x="320" y="490" width="4" height="88" rx="2" fill="#7C6EF8" opacity="0.5"/>
+  <text x="334" y="508" font-size="9" font-weight="700" fill="#374151">Amount is the primary data.</text>
+  <text x="334" y="522" font-size="9" fill="#6B7280">Large type, cursor visible, keyboard</text>
+  <text x="334" y="536" font-size="9" fill="#6B7280">ready. Category is disabled until</text>
+  <text x="334" y="550" font-size="9" fill="#6B7280">an amount exists — prevents</text>
+  <text x="334" y="564" font-size="9" fill="#6B7280">out-of-order input errors entirely.</text>
+
+  <!-- Card 3 annotation -->
+  <rect x="600" y="490" width="240" height="88" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <rect x="600" y="490" width="4" height="88" rx="2" fill="#EF4444"/>
+  <text x="614" y="508" font-size="9" font-weight="700" fill="#DC2626">Error = message + location.</text>
+  <text x="614" y="522" font-size="9" fill="#6B7280">Error text appears inline below the</text>
+  <text x="614" y="536" font-size="9" fill="#6B7280">amount — never as a modal or toast.</text>
+  <text x="614" y="550" font-size="9" fill="#6B7280">The fix (type a number) and the</text>
+  <text x="614" y="564" font-size="9" fill="#6B7280">error message are co-located.</text>
+
+  <!-- Card 4 annotation -->
+  <rect x="880" y="490" width="240" height="88" rx="8" fill="#FFFFFF" stroke="#E0E0D8" stroke-width="1"/>
+  <rect x="880" y="490" width="4" height="88" rx="2" fill="#7C6EF8"/>
+  <text x="894" y="508" font-size="9" font-weight="700" fill="#374151">6 categories, not 12.</text>
+  <text x="894" y="522" font-size="9" fill="#6B7280">Early prototype had 12. Recall testing</text>
+  <text x="894" y="536" font-size="9" fill="#6B7280">showed 6 performed better and users</text>
+  <text x="894" y="550" font-size="9" fill="#6B7280">spent less time deciding. Selected</text>
+  <text x="894" y="564" font-size="9" fill="#6B7280">state uses violet fill — same as CTA.</text>
+
+  <!-- Card 5 annotation -->
+  <rect x="1160" y="490" width="240" height="88" rx="8" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <rect x="1160" y="490" width="4" height="88" rx="2" fill="#10B981"/>
+  <text x="1174" y="508" font-size="9" font-weight="700" fill="#15803D">Success deserves ceremony.</text>
+  <text x="1174" y="522" font-size="9" fill="#6B7280">A task completed should feel good.</text>
+  <text x="1174" y="536" font-size="9" fill="#6B7280">Full-screen confirmation, animated ✓,</text>
+  <text x="1174" y="550" font-size="9" fill="#6B7280">balance updated immediately. Two</text>
+  <text x="1174" y="564" font-size="9" fill="#6B7280">clear next actions, no dead end.</text>
+
+  <!-- ══ DESIGN PRINCIPLES BAR ══ (y=650–820) -->
+  <rect x="0" y="650" width="1440" height="170" fill="#0A0A1C"/>
+
+  <text x="720" y="678" font-size="9" font-weight="700" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="3">INTERACTION PRINCIPLES APPLIED IN THIS FLOW</text>
+
+  <!-- Principle 1 -->
+  <rect x="40" y="694" width="2" height="64" fill="#7C6EF8" opacity="0.6"/>
+  <text x="52" y="712" font-size="11" font-weight="700" fill="#FFFFFF">Disable, don't hide</text>
+  <text x="52" y="728" font-size="9" fill="rgba(255,255,255,0.45)">Category grid is visible but muted until amount</text>
+  <text x="52" y="742" font-size="9" fill="rgba(255,255,255,0.45)">is entered. User knows it exists — the order is clear.</text>
+  <text x="52" y="756" font-size="9" fill="rgba(255,255,255,0.3)">vs. hiding it: users didn't know categories existed</text>
+
+  <!-- Principle 2 -->
+  <rect x="520" y="694" width="2" height="64" fill="#7C6EF8" opacity="0.6"/>
+  <text x="532" y="712" font-size="11" font-weight="700" fill="#FFFFFF">Error and fix are co-located</text>
+  <text x="532" y="728" font-size="9" fill="rgba(255,255,255,0.45)">Error message appears directly below the field</text>
+  <text x="532" y="742" font-size="9" fill="rgba(255,255,255,0.45)">that needs fixing. No toast, no modal, no scroll.</text>
+  <text x="532" y="756" font-size="9" fill="rgba(255,255,255,0.3)">In testing: modals caused users to lose their input</text>
+
+  <!-- Principle 3 -->
+  <rect x="1000" y="694" width="2" height="64" fill="#7C6EF8" opacity="0.6"/>
+  <text x="1012" y="712" font-size="11" font-weight="700" fill="#FFFFFF">3 taps maximum, by design</text>
+  <text x="1012" y="728" font-size="9" fill="rgba(255,255,255,0.45)">Amount → Category → Save. Every state in this</text>
+  <text x="1012" y="742" font-size="9" fill="rgba(255,255,255,0.45)">flow was pressure-tested against this constraint.</text>
+  <text x="1012" y="756" font-size="9" fill="rgba(255,255,255,0.3)">Adding a note is optional — it doesn't block Save</text>
+
+</svg>

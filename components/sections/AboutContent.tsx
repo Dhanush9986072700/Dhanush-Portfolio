@@ -10,7 +10,7 @@ import Container from "@/components/ui/Container";
 
 const experience = [
   {
-    role: "Product Designer + Front-End Developer",
+    role: "UI UX Product Designer + Front-End Developer",
     company: "XIPHIAS Group",
     period: "Aug 2022 — Present",
     location: "Bangalore, India",
@@ -47,20 +47,25 @@ const stack = [
     tools: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Prisma", "PostgreSQL"],
   },
   {
-    category: "Tooling",
+    category: "AI Tools",
     accent: "#c9ff6a",
+    tools: ["Claude", "GitHub Copilot", "Codex", "Cursor AI", "ChatGPT", "v0"],
+  },
+  {
+    category: "Tooling",
+    accent: "#f3a841",
     tools: ["VS Code", "Cursor", "Vercel", "GitHub", "Linear", "Notion"],
   },
   {
     category: "Analytics",
-    accent: "#f3a841",
+    accent: "#c9ff6a",
     tools: ["GA4", "Google Tag Manager", "Hotjar", "Lighthouse"],
   },
 ];
 
 const currently = [
   { label: "Building", value: "XIPHIAS Resort Property Management System — 46 data models, full ops suite" },
-  { label: "Learning", value: "Advanced animations with Framer Motion + GSAP" },
+  { label: "Exploring", value: "AI-assisted development with Claude and Codex — shipping faster without trading craft" },
   { label: "Reading", value: "Shape Up — Ryan Singer, Basecamp" },
   { label: "Listening", value: "99% Invisible, Design Details, Lenny's Podcast" },
 ];
@@ -102,14 +107,14 @@ export default function AboutContent() {
                 <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
                   <div>
                     <p className="font-mono text-[10px] uppercase tracking-widest mb-6" style={{ color: "rgba(247,247,242,0.30)" }}>
-                      Dhanush N. · Product Designer + Engineer
+                      Dhanush N. · UI/UX Product Designer
                     </p>
                     <h1 className="text-[3rem] font-black leading-[0.88] text-white sm:text-[5rem] lg:text-[6.5rem] text-balance">
                       Designer who<br />
                       <span style={{ color: "#c9ff6a" }}>builds.</span>
                     </h1>
                     <p className="mt-6 max-w-xl text-[0.9375rem] leading-relaxed" style={{ color: "rgba(247,247,242,0.50)" }}>
-                      Four years shipping products end-to-end — from first wireframe to production deployment. No handoffs. No translation layer. The gap between design intent and built reality is zero.
+                      Four years shipping real products solo — strategy, design, and production code all in one person. I work across five business verticals at XIPHIAS Group. No handoffs, no lost context. When you own the whole chain, nothing gets mistranslated between design and build.
                     </p>
 
                     <div className="mt-8 flex flex-wrap gap-3">
@@ -190,9 +195,9 @@ export default function AboutContent() {
             <div className="grid gap-10 lg:grid-cols-[1fr_0.85fr] lg:gap-16">
               <div className="space-y-6">
                 {[
-                  "My background is in visual communication — a year at Arena Animation learning that every design decision is a communication decision. That didn't fade when I moved into product design. It intensified.",
-                  "Since 2022 I've been the design and engineering function at XIPHIAS Group — five business verticals, no team, no handoffs. Just a brief, Figma, a codebase, and a deadline. I've shipped immigration platforms, property management systems, D2C storefronts, and more.",
-                  "I design and build simultaneously. When you write the code for your own designs, the gap between intent and output closes to zero. What ships is what was designed. Constraints at the code level sharpen every design decision.",
+                  "My roots are in visual communication — a year at Arena Animation that taught me every pixel is a decision and every decision sends a message. That thinking didn't leave when I moved into product. It became the foundation.",
+                  "Since 2022, I've been the entire design and front-end function at XIPHIAS Group. Five business verticals, zero teammates, real stakes. Immigration platforms, resort management systems, D2C storefronts, marketing sites. Brief to browser, solo — not because I had to, but because I wanted to own the whole chain.",
+                  "I design and build in the same breath. On top of that, I use AI tools — Claude, Codex, Copilot — as genuine collaborators in my development workflow. Not to skip thinking, but to move at a pace that keeps up with how fast ideas should ship. The craft stays mine. The speed multiplies.",
                 ].map((para, i) => (
                   <ScrollReveal key={i} delay={i * 0.08}>
                     <p
@@ -213,14 +218,14 @@ export default function AboutContent() {
                       &ldquo;
                     </span>
                     <p className="text-lg font-semibold leading-[1.4]" style={{ color: "rgba(247,247,242,0.78)" }}>
-                      The title &lsquo;designer who codes&rsquo; undersells it. I think like an engineer when I design, and design like a designer when I engineer. Both crafts get sharper.
+                      I&apos;m a designer who ships production code — and I use AI tools like Claude and Codex as part of how I build. The thinking is mine. The output is faster, tighter, and still entirely intentional.
                     </p>
                     <div className="mt-6 border-t border-white/[0.07] pt-4">
                       <p className="font-mono text-[10px] uppercase tracking-widest" style={{ color: "rgba(201,255,106,0.65)" }}>
                         Dhanush N.
                       </p>
                       <p className="font-mono text-[9px] uppercase mt-0.5" style={{ color: "rgba(247,247,242,0.28)" }}>
-                        Product Designer + Front-End Dev
+                        UI/UX Product Designer
                       </p>
                     </div>
                   </blockquote>
@@ -304,7 +309,7 @@ export default function AboutContent() {
               </h2>
             </ScrollReveal>
 
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
               {stack.map((group, index) => (
                 <ScrollReveal key={group.category} delay={index * 0.08}>
                   <div>

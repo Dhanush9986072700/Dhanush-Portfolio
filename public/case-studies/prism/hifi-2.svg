@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" font-family="-apple-system,'SF Pro Display',system-ui,sans-serif">
+  <defs>
+    <filter id="sh2" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="rgba(0,0,0,0.07)"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="900" fill="#F7F8FC"/>
+  <!-- Nav -->
+  <rect width="1440" height="56" fill="#FFFFFF" filter="url(#sh2)"/>
+  <text x="24" y="36" font-size="18" font-weight="800" letter-spacing="-0.3" fill="#4F46E5">PRISM</text>
+  <text x="570" y="35" font-size="14" fill="#6B7280">Insights</text>
+  <text x="630" y="35" font-size="14" font-weight="600" fill="#4F46E5" text-decoration="underline">Content Optimization</text>
+  <line x1="630" y1="52" x2="826" y2="52" stroke="#4F46E5" stroke-width="2"/>
+  <text x="852" y="35" font-size="14" fill="#6B7280">Knowledge Update</text>
+  <circle cx="1410" cy="28" r="16" fill="#E0E7FF"/>
+  <text x="1410" y="33" text-anchor="middle" font-size="12" font-weight="700" fill="#4F46E5">AA</text>
+  <!-- Page header -->
+  <text x="24" y="90" font-size="26" font-weight="800" fill="#111827" letter-spacing="-0.5">Content Optimization</text>
+  <text x="24" y="112" font-size="14" fill="#6B7280">Improve how AI tools represent your brand</text>
+  <rect x="1050" y="78" width="120" height="30" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="1110" y="97" text-anchor="middle" font-size="13" fill="#374151">Last 7 days ▾</text>
+  <rect x="1180" y="78" width="150" height="30" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="1255" y="97" text-anchor="middle" font-size="13" fill="#374151">Compare: Competitors ▾</text>
+  <rect x="1340" y="78" width="76" height="30" rx="8" fill="#111827"/>
+  <text x="1378" y="97" text-anchor="middle" font-size="13" font-weight="600" fill="white">Submit Content</text>
+  <!-- Connected domain card -->
+  <rect x="24" y="132" width="876" height="62" rx="10" fill="#FFFFFF" filter="url(#sh2)"/>
+  <text x="44" y="158" font-size="14" font-weight="500" fill="#374151">https://acme.com</text>
+  <rect x="190" y="146" width="86" height="22" rx="6" fill="#DCFCE7" stroke="#BBF7D0" stroke-width="1"/>
+  <text x="233" y="161" text-anchor="middle" font-size="12" font-weight="600" fill="#16A34A">Connected</text>
+  <text x="44" y="176" font-size="12" fill="#9CA3AF">Last indexed 2 days ago · 146 pages · Crawl healthy</text>
+  <!-- Source tabs -->
+  <rect x="620" y="144" width="66" height="26" rx="6" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="653" y="161" text-anchor="middle" font-size="12" font-weight="600" fill="#4F46E5">Website</text>
+  <rect x="696" y="144" width="46" height="26" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="719" y="161" text-anchor="middle" font-size="12" fill="#6B7280">Blog</text>
+  <rect x="752" y="144" width="76" height="26" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="790" y="161" text-anchor="middle" font-size="12" fill="#6B7280">Help Center</text>
+  <rect x="838" y="144" width="82" height="26" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="879" y="161" text-anchor="middle" font-size="12" fill="#4F46E5">Re-scan now</text>
+  <!-- AI Answer Examples table -->
+  <rect x="24" y="210" width="876" height="366" rx="10" fill="#FFFFFF" filter="url(#sh2)"/>
+  <text x="44" y="238" font-size="16" font-weight="700" fill="#111827">AI Answer Examples</text>
+  <text x="44" y="256" font-size="12" fill="#6B7280">How Acme is currently represented in AI answers</text>
+  <text x="44" y="272" font-size="11" fill="#9CA3AF">Seen 9 times · Last seen 2d ago</text>
+  <!-- Filters -->
+  <rect x="570" y="226" width="96" height="26" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="618" y="243" text-anchor="middle" font-size="12" fill="#374151">Platform: All ▾</text>
+  <rect x="676" y="226" width="82" height="26" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="717" y="243" text-anchor="middle" font-size="12" fill="#374151">Issue: All ▾</text>
+  <rect x="768" y="226" width="96" height="26" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="816" y="243" text-anchor="middle" font-size="12" fill="#374151">Sort: Impact ▾</text>
+  <!-- Table header -->
+  <rect x="24" y="284" width="876" height="32" fill="#F9FAFB"/>
+  <text x="44" y="304" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.5">QUERY</text>
+  <text x="250" y="304" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.5">PLATFORM</text>
+  <text x="380" y="304" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.5">AI ANSWER</text>
+  <text x="640" y="304" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.5">ISSUE</text>
+  <text x="760" y="304" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.5">EVIDENCE</text>
+  <!-- Table rows -->
+  <line x1="24" y1="316" x2="900" y2="316" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="337" font-size="13" fill="#374151">Is Acme SOC2 compliant?</text>
+  <text x="250" y="337" font-size="13" fill="#374151">Perplexity</text>
+  <text x="380" y="337" font-size="13" fill="#374151">Acme is SOC1 compliant as of 2021.</text>
+  <rect x="640" y="325" width="70" height="22" rx="11" fill="#FEF2F2"/>
+  <text x="675" y="340" text-anchor="middle" font-size="11" font-weight="600" fill="#EF4444">Incorrect</text>
+  <text x="770" y="337" font-size="13" fill="#4F46E5">See why ›</text>
+  <line x1="24" y1="358" x2="900" y2="358" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="379" font-size="13" fill="#374151">Is Acme pricing usage-based?</text>
+  <text x="250" y="379" font-size="13" fill="#374151">ChatGPT</text>
+  <text x="380" y="379" font-size="13" fill="#374151">Pricing starts at $49/month.</text>
+  <rect x="640" y="367" width="70" height="22" rx="11" fill="#FEF9C3"/>
+  <text x="675" y="382" text-anchor="middle" font-size="11" font-weight="600" fill="#B45309">Outdated</text>
+  <text x="770" y="379" font-size="13" fill="#4F46E5">See why ›</text>
+  <line x1="24" y1="400" x2="900" y2="400" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="421" font-size="13" fill="#374151">Does Acme integrate with Teams?</text>
+  <text x="250" y="421" font-size="13" fill="#374151">Claude</text>
+  <text x="380" y="421" font-size="13" fill="#374151">No mention of Teams integration.</text>
+  <rect x="640" y="409" width="62" height="22" rx="11" fill="#F3F4F6"/>
+  <text x="671" y="424" text-anchor="middle" font-size="11" font-weight="600" fill="#6B7280">Missing</text>
+  <text x="770" y="421" font-size="13" fill="#4F46E5">See why ›</text>
+  <line x1="24" y1="442" x2="900" y2="442" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="463" font-size="13" fill="#374151">What are Acme's top alternatives?</text>
+  <text x="250" y="463" font-size="13" fill="#374151">Perplexity</text>
+  <text x="380" y="463" font-size="13" fill="#374151">Competitor A is more enterprise-ready.</text>
+  <rect x="640" y="451" width="90" height="22" rx="11" fill="#FFF7ED"/>
+  <text x="685" y="466" text-anchor="middle" font-size="11" font-weight="600" fill="#C2410C">Risky framing</text>
+  <text x="770" y="463" font-size="13" fill="#4F46E5">See why ›</text>
+  <line x1="24" y1="484" x2="900" y2="484" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="505" font-size="13" fill="#374151">Does Acme support SSO / SAML?</text>
+  <text x="250" y="505" font-size="13" fill="#374151">ChatGPT</text>
+  <text x="380" y="505" font-size="13" fill="#374151">SSO is available on all plans.</text>
+  <rect x="640" y="493" width="70" height="22" rx="11" fill="#FEF2F2"/>
+  <text x="675" y="508" text-anchor="middle" font-size="11" font-weight="600" fill="#EF4444">Incorrect</text>
+  <text x="770" y="505" font-size="13" fill="#4F46E5">See why ›</text>
+  <!-- What to change panel (right) -->
+  <rect x="920" y="132" width="496" height="444" rx="10" fill="#FFFFFF" filter="url(#sh2)"/>
+  <text x="940" y="160" font-size="16" font-weight="700" fill="#111827">What to change</text>
+  <!-- Fix pricing - High priority item (expanded) -->
+  <rect x="940" y="174" width="456" height="96" rx="8" fill="#F7F8FC" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="956" y="196" font-size="14" font-weight="700" fill="#111827">Fix pricing page copy</text>
+  <rect x="1310" y="184" width="50" height="20" rx="10" fill="#FEF2F2"/>
+  <text x="1335" y="198" text-anchor="middle" font-size="11" font-weight="700" fill="#EF4444">High</text>
+  <text x="956" y="216" font-size="12" fill="#6B7280">AI extracts $49/mo, but pricing moved to usage-based. Update</text>
+  <text x="956" y="231" font-size="12" fill="#6B7280">pricing page + add a short 'Pricing model' FAQ.</text>
+  <rect x="956" y="244" width="106" height="26" rx="6" fill="#111827"/>
+  <text x="1009" y="261" text-anchor="middle" font-size="12" font-weight="600" fill="white">Create content brief</text>
+  <rect x="1072" y="244" width="106" height="26" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="1125" y="261" text-anchor="middle" font-size="12" fill="#374151">View source pages</text>
+  <rect x="1188" y="244" width="82" height="26" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="1229" y="261" text-anchor="middle" font-size="12" fill="#374151">Mark as done</text>
+  <line x1="940" y1="286" x2="1396" y2="286" stroke="#F3F4F6" stroke-width="1"/>
+  <!-- Other suggestions -->
+  <text x="956" y="314" font-size="14" font-weight="600" fill="#111827">Add SOC2 proof page</text>
+  <rect x="1300" y="302" width="60" height="20" rx="10" fill="#FEF9C3"/>
+  <text x="1330" y="316" text-anchor="middle" font-size="11" font-weight="700" fill="#B45309">Medium</text>
+  <line x1="940" y1="336" x2="1396" y2="336" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="956" y="364" font-size="14" font-weight="600" fill="#111827">Add Structured FAQs</text>
+  <rect x="1310" y="352" width="50" height="20" rx="10" fill="#FEF2F2"/>
+  <text x="1335" y="366" text-anchor="middle" font-size="11" font-weight="700" fill="#EF4444">High</text>
+  <line x1="940" y1="386" x2="1396" y2="386" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="956" y="414" font-size="14" font-weight="600" fill="#111827">Add updated product comparison</text>
+  <rect x="1300" y="402" width="60" height="20" rx="10" fill="#FEF9C3"/>
+  <text x="1330" y="416" text-anchor="middle" font-size="11" font-weight="700" fill="#B45309">Medium</text>
+  <line x1="940" y1="436" x2="1396" y2="436" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="956" y="464" font-size="14" font-weight="600" fill="#111827">Add Integrations directory page</text>
+  <rect x="1310" y="452" width="50" height="20" rx="10" fill="#FEF2F2"/>
+  <text x="1335" y="466" text-anchor="middle" font-size="11" font-weight="700" fill="#EF4444">High</text>
+  <line x1="940" y1="486" x2="1396" y2="486" stroke="#F3F4F6" stroke-width="1"/>
+  <rect x="940" y="500" width="456" height="36" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="1168" y="522" text-anchor="middle" font-size="13" font-weight="600" fill="#4F46E5">View all suggestions →</text>
+  <!-- Bottom issue cards -->
+  <rect x="24" y="594" width="210" height="118" rx="10" fill="#FFFFFF" filter="url(#sh2)"/>
+  <text x="44" y="618" font-size="14" font-weight="700" fill="#111827">Outdated Pricing</text>
+  <text x="44" y="636" font-size="12" fill="#9CA3AF">8 mentions affected</text>
+  <text x="44" y="660" font-size="12" fill="#374151">AI tools still cite $49/month</text>
+  <text x="44" y="676" font-size="12" fill="#374151">instead of usage-based pricing.</text>
+  <rect x="44" y="690" width="170" height="14" rx="0" fill="none"/>
+  <text x="44" y="702" font-size="13" font-weight="600" fill="#4F46E5">Review &amp; Improve →</text>
+  <rect x="250" y="594" width="210" height="118" rx="10" fill="#FFFFFF" filter="url(#sh2)"/>
+  <text x="270" y="618" font-size="14" font-weight="700" fill="#111827">Missing Case Studies</text>
+  <text x="270" y="636" font-size="12" fill="#9CA3AF">10 mentions affected</text>
+  <text x="270" y="660" font-size="12" fill="#374151">AI answers lack recent proof</text>
+  <text x="270" y="676" font-size="12" fill="#374151">points and customer outcomes.</text>
+  <text x="270" y="702" font-size="13" font-weight="600" fill="#4F46E5">Review &amp; Improve →</text>
+  <rect x="476" y="594" width="210" height="118" rx="10" fill="#FFFFFF" filter="url(#sh2)"/>
+  <text x="496" y="618" font-size="14" font-weight="700" fill="#111827">Old Feature Mention</text>
+  <text x="496" y="636" font-size="12" fill="#9CA3AF">6 mentions affected</text>
+  <text x="496" y="660" font-size="12" fill="#374151">AI references an older feature</text>
+  <text x="496" y="676" font-size="12" fill="#374151">name that was replaced.</text>
+  <text x="496" y="702" font-size="13" font-weight="600" fill="#4F46E5">Review &amp; Improve →</text>
+  <rect x="702" y="594" width="198" height="118" rx="10" fill="#FFFFFF" filter="url(#sh2)"/>
+  <text x="722" y="618" font-size="14" font-weight="700" fill="#111827">Weak Positioning</text>
+  <text x="722" y="636" font-size="12" fill="#9CA3AF">5 mentions affected</text>
+  <text x="722" y="660" font-size="12" fill="#374151">AI describes Acme generically;</text>
+  <text x="722" y="676" font-size="12" fill="#374151">missing differentiation.</text>
+  <text x="722" y="702" font-size="13" font-weight="600" fill="#4F46E5">Review &amp; Improve →</text>
+</svg>

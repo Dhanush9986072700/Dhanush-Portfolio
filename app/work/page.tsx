@@ -14,7 +14,7 @@ import Container from "@/components/ui/Container";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Selected product design and front-end case studies by Dhanush N — immigration platforms, hospitality operations, and D2C commerce.",
+    "Selected product design and front-end case studies by Dhanush N - immigration platforms, hospitality operations, D2C commerce, clinical AI, static websites, and SaaS admin dashboards.",
   alternates: { canonical: "/work" },
   openGraph: {
     title: "Work | Dhanush N",
@@ -27,6 +27,14 @@ const accentColors: Record<string, string> = {
   "xiphias-immigration": "#c9ff6a",
   "resort-app": "#f3a841",
   "agree-superfoods": "#4A7C59",
+  "harmony-luxe-spa-admin": "#C39A4A",
+  "harmony-luxe-website": "#C39A4A",
+  "clinical-ai-ward-monitoring": "#60a5fa",
+  "iris-digital-imaging": "#8B1111",
+  "xiphias-superfoods": "#C8960C",
+  "vault": "#7C6EF8",
+  "prism": "#4F46E5",
+  "helm": "#00C8FF",
 };
 
 function MetricCard({ project }: { project: Project }) {
@@ -156,7 +164,7 @@ function WorkShowcase({ project, index }: { project: Project; index: number }) {
                   alt={`${project.title} — live product`}
                   fill
                   sizes="(min-width: 1024px) 640px, 100vw"
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                   priority={index === 0}
                 />
               ) : (
@@ -192,7 +200,7 @@ function WorkShowcase({ project, index }: { project: Project; index: number }) {
                           alt={screen.alt ?? `${project.title} — ${screen.title}`}
                           fill
                           sizes="320px"
-                          className="object-cover object-top"
+                          className="object-cover object-center"
                         />
                       ) : (
                         <div className="absolute inset-0 flex items-center justify-center bg-white/[0.025]">
@@ -238,15 +246,15 @@ export default function WorkPage() {
                     Work / Selected projects
                   </p>
                   <p className="font-mono text-[10px] uppercase tracking-widest" style={{ color: "rgba(247,247,242,0.28)" }}>
-                    {projects.length} projects · All shipped
+                    {projects.length} projects · Selected work
                   </p>
                 </div>
                 <div className="grid gap-6 lg:grid-cols-[1fr_0.4fr] lg:items-end">
                   <h1 className="text-[3rem] font-black leading-[0.88] text-white sm:text-[5rem] lg:text-[6.5rem] text-balance">
-                    Three products.<br />All shipped.
+                    {projects.length} projects.<br />Proof first.
                   </h1>
                   <p className="max-w-xs text-sm leading-relaxed lg:pb-2" style={{ color: "rgba(247,247,242,0.45)" }}>
-                    Product strategy, interface design, and production front-end — solo, end to end. Each with a full proof layer.
+                    Product design and front-end development — solo, end to end. Strategy to browser, with AI tools in the workflow to ship without trading craft.
                   </p>
                 </div>
               </div>

@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" font-family="-apple-system,'SF Pro Display',system-ui,sans-serif">
+  <defs>
+    <filter id="sh3" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="rgba(0,0,0,0.07)"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="900" fill="#F7F8FC"/>
+  <!-- Nav -->
+  <rect width="1440" height="56" fill="#FFFFFF" filter="url(#sh3)"/>
+  <text x="24" y="36" font-size="18" font-weight="800" letter-spacing="-0.3" fill="#4F46E5">PRISM</text>
+  <text x="570" y="35" font-size="14" fill="#6B7280">Insights</text>
+  <text x="630" y="35" font-size="14" fill="#6B7280">Content Optimization</text>
+  <text x="852" y="35" font-size="14" font-weight="600" fill="#4F46E5" text-decoration="underline">Knowledge Update</text>
+  <line x1="852" y1="52" x2="990" y2="52" stroke="#4F46E5" stroke-width="2"/>
+  <circle cx="1410" cy="28" r="16" fill="#E0E7FF"/>
+  <text x="1410" y="33" text-anchor="middle" font-size="12" font-weight="700" fill="#4F46E5">AA</text>
+  <!-- Page header -->
+  <text x="24" y="90" font-size="26" font-weight="800" fill="#111827" letter-spacing="-0.5">Knowledge Update</text>
+  <text x="24" y="112" font-size="14" fill="#6B7280">Manage and update brand facts tracked by AI tools</text>
+  <rect x="1316" y="78" width="100" height="30" rx="8" fill="#4F46E5"/>
+  <text x="1366" y="97" text-anchor="middle" font-size="13" font-weight="600" fill="white">+ Add New Fact</text>
+  <!-- Connected domain bar -->
+  <rect x="24" y="132" width="876" height="42" rx="8" fill="#FFFFFF" filter="url(#sh3)"/>
+  <text x="44" y="157" font-size="13" font-weight="500" fill="#374151">https://acme.com</text>
+  <rect x="188" y="143" width="86" height="22" rx="6" fill="#DCFCE7" stroke="#BBF7D0" stroke-width="1"/>
+  <text x="231" y="158" text-anchor="middle" font-size="12" font-weight="600" fill="#16A34A">Connected</text>
+  <!-- Filters -->
+  <rect x="700" y="142" width="72" height="22" rx="4" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="736" y="157" text-anchor="middle" font-size="11" fill="#374151">All Facts ▾</text>
+  <rect x="782" y="142" width="78" height="22" rx="4" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="821" y="157" text-anchor="middle" font-size="11" fill="#374151">All Sources ▾</text>
+  <rect x="870" y="142" width="22" height="22" rx="4" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="881" y="157" font-size="11" fill="#374151">▾</text>
+  <!-- Status tabs -->
+  <rect x="24" y="186" width="876" height="36" rx="8" fill="#FFFFFF" filter="url(#sh3)"/>
+  <rect x="28" y="190" width="70" height="28" rx="6" fill="#F3F4F6"/>
+  <text x="63" y="208" text-anchor="middle" font-size="12" fill="#374151">Draft (2)</text>
+  <rect x="104" y="190" width="88" height="28" rx="6" fill="#F3F4F6"/>
+  <text x="148" y="208" text-anchor="middle" font-size="12" fill="#374151">Submitted (4)</text>
+  <rect x="198" y="190" width="104" height="28" rx="6" fill="#F3F4F6"/>
+  <text x="250" y="208" text-anchor="middle" font-size="12" fill="#374151">Under Review (3)</text>
+  <rect x="308" y="190" width="84" height="28" rx="6" fill="#F3F4F6"/>
+  <text x="350" y="208" text-anchor="middle" font-size="12" fill="#374151">Syncing (2)</text>
+  <rect x="398" y="190" width="72" height="28" rx="6" fill="#F3F4F6"/>
+  <text x="434" y="208" text-anchor="middle" font-size="12" fill="#374151">Live (18)</text>
+  <rect x="476" y="190" width="38" height="28" rx="6" fill="#111827"/>
+  <text x="495" y="208" text-anchor="middle" font-size="12" font-weight="600" fill="white">All</text>
+  <!-- Brand Facts table -->
+  <rect x="24" y="234" width="876" height="332" rx="10" fill="#FFFFFF" filter="url(#sh3)"/>
+  <text x="44" y="262" font-size="16" font-weight="700" fill="#111827">Brand Facts</text>
+  <text x="44" y="278" font-size="12" fill="#6B7280">Track what's been pushed and what's still pending.</text>
+  <!-- Table header -->
+  <rect x="24" y="290" width="876" height="32" fill="#F9FAFB"/>
+  <text x="44" y="310" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.5">FACT</text>
+  <text x="180" y="310" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.5">CURRENT AI VALUE</text>
+  <text x="380" y="310" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.5">PROPOSED / VERIFIED VALUE</text>
+  <text x="620" y="310" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.5">SOURCE</text>
+  <text x="740" y="310" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.5">STATUS</text>
+  <text x="840" y="310" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.5">ACTION</text>
+  <!-- Row 1 - Under Review -->
+  <line x1="24" y1="322" x2="900" y2="322" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="346" font-size="13" fill="#374151">Pricing model</text>
+  <text x="180" y="346" font-size="13" fill="#374151">$49/month flat</text>
+  <text x="380" y="346" font-size="13" fill="#374151">Usage based pricing (Starter + Pro tiers)</text>
+  <text x="620" y="346" font-size="12" fill="#6B7280">acme.com/pricing</text>
+  <rect x="740" y="334" width="78" height="22" rx="11" fill="#FEF9C3"/>
+  <text x="779" y="349" text-anchor="middle" font-size="11" font-weight="600" fill="#B45309">Under Review</text>
+  <text x="843" y="346" font-size="13" font-weight="600" fill="#4F46E5">Review</text>
+  <!-- Row 2 - Submitted -->
+  <line x1="24" y1="368" x2="900" y2="368" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="392" font-size="13" fill="#374151">SOC2 compliance</text>
+  <text x="180" y="392" font-size="13" fill="#374151">SOC1 (2021)</text>
+  <text x="380" y="392" font-size="13" fill="#374151">SOC2 Type II (2024) + report link</text>
+  <text x="620" y="392" font-size="12" fill="#6B7280">acme.com/security</text>
+  <rect x="740" y="380" width="68" height="22" rx="11" fill="#EDE9FE"/>
+  <text x="774" y="395" text-anchor="middle" font-size="11" font-weight="600" fill="#6D28D9">Submitted</text>
+  <text x="843" y="392" font-size="13" font-weight="600" fill="#4F46E5">Review</text>
+  <!-- Row 3 - Live -->
+  <line x1="24" y1="414" x2="900" y2="414" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="438" font-size="13" fill="#374151">HQ location</text>
+  <text x="180" y="438" font-size="13" fill="#374151">New York, USA</text>
+  <text x="380" y="438" font-size="13" fill="#374151">San Francisco, CA</text>
+  <text x="620" y="438" font-size="12" fill="#6B7280">LinkedIn + About page</text>
+  <rect x="740" y="426" width="38" height="22" rx="11" fill="#DCFCE7"/>
+  <text x="759" y="441" text-anchor="middle" font-size="11" font-weight="600" fill="#16A34A">Live</text>
+  <text x="843" y="438" font-size="13" font-weight="600" fill="#6B7280">View</text>
+  <!-- Row 4 - Syncing -->
+  <line x1="24" y1="460" x2="900" y2="460" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="484" font-size="13" fill="#374151">Founding year</text>
+  <text x="180" y="484" font-size="13" fill="#374151">2019</text>
+  <text x="380" y="484" font-size="13" fill="#374151">2017</text>
+  <text x="620" y="484" font-size="12" fill="#6B7280">Company sources</text>
+  <rect x="740" y="472" width="60" height="22" rx="11" fill="#E0F2FE"/>
+  <text x="770" y="487" text-anchor="middle" font-size="11" font-weight="600" fill="#0369A1">Syncing</text>
+  <text x="843" y="484" font-size="13" font-weight="600" fill="#6B7280">Track</text>
+  <!-- Row 5 - Under Review -->
+  <line x1="24" y1="506" x2="900" y2="506" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="530" font-size="13" fill="#374151">Team size</text>
+  <text x="180" y="530" font-size="13" fill="#374151">80 employees</text>
+  <text x="380" y="530" font-size="13" fill="#374151">150+ employees</text>
+  <text x="620" y="530" font-size="12" fill="#6B7280">LinkedIn</text>
+  <rect x="740" y="518" width="78" height="22" rx="11" fill="#FEF9C3"/>
+  <text x="779" y="533" text-anchor="middle" font-size="11" font-weight="600" fill="#B45309">Under Review</text>
+  <text x="843" y="530" font-size="13" font-weight="600" fill="#EF4444">Resolve</text>
+  <!-- Suggested Facts section -->
+  <text x="24" y="590" font-size="16" font-weight="700" fill="#111827">Suggested Facts to Validate</text>
+  <text x="24" y="608" font-size="12" fill="#6B7280">Found in AI answer, but missing verification</text>
+  <!-- 4 fact cards -->
+  <rect x="24" y="620" width="208" height="110" rx="10" fill="#FFFFFF" filter="url(#sh3)"/>
+  <text x="44" y="646" font-size="14" font-weight="700" fill="#111827">Funding</text>
+  <text x="44" y="664" font-size="12" fill="#9CA3AF">Found in 6 AI answers, no verified source.</text>
+  <text x="44" y="692" font-size="14" font-weight="600" fill="#374151">Series B: $25M</text>
+  <rect x="44" y="706" width="106" height="22" rx="6" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="97" y="721" text-anchor="middle" font-size="12" font-weight="600" fill="#4F46E5">Review &amp; Submit →</text>
+  <rect x="248" y="620" width="208" height="110" rx="10" fill="#FFFFFF" filter="url(#sh3)"/>
+  <text x="268" y="646" font-size="14" font-weight="700" fill="#111827">Customer count</text>
+  <text x="268" y="664" font-size="12" fill="#9CA3AF">Found in 3 AI answers, no verified source.</text>
+  <text x="268" y="692" font-size="14" font-weight="600" fill="#374151">5,000+ brands</text>
+  <rect x="268" y="706" width="106" height="22" rx="6" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="321" y="721" text-anchor="middle" font-size="12" font-weight="600" fill="#4F46E5">Review &amp; Submit →</text>
+  <rect x="472" y="620" width="208" height="110" rx="10" fill="#FFFFFF" filter="url(#sh3)"/>
+  <text x="492" y="646" font-size="14" font-weight="700" fill="#111827">CEO</text>
+  <text x="492" y="664" font-size="12" fill="#9CA3AF">Found in 1 AI answer, no verified source.</text>
+  <text x="492" y="692" font-size="14" font-weight="600" fill="#374151">Rachel Jain</text>
+  <rect x="492" y="706" width="106" height="22" rx="6" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="545" y="721" text-anchor="middle" font-size="12" font-weight="600" fill="#4F46E5">Review &amp; Submit →</text>
+  <rect x="696" y="620" width="204" height="110" rx="10" fill="#FFFFFF" filter="url(#sh3)"/>
+  <text x="716" y="646" font-size="14" font-weight="700" fill="#111827">Integrations</text>
+  <text x="716" y="664" font-size="12" fill="#9CA3AF">Found in 7 AI answers, no verified source.</text>
+  <text x="716" y="692" font-size="14" font-weight="600" fill="#374151">Jira · Teams</text>
+  <rect x="716" y="706" width="106" height="22" rx="6" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="769" y="721" text-anchor="middle" font-size="12" font-weight="600" fill="#4F46E5">Review &amp; Submit →</text>
+  <!-- Review Fact panel (right) -->
+  <rect x="920" y="132" width="496" height="598" rx="10" fill="#FFFFFF" filter="url(#sh3)"/>
+  <text x="940" y="160" font-size="16" font-weight="700" fill="#111827">Review Fact</text>
+  <!-- Fact details -->
+  <text x="940" y="190" font-size="18" font-weight="700" fill="#111827">Pricing model</text>
+  <rect x="1080" y="178" width="84" height="22" rx="11" fill="#FEF9C3"/>
+  <text x="1122" y="193" text-anchor="middle" font-size="11" font-weight="600" fill="#B45309">Under review</text>
+  <line x1="940" y1="210" x2="1396" y2="210" stroke="#F3F4F6" stroke-width="1"/>
+  <!-- Current vs proposed -->
+  <text x="940" y="238" font-size="14" fill="#9CA3AF">49$/month flat</text>
+  <rect x="940" y="248" width="180" height="1" fill="#EF4444" opacity="0.5"/>
+  <text x="940" y="274" font-size="16" font-weight="700" fill="#111827">Usage-based pricing (Starter + Pro tiers)</text>
+  <line x1="940" y1="292" x2="1396" y2="292" stroke="#F3F4F6" stroke-width="1"/>
+  <!-- Metadata -->
+  <text x="940" y="316" font-size="13" fill="#374151"><tspan font-weight="700">Confidence:</tspan> High</text>
+  <line x1="940" y1="330" x2="1396" y2="330" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="940" y="354" font-size="13" fill="#374151"><tspan font-weight="700">Last seen:</tspan> 2 days ago · 9 answers affected</text>
+  <line x1="940" y1="368" x2="1396" y2="368" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="940" y="392" font-size="13" fill="#374151"><tspan font-weight="700">Evidence:</tspan> acme.com/pricing (last crawled 2 days ago)</text>
+  <line x1="940" y1="406" x2="1396" y2="406" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="940" y="430" font-size="13" fill="#374151"><tspan font-weight="700">Recommended:</tspan> acme.com/pricing-faq (add</text>
+  <text x="940" y="448" font-size="13" fill="#374151">"Pricing model" section)</text>
+  <!-- Actions -->
+  <rect x="940" y="474" width="192" height="36" rx="8" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="1036" y="496" text-anchor="middle" font-size="14" font-weight="500" fill="#374151">Edit proposal</text>
+  <rect x="1144" y="474" width="232" height="36" rx="8" fill="#111827"/>
+  <text x="1260" y="496" text-anchor="middle" font-size="14" font-weight="600" fill="white">Approve &amp; Submit</text>
+  <line x1="940" y1="530" x2="1396" y2="530" stroke="#F3F4F6" stroke-width="1"/>
+  <!-- Other suggested facts in panel -->
+  <text x="940" y="554" font-size="13" font-weight="700" fill="#374151">Other facts needing review</text>
+  <rect x="940" y="566" width="436" height="50" rx="8" fill="#F9FAFB"/>
+  <text x="956" y="588" font-size="13" fill="#374151">Team size</text>
+  <text x="956" y="604" font-size="12" fill="#9CA3AF">80 employees → 150+ employees</text>
+  <rect x="1298" y="576" width="60" height="26" rx="6" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="1328" y="593" text-anchor="middle" font-size="12" font-weight="600" fill="#4F46E5">Review</text>
+  <line x1="940" y1="618" x2="1376" y2="618" stroke="#F3F4F6" stroke-width="1"/>
+  <rect x="940" y="622" width="436" height="50" rx="8" fill="#F9FAFB"/>
+  <text x="956" y="644" font-size="13" fill="#374151">SOC2 compliance</text>
+  <text x="956" y="660" font-size="12" fill="#9CA3AF">SOC1 (2021) → SOC2 Type II (2024)</text>
+  <rect x="1298" y="632" width="60" height="26" rx="6" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="1328" y="649" text-anchor="middle" font-size="12" font-weight="600" fill="#4F46E5">Review</text>
+</svg>

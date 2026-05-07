@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+  <rect width="390" height="844" fill="#F0F0F0"/>
+  <rect width="390" height="48" fill="#E2E2E2"/>
+  <text x="24" y="30" font-size="12" fill="#888" font-weight="600">9:41</text>
+  <rect x="318" y="18" width="56" height="12" rx="3" fill="#C8C8C8"/>
+  <rect x="0" y="48" width="390" height="20" fill="#E8E8E8"/>
+  <text x="16" y="62" font-size="9" fill="#999" font-weight="700" letter-spacing="0.8">SCREEN 3 · ADD TRANSACTION</text>
+  <!-- header bar -->
+  <rect x="20" y="80" width="28" height="28" rx="8" fill="#D4D4D4"/>
+  <rect x="150" y="84" width="90" height="18" rx="3" fill="#C4C4C4"/>
+  <rect x="342" y="80" width="28" height="28" rx="8" fill="#D4D4D4"/>
+  <!-- income/expense toggle -->
+  <text x="20" y="130" font-size="9" fill="#999" font-weight="700" letter-spacing="0.6">TYPE TOGGLE</text>
+  <rect x="20" y="134" width="350" height="44" rx="22" fill="#DCDCDC"/>
+  <rect x="24" y="138" width="170" height="36" rx="18" fill="#C0C0C0"/>
+  <rect x="198" y="138" width="168" height="36" rx="18" fill="transparent"/>
+  <rect x="70" y="152" width="78" height="12" rx="2" fill="#A8A8A8"/>
+  <rect x="234" y="152" width="70" height="12" rx="2" fill="#CCCCCC"/>
+  <!-- amount display -->
+  <text x="20" y="204" font-size="9" fill="#999" font-weight="700" letter-spacing="0.6">AMOUNT INPUT</text>
+  <rect x="80" y="208" width="230" height="40" rx="6" fill="#DCDCDC"/>
+  <rect x="120" y="222" width="150" height="22" rx="4" fill="#BEBEBE"/>
+  <!-- category grid -->
+  <text x="20" y="276" font-size="9" fill="#999" font-weight="700" letter-spacing="0.6">CATEGORY SELECTOR</text>
+  <rect x="20" y="280" width="104" height="80" rx="12" fill="#DCDCDC"/>
+  <rect x="143" y="280" width="104" height="80" rx="12" fill="#DCDCDC"/>
+  <rect x="266" y="280" width="104" height="80" rx="12" fill="#DCDCDC"/>
+  <rect x="20" y="374" width="104" height="80" rx="12" fill="#DCDCDC"/>
+  <rect x="143" y="374" width="104" height="80" rx="12" fill="#DCDCDC"/>
+  <rect x="266" y="374" width="104" height="80" rx="12" fill="#DCDCDC"/>
+  <!-- category icons + labels -->
+  <circle cx="72" cy="308" r="18" fill="#CCCCCC"/>
+  <rect x="48" y="336" width="48" height="10" rx="2" fill="#C4C4C4"/>
+  <circle cx="195" cy="308" r="18" fill="#CCCCCC"/>
+  <rect x="171" y="336" width="48" height="10" rx="2" fill="#C4C4C4"/>
+  <circle cx="318" cy="308" r="18" fill="#CCCCCC"/>
+  <rect x="294" y="336" width="48" height="10" rx="2" fill="#C4C4C4"/>
+  <circle cx="72" cy="402" r="18" fill="#CCCCCC"/>
+  <rect x="48" y="430" width="48" height="10" rx="2" fill="#C4C4C4"/>
+  <circle cx="195" cy="402" r="18" fill="#CCCCCC"/>
+  <rect x="171" y="430" width="48" height="10" rx="2" fill="#C4C4C4"/>
+  <circle cx="318" cy="402" r="18" fill="#CCCCCC"/>
+  <rect x="294" y="430" width="48" height="10" rx="2" fill="#C4C4C4"/>
+  <!-- note field -->
+  <text x="20" y="478" font-size="9" fill="#999" font-weight="700" letter-spacing="0.6">NOTE / DESCRIPTION</text>
+  <rect x="20" y="482" width="350" height="52" rx="8" fill="#E0E0E0" stroke="#CCCCCC" stroke-width="1"/>
+  <rect x="36" y="504" width="160" height="12" rx="2" fill="#D4D4D4"/>
+  <!-- date row -->
+  <text x="20" y="554" font-size="9" fill="#999" font-weight="700" letter-spacing="0.6">DATE PICKER</text>
+  <rect x="20" y="558" width="350" height="48" rx="8" fill="#E0E0E0"/>
+  <rect x="36" y="574" width="80" height="12" rx="2" fill="#D0D0D0"/>
+  <rect x="310" y="572" width="44" height="16" rx="3" fill="#CCCCCC"/>
+  <!-- save button -->
+  <rect x="20" y="628" width="350" height="54" rx="27" fill="#C0C0C0"/>
+  <rect x="136" y="648" width="118" height="14" rx="2" fill="#A8A8A8"/>
+  <text x="20" y="624" font-size="9" fill="#999" font-weight="700" letter-spacing="0.6">SAVE CTA</text>
+  <!-- keyboard -->
+  <rect x="0" y="696" width="390" height="134" fill="#E0E0E0"/>
+  <rect x="0" y="696" width="390" height="1" fill="#CACACA"/>
+  <text x="16" y="712" font-size="9" fill="#AAAAAA">Numeric keyboard</text>
+  <rect x="150" y="818" width="90" height="5" rx="2.5" fill="#CACACA"/>
+</svg>

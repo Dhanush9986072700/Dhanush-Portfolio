@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+
+  <rect width="1440" height="800" fill="#F3F3F0"/>
+
+  <!-- ── HEADER ── -->
+  <rect width="1440" height="56" fill="#0F0E1A"/>
+  <text x="24" y="24" font-size="9" font-weight="700" fill="#4F46E5" letter-spacing="3" font-family="'Courier New',monospace">PRISM</text>
+  <text x="76" y="24" font-size="9" fill="rgba(255,255,255,0.25)" letter-spacing="1">·</text>
+  <text x="88" y="24" font-size="9" fill="rgba(255,255,255,0.4)" letter-spacing="1.5">DESIGN PROCESS · KNOWLEDGE UPDATE WORKFLOW · ITERATION LOG</text>
+  <text x="24" y="42" font-size="9" fill="rgba(255,255,255,0.25)" letter-spacing="1">How the correction experience went from a blank text box to the before/after diff view — 3 usability sessions, 2 pivots</text>
+  <text x="1416" y="32" font-size="8" fill="rgba(255,255,255,0.18)" text-anchor="end">PROCESS ARTEFACT · DHANUSH N.</text>
+
+  <!-- ────────────────────────────────────────────
+       LEFT PANEL — "Before" (Version 1)
+       x=20, y=70, w=618, h=636
+  ──────────────────────────────────────────── -->
+  <rect x="20" y="70" width="618" height="636" rx="10" fill="#FFFFFF" stroke="#E0E0D8" stroke-width="1"/>
+
+  <!-- Version badge -->
+  <rect x="36" y="86" width="120" height="22" rx="11" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="96" y="101" font-size="9" font-weight="700" fill="#DC2626" text-anchor="middle" letter-spacing="1">VERSION 1</text>
+  <text x="36" y="128" font-size="14" font-weight="700" fill="#111827">The free-text editor</text>
+  <text x="36" y="146" font-size="11" fill="#6B7280">Initial concept — shown to 4 users in first testing round</text>
+
+  <!-- ─ UI Mockup: Free-text correction ─ -->
+  <!-- Mockup card bg -->
+  <rect x="36" y="162" width="586" height="340" rx="8" fill="#F8F8F6" stroke="#E8E8E2" stroke-width="1"/>
+
+  <!-- Mockup header bar -->
+  <rect x="36" y="162" width="586" height="40" rx="8" fill="#F0F0EB" stroke="#E8E8E2" stroke-width="1"/>
+  <rect x="36" y="182" width="586" height="20" fill="#F0F0EB"/>
+  <text x="54" y="187" font-size="11" font-weight="600" fill="#374151">Review Fact — Correction Editor</text>
+  <text x="604" y="187" font-size="9" fill="#9CA3AF" text-anchor="end">⚑ Flagged · High Priority</text>
+
+  <!-- Flagged AI answer -->
+  <rect x="52" y="214" width="554" height="70" rx="6" fill="#FFFFFF" stroke="#FCA5A5" stroke-width="1.5"/>
+  <rect x="52" y="214" width="4" height="70" rx="2" fill="#EF4444"/>
+  <text x="66" y="230" font-size="9" font-weight="600" fill="#DC2626">Current AI Answer (Incorrect)</text>
+  <text x="66" y="247" font-size="10" fill="#374151">"XIPHIAS Immigration charges £1,200 for Skilled Worker visa</text>
+  <text x="66" y="262" font-size="10" fill="#374151">applications, with processing taking approximately 2–3 weeks."</text>
+  <text x="66" y="277" font-size="8"  fill="#9CA3AF">Source: ChatGPT · Perplexity · Detected Oct 14, 2024</text>
+
+  <!-- Label for textarea -->
+  <text x="54" y="303" font-size="10" font-weight="500" fill="#374151">Your correction:</text>
+
+  <!-- Textarea (empty, problem!) -->
+  <rect x="52" y="310" width="554" height="120" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="66" y="334" font-size="10" fill="#D1D5DB">Write the correct information here...</text>
+
+  <!-- Save button -->
+  <rect x="468" y="446" width="130" height="36" rx="6" fill="#4F46E5"/>
+  <text x="533" y="469" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Save &amp; Submit</text>
+  <rect x="52"  y="446" width="100" height="36" rx="6" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="102" y="469" font-size="11" fill="#6B7280" text-anchor="middle">Cancel</text>
+
+  <!-- ─ Problem annotations (red numbered circles) ─ -->
+  <!-- Problem 1: blank textarea -->
+  <circle cx="598" cy="372" r="12" fill="#EF4444"/>
+  <text x="598" y="377" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <!-- Line from circle to textarea -->
+  <line x1="606" y1="370" x2="636" y2="370" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- Problem 2: no context around flagged answer -->
+  <circle cx="598" cy="250" r="12" fill="#EF4444"/>
+  <text x="598" y="255" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <line x1="606" y1="248" x2="636" y2="248" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- Problem annotation callouts (outside the mockup card, below it) -->
+  <!-- Annotation 1 -->
+  <rect x="36" y="516" width="586" height="32" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <circle cx="56" cy="532" r="9" fill="#EF4444"/>
+  <text x="56" y="536" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="74" y="528" font-size="10" font-weight="600" fill="#DC2626">Blank canvas problem</text>
+  <text x="74" y="542" font-size="9" fill="#7F1D1D">3 of 4 users stared at the textarea without typing. "I don't know how specific to be."</text>
+
+  <rect x="36" y="554" width="586" height="32" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <circle cx="56" cy="570" r="9" fill="#EF4444"/>
+  <text x="56" y="574" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="74" y="566" font-size="10" font-weight="600" fill="#DC2626">No scope signal</text>
+  <text x="74" y="580" font-size="9" fill="#7F1D1D">Users unsure which part of the AI answer was wrong. One rewrote the entire answer from memory.</text>
+
+  <!-- ─ User quote ─ -->
+  <rect x="36" y="598" width="586" height="68" rx="8" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="52" y="620" font-size="20" fill="#D1D5DB">"</text>
+  <text x="70" y="622" font-size="11" fill="#374151">I don't know what to write here. Am I correcting</text>
+  <text x="70" y="638" font-size="11" fill="#374151">just the price? The whole thing? How detailed?</text>
+  <text x="70" y="656" font-size="9"  fill="#9CA3AF">— Research participant P2, Brand Manager · Session 1</text>
+
+  <!-- ────────────────────────────────────────────
+       CENTER STRIP (x=656, y=70, w=128)
+  ──────────────────────────────────────────── -->
+  <text x="720" y="290" font-size="9" fill="#9CA3AF" text-anchor="middle" letter-spacing="1">3 SESSIONS</text>
+  <text x="720" y="306" font-size="9" fill="#9CA3AF" text-anchor="middle" letter-spacing="1">2 PIVOTS</text>
+
+  <!-- Arrow -->
+  <line x1="680" y1="370" x2="752" y2="370" stroke="#4F46E5" stroke-width="2"/>
+  <polygon points="752,364 764,370 752,376" fill="#4F46E5"/>
+
+  <text x="720" y="400" font-size="9" fill="#6B7280" text-anchor="middle">V1 → V2:</text>
+  <text x="720" y="415" font-size="9" fill="#6B7280" text-anchor="middle">Added context</text>
+  <text x="720" y="450" font-size="9" fill="#6B7280" text-anchor="middle">V2 → V3:</text>
+  <text x="720" y="465" font-size="9" fill="#6B7280" text-anchor="middle">Before/after diff</text>
+
+  <!-- ────────────────────────────────────────────
+       RIGHT PANEL — "After" (Version 3 / Shipped)
+       x=802, y=70, w=618, h=636
+  ──────────────────────────────────────────── -->
+  <rect x="802" y="70" width="618" height="636" rx="10" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="2"/>
+  <!-- Green top accent -->
+  <rect x="802" y="70" width="618" height="4" rx="2" fill="#10B981"/>
+
+  <!-- Version badge -->
+  <rect x="818" y="86" width="140" height="22" rx="11" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <text x="888" y="101" font-size="9" font-weight="700" fill="#15803D" text-anchor="middle" letter-spacing="1">VERSION 3 · SHIPPED</text>
+  <text x="818" y="128" font-size="14" font-weight="700" fill="#111827">The before/after diff view</text>
+  <text x="818" y="146" font-size="11" fill="#6B7280">Session 3 result — 8 of 8 users completed without guidance</text>
+
+  <!-- ─ UI Mockup: Before/After diff ─ -->
+  <rect x="818" y="162" width="586" height="340" rx="8" fill="#F8F8F6" stroke="#E8E8E2" stroke-width="1"/>
+
+  <!-- Mockup header bar -->
+  <rect x="818" y="162" width="586" height="40" rx="8" fill="#F0F0EB" stroke="#E8E8E2" stroke-width="1"/>
+  <rect x="818" y="182" width="586" height="20" fill="#F0F0EB"/>
+  <text x="836" y="187" font-size="11" font-weight="600" fill="#374151">Review Fact — Before / After</text>
+  <text x="1386" y="187" font-size="9" fill="#10B981" text-anchor="end">● 2 corrections ready</text>
+
+  <!-- Current AI answer (before - muted red) -->
+  <text x="836" y="215" font-size="9" font-weight="600" fill="#6B7280" letter-spacing="1">CURRENT AI ANSWER</text>
+  <rect x="834" y="222" width="554" height="70" rx="6" fill="#FFF5F5" stroke="#FECACA" stroke-width="1"/>
+  <rect x="834" y="222" width="4" height="70" rx="2" fill="#EF4444"/>
+  <text x="848" y="240" font-size="10" fill="#374151">"XIPHIAS Immigration charges £1,200 for Skilled Worker</text>
+  <text x="848" y="256" font-size="10" fill="#374151">visa applications, with processing taking 2–3 weeks."</text>
+  <text x="848" y="272" font-size="8"  fill="#EF4444">⚑ Incorrect · Found in ChatGPT, Perplexity · Detected Oct 14</text>
+  <text x="848" y="284" font-size="8"  fill="#9CA3AF">↑ This is what AI engines are currently saying</text>
+
+  <!-- Arrow divider -->
+  <text x="1111" y="316" font-size="16" fill="#D1D5DB" text-anchor="middle">↓</text>
+
+  <!-- Proposed correction (after - green) -->
+  <text x="836" y="340" font-size="9" font-weight="600" fill="#15803D" letter-spacing="1">PROPOSED CORRECTION</text>
+  <rect x="834" y="347" width="554" height="88" rx="6" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.5"/>
+  <rect x="834" y="347" width="4" height="88" rx="2" fill="#10B981"/>
+  <text x="848" y="365" font-size="10" fill="#374151">"XIPHIAS Immigration fees vary by visa type and are</text>
+  <text x="848" y="381" font-size="10" fill="#374151">confirmed after a free eligibility assessment. Processing</text>
+  <text x="848" y="397" font-size="10" fill="#374151">timelines range from 3–8 weeks depending on Home Office</text>
+  <text x="848" y="413" font-size="10" fill="#374151">workload. See xiphiasimmigration.com for current fees."</text>
+  <text x="848" y="428" font-size="8"  fill="#6B7280">✎ Editing enabled — only the proposed field is editable</text>
+
+  <!-- Submit button -->
+  <rect x="1022" y="452" width="174" height="36" rx="6" fill="#4F46E5"/>
+  <text x="1109" y="475" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Submit to Engines →</text>
+  <rect x="834"  y="452" width="100" height="36" rx="6" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="884"  y="475" font-size="11" fill="#6B7280" text-anchor="middle">Skip</text>
+
+  <!-- ─ Success annotations (green numbered circles) ─ -->
+  <circle cx="818" cy="258" r="12" fill="#10B981"/>
+  <text x="818" y="263" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <line x1="810" y1="256" x2="786" y2="256" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <circle cx="818" cy="390" r="12" fill="#10B981"/>
+  <text x="818" y="395" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <line x1="810" y1="388" x2="786" y2="388" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- Win annotations -->
+  <rect x="818" y="516" width="586" height="32" rx="6" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <circle cx="838" cy="532" r="9" fill="#10B981"/>
+  <text x="838" y="536" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="856" y="528" font-size="10" font-weight="600" fill="#15803D">Context anchor</text>
+  <text x="856" y="542" font-size="9" fill="#14532D">Users immediately saw what AI was saying wrong. "Oh — I just need to fix that line."</text>
+
+  <rect x="818" y="554" width="586" height="32" rx="6" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <circle cx="838" cy="570" r="9" fill="#10B981"/>
+  <text x="838" y="574" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="856" y="566" font-size="10" font-weight="600" fill="#15803D">Scope is clear — edit the proposed field only</text>
+  <text x="856" y="580" font-size="9" fill="#14532D">Users knew exactly what to change and felt confident submitting without a legal review.</text>
+
+  <!-- ─ Result metrics quote ─ -->
+  <rect x="818" y="598" width="586" height="68" rx="8" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <text x="834" y="620" font-size="20" fill="#BBF7D0">"</text>
+  <text x="854" y="622" font-size="11" fill="#374151">I can see what it's saying. I can see what I'm changing.</text>
+  <text x="854" y="638" font-size="11" fill="#374151">I'd submit this right now without running it past anyone.</text>
+  <text x="854" y="656" font-size="9"  fill="#9CA3AF">— Research participant P1, Head of Brand · Session 3</text>
+
+  <!-- ── BOTTOM METRICS BAR ── -->
+  <rect x="20" y="724" width="1400" height="64" rx="8" fill="#0F0E1A"/>
+
+  <!-- Metric 1 -->
+  <text x="180" y="748" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle" letter-spacing="1">TIME TO COMPLETE CORRECTION</text>
+  <text x="100" y="775" font-size="22" font-weight="700" fill="#EF4444" text-anchor="middle">4.2 min</text>
+  <text x="148" y="775" font-size="16" fill="rgba(255,255,255,0.25)" text-anchor="middle">→</text>
+  <text x="200" y="775" font-size="22" font-weight="700" fill="#10B981" text-anchor="middle">1.8 min</text>
+
+  <!-- divider -->
+  <line x1="380" y1="730" x2="380" y2="782" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Metric 2 -->
+  <text x="580" y="748" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle" letter-spacing="1">COMPLETED WITHOUT GUIDANCE</text>
+  <text x="488" y="775" font-size="22" font-weight="700" fill="#EF4444" text-anchor="middle">1 / 4</text>
+  <text x="546" y="775" font-size="16" fill="rgba(255,255,255,0.25)" text-anchor="middle">→</text>
+  <text x="620" y="775" font-size="22" font-weight="700" fill="#10B981" text-anchor="middle">8 / 8</text>
+
+  <!-- divider -->
+  <line x1="780" y1="730" x2="780" y2="782" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Metric 3 -->
+  <text x="980" y="748" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle" letter-spacing="1">CONFIDENCE RATING (1–5)</text>
+  <text x="892" y="775" font-size="22" font-weight="700" fill="#EF4444" text-anchor="middle">2.1</text>
+  <text x="942" y="775" font-size="16" fill="rgba(255,255,255,0.25)" text-anchor="middle">→</text>
+  <text x="1000" y="775" font-size="22" font-weight="700" fill="#10B981" text-anchor="middle">4.6</text>
+
+  <!-- divider -->
+  <line x1="1180" y1="730" x2="1180" y2="782" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Attribution -->
+  <text x="1400" y="752" font-size="8" fill="rgba(255,255,255,0.2)" text-anchor="end">n=12 participants across 3 rounds</text>
+  <text x="1400" y="766" font-size="8" fill="rgba(255,255,255,0.2)" text-anchor="end">Task: correct a flagged AI answer in Prism</text>
+  <text x="1400" y="780" font-size="8" fill="rgba(255,255,255,0.2)" text-anchor="end">Dhanush N. · Product Designer</text>
+
+</svg>

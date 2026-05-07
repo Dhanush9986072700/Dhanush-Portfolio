@@ -90,7 +90,8 @@ export default function Hero() {
             style={{ color: "rgba(247,247,242,0.58)" }}
           >
             Four years building real products: immigration platforms, booking
-            systems, D2C storefronts. Solo, end to end.
+            systems, D2C storefronts, clinical AI narratives, SaaS dashboards,
+            and static healthcare websites.
           </motion.p>
 
           {/* Skill pills */}

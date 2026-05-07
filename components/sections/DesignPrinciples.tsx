@@ -50,7 +50,7 @@ export default function DesignPrinciples() {
               </h2>
             </div>
             <p className="max-w-[22rem] text-sm leading-relaxed sm:pb-2" style={{ color: "rgba(247,247,242,0.42)" }}>
-              Four things I won't compromise on. Formed over four years of shipping products that had to work, not just look right.
+              Four things I won&apos;t compromise on. Formed over four years of shipping products that had to work, not just look right.
             </p>
           </div>
         </ScrollReveal>

@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+  <filter id="glow-c" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow-s" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<rect width="1440" height="900" fill="#070810"/>
+<rect x="0" y="844" width="1440" height="56" fill="#04050A"/>
+<line x1="0" y1="844" x2="1440" y2="844" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+<!-- ── TOP NAV BAR ── -->
+<rect width="1440" height="52" fill="rgba(0,0,0,0.5)"/>
+<text x="24" y="24"  font-size="13" font-weight="800" fill="#00C8FF" letter-spacing="6" font-family="'Courier New',monospace">HELM</text>
+<text x="76" y="24"  font-size="8" fill="rgba(255,255,255,0.2)" letter-spacing="1">·</text>
+<text x="88" y="24"  font-size="8" fill="rgba(255,255,255,0.28)" letter-spacing="2">AI ROUTE INTELLIGENCE</text>
+
+<text x="720" y="33" font-size="11" font-weight="600" fill="#E8F0F8" text-anchor="middle">Indiranagar → Whitefield Tech Park</text>
+<text x="1416" y="24" font-size="12" fill="rgba(255,255,255,0.35)" text-anchor="end">14:27</text>
+<text x="1416" y="40" font-size="9"  fill="rgba(255,255,255,0.25)" text-anchor="end">47 km · 47 min</text>
+
+<line x1="0" y1="52" x2="1440" y2="52" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+<!-- ══ LEFT SIDEBAR — JOURNEY OVERVIEW (x=0, w=380) ══ -->
+
+<rect x="0" y="52" width="380" height="792" fill="#060810"/>
+<line x1="380" y1="52" x2="380" y2="844" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+<!-- Journey summary -->
+<text x="24" y="84" font-size="7.5" fill="rgba(255,255,255,0.28)" letter-spacing="2.5">JOURNEY OVERVIEW</text>
+
+<rect x="24" y="94" width="332" height="76" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<!-- From -->
+<circle cx="46" cy="116" r="5" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+<text x="60" y="111" font-size="8" fill="rgba(255,255,255,0.3)">FROM</text>
+<text x="60" y="124" font-size="11" font-weight="500" fill="#E8F0F8">Indiranagar, Bengaluru</text>
+<!-- To -->
+<line x1="46" y1="121" x2="46" y2="137" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="3,2"/>
+<circle cx="46" cy="143" r="5" fill="#00C8FF" filter="url(#glow-s)"/>
+<text x="60" y="138" font-size="8" fill="rgba(255,255,255,0.3)">TO</text>
+<text x="60" y="151" font-size="11" font-weight="600" fill="#00C8FF">Whitefield Tech Park</text>
+
+<!-- Stats row -->
+<rect x="24" y="180" width="332" height="56" rx="8" fill="rgba(255,255,255,0.02)"/>
+<text x="48"  y="202" font-size="8" fill="rgba(255,255,255,0.25)" text-anchor="middle">DIST</text>
+<text x="48"  y="222" font-size="15" font-weight="700" fill="#E8F0F8" text-anchor="middle" font-family="'Courier New',monospace">47</text>
+<text x="64"  y="222" font-size="9" fill="rgba(232,240,248,0.35)">km</text>
+<line x1="116" y1="188" x2="116" y2="228" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="152" y="202" font-size="8" fill="rgba(255,255,255,0.25)" text-anchor="middle">ETA</text>
+<text x="152" y="222" font-size="15" font-weight="700" fill="#E8F0F8" text-anchor="middle" font-family="'Courier New',monospace">15:14</text>
+<line x1="208" y1="188" x2="208" y2="228" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="260" y="202" font-size="8" fill="rgba(255,255,255,0.25)" text-anchor="middle">RANGE LEFT</text>
+<text x="260" y="222" font-size="15" font-weight="700" fill="#22C55E" text-anchor="middle" font-family="'Courier New',monospace">248</text>
+<text x="280" y="222" font-size="9" fill="rgba(232,240,248,0.35)">km</text>
+<line x1="308" y1="188" x2="308" y2="228" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="346" y="202" font-size="8" fill="rgba(255,255,255,0.25)" text-anchor="middle">CONF</text>
+<text x="346" y="222" font-size="15" font-weight="700" fill="#22C55E" text-anchor="middle" font-family="'Courier New',monospace">94%</text>
+
+<text x="356" y="228" font-size="7" fill="rgba(255,255,255,0.18)" text-anchor="end">AI route confidence</text>
+
+<!-- Stops timeline -->
+<line x1="24" y1="250" x2="356" y2="250" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="24" y="268" font-size="7.5" fill="rgba(255,255,255,0.28)" letter-spacing="2.5">ROUTE STOPS</text>
+
+<!-- Stop: Current -->
+<circle cx="44" cy="292" r="6" fill="#00C8FF" filter="url(#glow-s)"/>
+<line x1="44" y1="298" x2="44" y2="336" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="60" y="289" font-size="9" font-weight="600" fill="#E8F0F8">Current position</text>
+<text x="60" y="303" font-size="8.5" fill="rgba(232,240,248,0.4)">Indiranagar · Just now</text>
+
+<!-- Stop: Toll -->
+<circle cx="44" cy="340" r="4.5" fill="rgba(245,158,11,0.3)" stroke="#F59E0B" stroke-width="1.5"/>
+<line x1="44" y1="344" x2="44" y2="388" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="60" y="337" font-size="9" fill="#E8F0F8">Toll booth</text>
+<text x="60" y="351" font-size="8.5" fill="rgba(232,240,248,0.4)">4.2 km · FASTAG auto-pay</text>
+<rect x="296" y="330" width="60" height="18" rx="9" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+<text x="326" y="343" font-size="7.5" fill="#F59E0B" text-anchor="middle">₹ 48</text>
+
+<!-- Stop: Coffee -->
+<circle cx="44" cy="392" r="4.5" fill="rgba(34,197,94,0.3)" stroke="#22C55E" stroke-width="1.5"/>
+<line x1="44" y1="396" x2="44" y2="440" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="60" y="389" font-size="9" fill="#E8F0F8">Café Coffee Day</text>
+<text x="60" y="403" font-size="8.5" fill="rgba(232,240,248,0.4)">9 km · 0.4 km detour · Habit match</text>
+<rect x="268" y="382" width="88" height="18" rx="9" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+<text x="312" y="395" font-size="7.5" fill="#22C55E" text-anchor="middle">OPTIONAL</text>
+
+<!-- Stop: Rain -->
+<circle cx="44" cy="444" r="4.5" fill="rgba(0,200,255,0.2)" stroke="#00C8FF" stroke-width="1.5"/>
+<line x1="44" y1="448" x2="44" y2="492" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="60" y="441" font-size="9" fill="#E8F0F8">Rain zone begins</text>
+<text x="60" y="455" font-size="8.5" fill="rgba(232,240,248,0.4)">18 km · Auto traction enabled</text>
+
+<!-- Stop: Destination -->
+<circle cx="44" cy="496" r="7" fill="rgba(0,200,255,0.15)" stroke="#00C8FF" stroke-width="2"/>
+<circle cx="44" cy="496" r="3" fill="#00C8FF"/>
+<text x="60" y="493" font-size="9" font-weight="600" fill="#00C8FF">Whitefield Tech Park</text>
+<text x="60" y="507" font-size="8.5" fill="rgba(232,240,248,0.4)">47 km · ETA 15:14</text>
+
+<!-- Alternatives -->
+<line x1="24" y1="530" x2="356" y2="530" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="24" y="548" font-size="7.5" fill="rgba(255,255,255,0.28)" letter-spacing="2.5">ALTERNATIVE ROUTES</text>
+
+<!-- Alt 1 (current) -->
+<rect x="24" y="558" width="332" height="56" rx="8" fill="rgba(0,200,255,0.06)" stroke="rgba(0,200,255,0.2)" stroke-width="1.5"/>
+<text x="40" y="577" font-size="9" font-weight="600" fill="#00C8FF">▶  Via MG Road · Marathahalli</text>
+<text x="40" y="593" font-size="8.5" fill="rgba(232,240,248,0.45)">47 km · 47 min · Fastest · AI recommended</text>
+<text x="340" y="577" font-size="8.5" fill="rgba(0,200,255,0.6)" text-anchor="end">ACTIVE</text>
+
+<!-- Alt 2 -->
+<rect x="24" y="622" width="332" height="52" rx="8" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="40" y="640" font-size="9" fill="rgba(232,240,248,0.55)">Via Old Madras Road</text>
+<text x="40" y="655" font-size="8.5" fill="rgba(232,240,248,0.35)">51 km · 58 min · Avoids toll</text>
+<text x="340" y="640" font-size="8.5" fill="rgba(255,255,255,0.22)" text-anchor="end">+11 min</text>
+
+<!-- Alt 3 -->
+<rect x="24" y="682" width="332" height="52" rx="8" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="40" y="700" font-size="9" fill="rgba(232,240,248,0.55)">Via Outer Ring Road</text>
+<text x="40" y="715" font-size="8.5" fill="rgba(232,240,248,0.35)">54 km · 1h 04 min · Avoids rain zone</text>
+<text x="340" y="700" font-size="8.5" fill="rgba(255,255,255,0.22)" text-anchor="end">+17 min</text>
+
+<!-- ══ CENTER — ROUTE SCHEMATIC ══ -->
+
+<!-- Schematic bg -->
+<rect x="380" y="52" width="680" height="792" fill="#080B12"/>
+
+<!-- Faint grid -->
+<line x1="380" y1="152" x2="1060" y2="152" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+<line x1="380" y1="282" x2="1060" y2="282" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+<line x1="380" y1="412" x2="1060" y2="412" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+<line x1="380" y1="542" x2="1060" y2="542" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+<line x1="380" y1="672" x2="1060" y2="672" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+<line x1="500" y1="52" x2="500" y2="844" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+<line x1="660" y1="52" x2="660" y2="844" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+<line x1="820" y1="52" x2="820" y2="844" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+<line x1="980" y1="52" x2="980" y2="844" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+
+<!-- Secondary roads -->
+<path d="M 500,844 L 500,672 L 660,672 L 660,412 L 820,412" fill="none" stroke="rgba(255,255,255,0.055)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 820,844 L 820,542 L 980,542 L 980,282" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 380,500 L 500,500 L 500,350 L 640,350 L 640,150" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- Route road (wider, brighter) -->
+<path d="M 720,844 Q 720,780 700,740 Q 670,690 640,650 Q 595,600 600,530 Q 605,450 650,400 Q 695,350 720,290 Q 745,230 740,160 L 740,80" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- Cyan glow -->
+<path d="M 720,844 Q 720,780 700,740 Q 670,690 640,650 Q 595,600 600,530 Q 605,450 650,400 Q 695,350 720,290 Q 745,230 740,160 L 740,80" fill="none" stroke="rgba(0,200,255,0.3)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 720,844 Q 720,780 700,740 Q 670,690 640,650 Q 595,600 600,530 Q 605,450 650,400 Q 695,350 720,290 Q 745,230 740,160 L 740,80" fill="none" stroke="#00C8FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow-c)"/>
+
+<!-- Current position -->
+<circle cx="720" cy="844" r="16" fill="rgba(0,200,255,0.08)"/>
+<circle cx="720" cy="844" r="9"  fill="rgba(0,200,255,0.2)"/>
+<circle cx="720" cy="844" r="5"  fill="#00C8FF" filter="url(#glow-c)"/>
+<circle cx="720" cy="844" r="2"  fill="#FFFFFF"/>
+
+<!-- Route waypoint markers -->
+<!-- Toll (at ~750, 620) -->
+<circle cx="663" cy="640" r="7" fill="rgba(245,158,11,0.15)" stroke="#F59E0B" stroke-width="1.5"/>
+<text x="663" y="644" font-size="8" fill="#F59E0B" text-anchor="middle">T</text>
+<rect x="674" y="630" width="56" height="18" rx="3" fill="rgba(6,7,14,0.85)" stroke="rgba(245,158,11,0.25)" stroke-width="1"/>
+<text x="702" y="643" font-size="7" fill="#F59E0B" text-anchor="middle">Toll · ₹48</text>
+
+<!-- Coffee (at ~680, 470) -->
+<circle cx="625" cy="520" r="7" fill="rgba(34,197,94,0.15)" stroke="#22C55E" stroke-width="1.5"/>
+<text x="625" y="524" font-size="8" fill="#22C55E" text-anchor="middle">☕</text>
+<rect x="636" y="510" width="80" height="18" rx="3" fill="rgba(6,7,14,0.85)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+<text x="676" y="523" font-size="7" fill="#22C55E" text-anchor="middle">Coffee · +0.4km</text>
+
+<!-- Rain zone start -->
+<circle cx="663" cy="395" r="7" fill="rgba(0,200,255,0.1)" stroke="#00C8FF" stroke-width="1.5"/>
+<text x="663" y="399" font-size="8" fill="#00C8FF" text-anchor="middle">🌧</text>
+<rect x="674" y="386" width="68" height="18" rx="3" fill="rgba(6,7,14,0.85)" stroke="rgba(0,200,255,0.25)" stroke-width="1"/>
+<text x="708" y="399" font-size="7" fill="#00C8FF" text-anchor="middle">Rain starts</text>
+
+<!-- Destination -->
+<circle cx="740" cy="80"  r="9" fill="rgba(0,200,255,0.2)" stroke="#00C8FF" stroke-width="2"/>
+<circle cx="740" cy="80"  r="4" fill="#00C8FF"/>
+<text x="756" y="84" font-size="9" fill="#00C8FF">Whitefield Tech Park</text>
+
+<!-- ══ RIGHT PANEL — AI REASONING ══ -->
+
+<rect x="1060" y="52" width="380" height="792" fill="#060810"/>
+<line x1="1060" y1="52" x2="1060" y2="844" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+<text x="1084" y="84" font-size="7.5" fill="rgba(255,255,255,0.28)" letter-spacing="2.5">AI ROUTE REASONING</text>
+<rect x="1076" y="93" width="340" height="2" rx="1" fill="rgba(0,200,255,0.3)"/>
+
+<!-- AI reasoning card -->
+<rect x="1076" y="106" width="340" height="180" rx="10" fill="rgba(0,200,255,0.04)" stroke="rgba(0,200,255,0.15)" stroke-width="1"/>
+<text x="1092" y="124" font-size="8.5" font-weight="700" fill="#00C8FF" letter-spacing="1">WHY THIS ROUTE?</text>
+<text x="1092" y="143" font-size="9.5" fill="#E8F0F8">MG Road via Marathahalli was</text>
+<text x="1092" y="159" font-size="9.5" fill="#E8F0F8">selected based on 3 live signals:</text>
+
+<circle cx="1096" cy="178" r="3" fill="#00C8FF"/>
+<text x="1107" y="182" font-size="9" fill="rgba(232,240,248,0.65)">Silk Board overpass — 22 min jam</text>
+<circle cx="1096" cy="198" r="3" fill="#00C8FF"/>
+<text x="1107" y="202" font-size="9" fill="rgba(232,240,248,0.65)">Your last 6 Fri journeys used this route</text>
+<circle cx="1096" cy="218" r="3" fill="#00C8FF"/>
+<text x="1107" y="222" font-size="9" fill="rgba(232,240,248,0.65)">94% confidence based on current data</text>
+
+<text x="1390" y="280" font-size="8" fill="rgba(255,255,255,0.2)" text-anchor="end">Recalculated 3 min ago</text>
+
+<!-- Saved time callout -->
+<rect x="1076" y="300" width="340" height="64" rx="10" fill="rgba(34,197,94,0.06)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+<text x="1092" y="320" font-size="8" fill="#22C55E" letter-spacing="1.5">TIME SAVED VS PREVIOUS ROUTE</text>
+<text x="1092" y="346" font-size="28" font-weight="700" fill="#22C55E" font-family="'Courier New',monospace">−14</text>
+<text x="1130" y="346" font-size="13" fill="#22C55E"> min</text>
+<text x="1390" y="358" font-size="8" fill="rgba(34,197,94,0.5)" text-anchor="end">Rerouted away from Silk Board</text>
+
+<!-- Traffic signals -->
+<line x1="1084" y1="380" x2="1400" y2="380" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="1084" y="398" font-size="7.5" fill="rgba(255,255,255,0.28)" letter-spacing="2.5">LIVE TRAFFIC SIGNALS</text>
+
+<rect x="1076" y="408" width="340" height="44" rx="8" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<circle cx="1098" cy="430" r="5" fill="#22C55E"/>
+<text x="1112" y="434" font-size="9" fill="rgba(232,240,248,0.55)">MG Road — Clear traffic</text>
+<text x="1390" y="434" font-size="8.5" fill="#22C55E" text-anchor="end">Live</text>
+
+<rect x="1076" y="460" width="340" height="44" rx="8" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<circle cx="1098" cy="482" r="5" fill="#EF4444"/>
+<text x="1112" y="486" font-size="9" fill="rgba(232,240,248,0.55)">Silk Board — 22 min delay</text>
+<text x="1390" y="486" font-size="8.5" fill="#EF4444" text-anchor="end">Avoided</text>
+
+<rect x="1076" y="512" width="340" height="44" rx="8" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<circle cx="1098" cy="534" r="5" fill="#F59E0B"/>
+<text x="1112" y="538" font-size="9" fill="rgba(232,240,248,0.55)">ITPL Rd — Moderate (13 min)</text>
+<text x="1390" y="538" font-size="8.5" fill="#F59E0B" text-anchor="end">On route</text>
+
+<!-- Range forecast -->
+<line x1="1084" y1="574" x2="1400" y2="574" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="1084" y="592" font-size="7.5" fill="rgba(255,255,255,0.28)" letter-spacing="2.5">RANGE FORECAST</text>
+
+<rect x="1076" y="602" width="340" height="80" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+<text x="1092" y="622" font-size="9" fill="rgba(232,240,248,0.4)">Range on arrival</text>
+<text x="1390" y="622" font-size="13" font-weight="700" fill="#22C55E" text-anchor="end" font-family="'Courier New',monospace">201 km</text>
+<text x="1092" y="642" font-size="9" fill="rgba(232,240,248,0.4)">Trip energy cost</text>
+<text x="1390" y="642" font-size="13" font-weight="700" fill="#E8F0F8" text-anchor="end" font-family="'Courier New',monospace">9.4 kWh</text>
+<text x="1092" y="662" font-size="9" fill="rgba(232,240,248,0.4)">Efficiency estimate</text>
+<text x="1390" y="662" font-size="13" font-weight="700" fill="#22C55E" text-anchor="end" font-family="'Courier New',monospace">5.1 km/kWh</text>
+
+<!-- Historical context -->
+<line x1="1084" y1="700" x2="1400" y2="700" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="1084" y="718" font-size="7.5" fill="rgba(255,255,255,0.28)" letter-spacing="2.5">YOUR PATTERN ON THIS ROUTE</text>
+
+<text x="1084" y="740" font-size="9" fill="rgba(232,240,248,0.4)">Times driven last 30 days</text>
+<text x="1390" y="740" font-size="9" font-weight="600" fill="#E8F0F8" text-anchor="end">8 trips</text>
+<text x="1084" y="760" font-size="9" fill="rgba(232,240,248,0.4)">Average travel time</text>
+<text x="1390" y="760" font-size="9" font-weight="600" fill="#E8F0F8" text-anchor="end">51 min</text>
+<text x="1084" y="780" font-size="9" fill="rgba(232,240,248,0.4)">Today's estimate</text>
+<text x="1390" y="780" font-size="9" font-weight="600" fill="#22C55E" text-anchor="end">47 min (−4 min)</text>
+<text x="1084" y="800" font-size="9" fill="rgba(232,240,248,0.4)">Best time recorded</text>
+<text x="1390" y="800" font-size="9" font-weight="600" fill="#E8F0F8" text-anchor="end">43 min</text>
+
+<!-- ── BOTTOM STRIP ── -->
+<text x="24"  y="868" font-size="7" fill="rgba(255,255,255,0.28)" letter-spacing="2">CLIMATE</text>
+<text x="24"  y="886" font-size="12" font-weight="600" fill="#E8F0F8">22°C · Auto</text>
+<line x1="160" y1="850" x2="160" y2="898" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="720" y="862" font-size="7" fill="rgba(255,255,255,0.28)" text-anchor="middle" letter-spacing="2">NOW PLAYING</text>
+<text x="720" y="882" font-size="11" fill="rgba(232,240,248,0.6)" text-anchor="middle">In The End — Linkin Park</text>
+<line x1="1280" y1="850" x2="1280" y2="898" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<text x="1416" y="868" font-size="7" fill="rgba(255,255,255,0.28)" text-anchor="end" letter-spacing="2">DASHBOARD</text>
+<text x="1416" y="886" font-size="9" fill="rgba(0,200,255,0.6)" text-anchor="end">← Back to cockpit</text>
+</svg>

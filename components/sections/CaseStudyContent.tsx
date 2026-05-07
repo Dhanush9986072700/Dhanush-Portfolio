@@ -55,7 +55,7 @@ function MediaFrame({
           alt={alt ?? title}
           fill
           sizes="(min-width: 1024px) 960px, 100vw"
-          className="object-cover object-top"
+          className="object-cover object-center"
         />
       ) : (
         <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" font-family="-apple-system,'SF Pro Display',system-ui,sans-serif">
+  <defs>
+    <linearGradient id="btn2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B7FF9"/>
+      <stop offset="100%" stop-color="#6554E7"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="390" height="844" fill="#0A0A1C"/>
+  <!-- Status bar -->
+  <text x="24" y="30" font-size="15" font-weight="600" fill="white">9:41</text>
+  <text x="340" y="30" font-size="13" font-weight="500" fill="rgba(255,255,255,0.6)">100%</text>
+  <!-- Header -->
+  <text x="24" y="70" font-size="22" font-weight="800" fill="white" letter-spacing="-0.3">Insights</text>
+  <!-- Month picker -->
+  <rect x="20" y="84" width="28" height="28" rx="8" fill="rgba(255,255,255,0.07)"/>
+  <text x="34" y="102" text-anchor="middle" font-size="15" fill="rgba(255,255,255,0.5)">‹</text>
+  <rect x="131" y="84" width="128" height="28" rx="8" fill="rgba(255,255,255,0.06)"/>
+  <text x="195" y="102" text-anchor="middle" font-size="14" font-weight="600" fill="white">May 2026</text>
+  <rect x="342" y="84" width="28" height="28" rx="8" fill="rgba(255,255,255,0.07)"/>
+  <text x="356" y="102" text-anchor="middle" font-size="15" fill="rgba(255,255,255,0.5)">›</text>
+  <!-- Period tabs -->
+  <rect x="20" y="126" width="350" height="42" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <rect x="24" y="130" width="110" height="34" rx="10" fill="#7C6EF8"/>
+  <text x="79" y="152" text-anchor="middle" font-size="14" font-weight="700" fill="white">Week</text>
+  <text x="195" y="152" text-anchor="middle" font-size="14" font-weight="500" fill="rgba(255,255,255,0.4)">Month</text>
+  <text x="311" y="152" text-anchor="middle" font-size="14" font-weight="500" fill="rgba(255,255,255,0.4)">Year</text>
+  <!-- Donut chart -->
+  <!-- Food (42%) violet: top -90° to 61.2° -->
+  <path d="M 195 190 A 90 90 0 0 1 239 389 L 223 361 A 58 58 0 0 0 195 222 Z" fill="#7C6EF8"/>
+  <!-- Transport (18%) amber: 61.2° to 126° -->
+  <path d="M 239 389 A 90 90 0 0 1 142 383 L 161 357 A 58 58 0 0 0 223 361 Z" fill="#F9A74B"/>
+  <!-- Shopping (25%) green: 126° to 216° -->
+  <path d="M 142 383 A 90 90 0 0 1 122 257 L 148 276 A 58 58 0 0 0 161 357 Z" fill="#50D896"/>
+  <!-- Bills (15%) red: 216° to 270° -->
+  <path d="M 122 257 A 90 90 0 0 1 195 190 L 195 222 A 58 58 0 0 0 148 276 Z" fill="#F87171"/>
+  <!-- Donut hole -->
+  <circle cx="195" cy="290" r="55" fill="#0A0A1C"/>
+  <!-- Center text -->
+  <text x="195" y="282" text-anchor="middle" font-size="22" font-weight="800" fill="white">₹18,420</text>
+  <text x="195" y="304" text-anchor="middle" font-size="11" font-weight="500" fill="rgba(255,255,255,0.4)" letter-spacing="0.5">TOTAL SPENT</text>
+  <!-- Legend -->
+  <rect x="20" y="410" width="350" height="52" rx="10" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="42" cy="436" r="8" fill="#7C6EF8"/>
+  <text x="58" y="432" font-size="14" font-weight="500" fill="white">Food &amp; Dining</text>
+  <text x="58" y="450" font-size="12" fill="rgba(255,255,255,0.4)">42% of spending</text>
+  <text x="358" y="440" text-anchor="end" font-size="15" font-weight="700" fill="white">₹7,736</text>
+  <line x1="20" y1="462" x2="370" y2="462" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="20" y="462" width="350" height="52" rx="10" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="42" cy="488" r="8" fill="#50D896"/>
+  <text x="58" y="484" font-size="14" font-weight="500" fill="white">Shopping</text>
+  <text x="58" y="502" font-size="12" fill="rgba(255,255,255,0.4)">25% of spending</text>
+  <text x="358" y="492" text-anchor="end" font-size="15" font-weight="700" fill="white">₹4,605</text>
+  <line x1="20" y1="514" x2="370" y2="514" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="20" y="514" width="350" height="52" rx="10" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="42" cy="540" r="8" fill="#F9A74B"/>
+  <text x="58" y="536" font-size="14" font-weight="500" fill="white">Transport</text>
+  <text x="58" y="554" font-size="12" fill="rgba(255,255,255,0.4)">18% of spending</text>
+  <text x="358" y="544" text-anchor="end" font-size="15" font-weight="700" fill="white">₹3,316</text>
+  <line x1="20" y1="566" x2="370" y2="566" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="20" y="566" width="350" height="52" rx="10" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="42" cy="592" r="8" fill="#F87171"/>
+  <text x="58" y="588" font-size="14" font-weight="500" fill="white">Bills &amp; Utilities</text>
+  <text x="58" y="606" font-size="12" fill="rgba(255,255,255,0.4)">15% of spending</text>
+  <text x="358" y="596" text-anchor="end" font-size="15" font-weight="700" fill="white">₹2,763</text>
+  <!-- Trend label -->
+  <text x="20" y="648" font-size="16" font-weight="700" fill="white">Daily spending trend</text>
+  <!-- Mini bar chart (7 days) -->
+  <rect x="20" y="660" width="350" height="80" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="38" y="706" width="28" height="20" rx="4" fill="rgba(124,110,248,0.4)"/>
+  <rect x="86" y="694" width="28" height="32" rx="4" fill="rgba(124,110,248,0.5)"/>
+  <rect x="134" y="680" width="28" height="46" rx="4" fill="#7C6EF8"/>
+  <rect x="182" y="698" width="28" height="28" rx="4" fill="rgba(124,110,248,0.5)"/>
+  <rect x="230" y="702" width="28" height="24" rx="4" fill="rgba(124,110,248,0.4)"/>
+  <rect x="278" y="690" width="28" height="36" rx="4" fill="rgba(124,110,248,0.55)"/>
+  <rect x="326" y="704" width="28" height="22" rx="4" fill="rgba(124,110,248,0.4)"/>
+  <!-- Bottom nav -->
+  <rect x="0" y="756" width="390" height="1" fill="rgba(255,255,255,0.08)"/>
+  <rect x="0" y="757" width="390" height="87" fill="#0A0A1C"/>
+  <text x="49" y="789" text-anchor="middle" font-size="20">⊞</text>
+  <text x="49" y="811" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)" letter-spacing="0.3">HOME</text>
+  <rect x="98" y="764" width="54" height="38" rx="12" fill="rgba(124,110,248,0.15)"/>
+  <text x="125" y="789" text-anchor="middle" font-size="20">📊</text>
+  <text x="125" y="811" text-anchor="middle" font-size="9" font-weight="600" fill="#7C6EF8" letter-spacing="0.3">STATS</text>
+  <rect x="168" y="760" width="54" height="46" rx="16" fill="#7C6EF8"/>
+  <text x="195" y="789" text-anchor="middle" font-size="26" font-weight="300" fill="white">+</text>
+  <text x="265" y="789" text-anchor="middle" font-size="20">💳</text>
+  <text x="265" y="811" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)" letter-spacing="0.3">CARDS</text>
+  <text x="341" y="789" text-anchor="middle" font-size="20">👤</text>
+  <text x="341" y="811" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)" letter-spacing="0.3">PROFILE</text>
+  <!-- Home indicator -->
+  <rect x="150" y="832" width="90" height="5" rx="2.5" fill="rgba(255,255,255,0.2)"/>
+</svg>

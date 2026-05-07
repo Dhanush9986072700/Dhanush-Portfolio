@@ -16,8 +16,14 @@ const gradients: Record<string, string> = {
     "#101010",
   "resort-app":
     "#d8d3c4",
-  superfoods:
+  "agree-superfoods":
     "#17120c",
+  "harmony-luxe-spa-admin":
+    "#0b1324",
+  "clinical-ai-ward-monitoring":
+    "#060816",
+  "iris-digital-imaging":
+    "#1f1f1f",
 };
 
 export default function CaseStudyHero({ project }: Props) {
@@ -123,7 +129,7 @@ export default function CaseStudyHero({ project }: Props) {
                 fill
                 priority
                 sizes="100vw"
-                className="object-cover object-top"
+                className="object-cover object-center"
               />
             ) : (
               <>

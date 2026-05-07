@@ -17,7 +17,15 @@ const socials = [
 const caseStudies = [
   { href: "/work/xiphias-immigration", label: "XIPHIAS Immigration" },
   { href: "/work/resort-app", label: "Resort Booking" },
-  { href: "/work/superfoods", label: "XIPHIAS Superfoods" },
+  { href: "/work/agree-superfoods", label: "Agree Superfoods" },
+  { href: "/work/harmony-luxe-spa-admin", label: "Harmony Luxe Admin" },
+  { href: "/work/clinical-ai-ward-monitoring", label: "Clinical AI Platform" },
+  { href: "/work/iris-digital-imaging", label: "IRIS Digital Imaging" },
+  { href: "/work/harmony-luxe-website", label: "Harmony Luxe Website" },
+  { href: "/work/xiphias-superfoods", label: "XIPHIAS Superfoods" },
+  { href: "/work/vault", label: "Vault (Concept)" },
+  { href: "/work/prism", label: "Prism — AI Brand Intelligence" },
+  { href: "/work/helm", label: "Helm — Automotive AI OS" },
 ];
 
 export default function Footer() {

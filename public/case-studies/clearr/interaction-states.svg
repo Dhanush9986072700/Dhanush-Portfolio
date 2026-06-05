@@ -1,0 +1,288 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 820" width="1440" height="820">
+  <defs>
+    <linearGradient id="ibg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0A15"/>
+      <stop offset="100%" stop-color="#0F0F1A"/>
+    </linearGradient>
+    <linearGradient id="bar-safe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="bar-mid" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="70%" stop-color="#FBBF24"/>
+    </linearGradient>
+    <linearGradient id="bar-warn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="80%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="bar-end" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="60%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#2DD4BF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1440" height="820" fill="url(#ibg)"/>
+
+  <!-- Header bar -->
+  <rect width="1440" height="72" fill="rgba(28,28,46,0.6)"/>
+  <rect width="1440" height="1" y="72" fill="rgba(255,255,255,0.06)"/>
+  <text x="72" y="27" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.35)" font-weight="600" letter-spacing="1.5">CLEARR · BILL PREVIEW — AWARENESS ACROSS BILLING CYCLE</text>
+  <text x="72" y="52" font-family="Inter,sans-serif" font-size="22" fill="white" font-weight="800" letter-spacing="-0.5">How Clearr frames the same spend differently at 4 points in the billing cycle</text>
+  <text x="1368" y="38" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.25)" text-anchor="end">₹9,620 spent · ₹14,100 projected · 30-day cycle</text>
+
+  <!-- Column labels -->
+  <!-- State 1: Day 5 -->
+  <text x="180" y="110" font-family="Inter,sans-serif" font-size="11" fill="rgba(99,102,241,0.7)" font-weight="700" text-anchor="middle" letter-spacing="1">STATE 01 · DAY 5</text>
+  <!-- State 2: Day 12 -->
+  <text x="540" y="110" font-family="Inter,sans-serif" font-size="11" fill="rgba(251,191,36,0.7)" font-weight="700" text-anchor="middle" letter-spacing="1">STATE 02 · DAY 12</text>
+  <!-- State 3: Day 22 -->
+  <text x="900" y="110" font-family="Inter,sans-serif" font-size="11" fill="rgba(239,68,68,0.7)" font-weight="700" text-anchor="middle" letter-spacing="1">STATE 03 · DAY 22</text>
+  <!-- State 4: Day 28 -->
+  <text x="1260" y="110" font-family="Inter,sans-serif" font-size="11" fill="rgba(45,212,191,0.7)" font-weight="700" text-anchor="middle" letter-spacing="1">STATE 04 · DAY 28</text>
+
+  <!-- ====================== STATE 1: Day 5 — Safe / Calm ====================== -->
+  <rect x="36" y="126" width="288" height="580" rx="20" fill="rgba(22,22,42,0.8)"/>
+  <rect x="36" y="126" width="288" height="580" rx="20" fill="none" stroke="rgba(99,102,241,0.25)" stroke-width="1.5"/>
+
+  <!-- Phone top -->
+  <rect x="36" y="126" width="288" height="48" rx="20" fill="rgba(28,28,46,0.9)"/>
+  <rect x="36" y="154" width="288" height="20" fill="rgba(28,28,46,0.9)"/>
+  <rect x="120" y="132" width="48" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <text x="180" y="162" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle">Bill Preview</text>
+
+  <!-- Day 5 content -->
+  <text x="64" y="200" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" font-weight="600" letter-spacing="1">ESTIMATED BILL</text>
+  <text x="64" y="230" font-family="Inter,sans-serif" font-size="30" fill="white" font-weight="800" letter-spacing="-1">₹14,100</text>
+  <text x="64" y="250" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.35)">Spent so far</text>
+  <text x="180" y="250" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)" font-weight="600">₹1,920</text>
+  <text x="64" y="268" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.25)">25 days left in cycle</text>
+
+  <!-- Progress bar: Day 5 = 14% -->
+  <rect x="64" y="280" width="236" height="8" rx="4" fill="rgba(255,255,255,0.07)"/>
+  <rect x="64" y="280" width="33" height="8" rx="4" fill="url(#bar-safe)"/>
+  <text x="300" y="278" font-family="Inter,sans-serif" font-size="10" fill="rgba(99,102,241,0.7)" text-anchor="end">14%</text>
+
+  <!-- Calm insight -->
+  <rect x="64" y="302" width="236" height="48" rx="10" fill="rgba(45,212,191,0.07)"/>
+  <rect x="64" y="302" width="236" height="48" rx="10" fill="none" stroke="rgba(45,212,191,0.15)" stroke-width="1"/>
+  <text x="182" y="322" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle" font-weight="500">Early in the cycle. 😌</text>
+  <text x="182" y="340" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.3)" text-anchor="middle">No pressure — plenty of runway.</text>
+
+  <!-- Daily budget stat -->
+  <rect x="64" y="362" width="110" height="68" rx="10" fill="rgba(99,102,241,0.07)"/>
+  <text x="119" y="386" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="0.8">DAILY BUDGET</text>
+  <text x="119" y="412" font-family="Inter,sans-serif" font-size="22" fill="#6366F1" font-weight="800" text-anchor="middle">₹470</text>
+
+  <rect x="190" y="362" width="110" height="68" rx="10" fill="rgba(45,212,191,0.07)"/>
+  <text x="245" y="386" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="0.8">DAYS LEFT</text>
+  <text x="245" y="412" font-family="Inter,sans-serif" font-size="22" fill="#2DD4BF" font-weight="800" text-anchor="middle">25</text>
+
+  <!-- Mini bar chart -->
+  <text x="64" y="454" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.25)" font-weight="600" letter-spacing="0.8">DAILY SPEND</text>
+  <rect x="64" y="464" width="236" height="80" rx="8" fill="rgba(255,255,255,0.02)"/>
+  <!-- 5 bars -->
+  <rect x="78" y="510" width="16" height="26" rx="3" fill="rgba(99,102,241,0.5)"/>
+  <rect x="100" y="502" width="16" height="34" rx="3" fill="rgba(99,102,241,0.5)"/>
+  <rect x="122" y="514" width="16" height="22" rx="3" fill="rgba(99,102,241,0.5)"/>
+  <rect x="144" y="498" width="16" height="38" rx="3" fill="rgba(99,102,241,0.5)"/>
+  <rect x="166" y="508" width="16" height="28" rx="3" fill="rgba(99,102,241,0.5)"/>
+  <!-- Projection bars (dashed) -->
+  <rect x="188" y="506" width="16" height="30" rx="3" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="210" y="504" width="16" height="32" rx="3" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="232" y="508" width="16" height="28" rx="3" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="254" y="506" width="16" height="30" rx="3" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+
+  <!-- CTA -->
+  <rect x="64" y="562" width="236" height="36" rx="18" fill="rgba(99,102,241,0.15)"/>
+  <rect x="64" y="562" width="236" height="36" rx="18" fill="none" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="182" y="585" font-family="Inter,sans-serif" font-size="12" fill="#6366F1" font-weight="600" text-anchor="middle">Set payment reminder</text>
+
+  <!-- ====================== STATE 2: Day 12 — Attention ====================== -->
+  <rect x="396" y="126" width="288" height="580" rx="20" fill="rgba(22,22,42,0.8)"/>
+  <rect x="396" y="126" width="288" height="580" rx="20" fill="none" stroke="rgba(251,191,36,0.25)" stroke-width="1.5"/>
+
+  <rect x="396" y="126" width="288" height="48" rx="20" fill="rgba(28,28,46,0.9)"/>
+  <rect x="396" y="154" width="288" height="20" fill="rgba(28,28,46,0.9)"/>
+  <rect x="480" y="132" width="48" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <text x="540" y="162" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle">Bill Preview</text>
+
+  <text x="424" y="200" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" font-weight="600" letter-spacing="1">ESTIMATED BILL</text>
+  <text x="424" y="230" font-family="Inter,sans-serif" font-size="30" fill="white" font-weight="800" letter-spacing="-1">₹14,100</text>
+  <text x="424" y="250" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.35)">Spent so far</text>
+  <text x="540" y="250" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)" font-weight="600">₹5,400</text>
+  <text x="424" y="268" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.25)">18 days left in cycle</text>
+
+  <!-- Progress bar: Day 12 = 38% -->
+  <rect x="424" y="280" width="236" height="8" rx="4" fill="rgba(255,255,255,0.07)"/>
+  <rect x="424" y="280" width="90" height="8" rx="4" fill="url(#bar-mid)"/>
+  <line x1="565" y1="276" x2="565" y2="292" stroke="rgba(251,191,36,0.4)" stroke-width="1"/>
+  <text x="660" y="278" font-family="Inter,sans-serif" font-size="10" fill="rgba(251,191,36,0.7)" text-anchor="end">38%</text>
+
+  <!-- Attention insight -->
+  <rect x="424" y="302" width="236" height="48" rx="10" fill="rgba(251,191,36,0.07)"/>
+  <rect x="424" y="302" width="236" height="48" rx="10" fill="none" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="542" y="322" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle" font-weight="500">Food spending is trending high ⚠️</text>
+  <text x="542" y="340" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.3)" text-anchor="middle">₹3,420 · 68% more than last June.</text>
+
+  <!-- Stats -->
+  <rect x="424" y="362" width="110" height="68" rx="10" fill="rgba(251,191,36,0.07)"/>
+  <text x="479" y="386" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="0.8">DAILY BUDGET</text>
+  <text x="479" y="412" font-family="Inter,sans-serif" font-size="22" fill="#FBBF24" font-weight="800" text-anchor="middle">₹382</text>
+
+  <rect x="550" y="362" width="110" height="68" rx="10" fill="rgba(45,212,191,0.07)"/>
+  <text x="605" y="386" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="0.8">DAYS LEFT</text>
+  <text x="605" y="412" font-family="Inter,sans-serif" font-size="22" fill="#2DD4BF" font-weight="800" text-anchor="middle">18</text>
+
+  <!-- Mini bar chart -->
+  <text x="424" y="454" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.25)" font-weight="600" letter-spacing="0.8">DAILY SPEND</text>
+  <rect x="424" y="464" width="236" height="80" rx="8" fill="rgba(255,255,255,0.02)"/>
+  <rect x="438" y="512" width="12" height="24" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="456" y="504" width="12" height="32" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="474" y="516" width="12" height="20" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="492" y="498" width="12" height="38" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="510" y="504" width="12" height="32" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="528" y="488" width="12" height="48" rx="2" fill="rgba(251,191,36,0.7)"/>
+  <rect x="546" y="494" width="12" height="42" rx="2" fill="rgba(251,191,36,0.6)"/>
+  <rect x="564" y="510" width="12" height="26" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="582" y="500" width="12" height="36" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="600" y="506" width="12" height="30" rx="2" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="618" y="508" width="12" height="28" rx="2" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="636" y="504" width="12" height="32" rx="2" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+
+  <rect x="424" y="562" width="236" height="36" rx="18" fill="rgba(251,191,36,0.1)"/>
+  <rect x="424" y="562" width="236" height="36" rx="18" fill="none" stroke="rgba(251,191,36,0.3)" stroke-width="1"/>
+  <text x="542" y="585" font-family="Inter,sans-serif" font-size="12" fill="#FBBF24" font-weight="600" text-anchor="middle">Review food spending →</text>
+
+  <!-- ====================== STATE 3: Day 22 — Warning ====================== -->
+  <rect x="756" y="126" width="288" height="580" rx="20" fill="rgba(22,22,42,0.8)"/>
+  <rect x="756" y="126" width="288" height="580" rx="20" fill="none" stroke="rgba(239,68,68,0.25)" stroke-width="1.5"/>
+
+  <rect x="756" y="126" width="288" height="48" rx="20" fill="rgba(28,28,46,0.9)"/>
+  <rect x="756" y="154" width="288" height="20" fill="rgba(28,28,46,0.9)"/>
+  <rect x="840" y="132" width="48" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <text x="900" y="162" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle">Bill Preview</text>
+
+  <text x="784" y="200" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" font-weight="600" letter-spacing="1">ESTIMATED BILL</text>
+  <text x="784" y="230" font-family="Inter,sans-serif" font-size="30" fill="white" font-weight="800" letter-spacing="-1">₹14,800</text>
+  <text x="784" y="250" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.35)">Spent so far</text>
+  <text x="900" y="250" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)" font-weight="600">₹10,840</text>
+  <text x="784" y="268" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.25)">8 days left in cycle</text>
+
+  <!-- Progress bar: Day 22 = 86% -->
+  <rect x="784" y="280" width="236" height="8" rx="4" fill="rgba(255,255,255,0.07)"/>
+  <rect x="784" y="280" width="203" height="8" rx="4" fill="url(#bar-warn)"/>
+  <line x1="925" y1="276" x2="925" y2="292" stroke="rgba(239,68,68,0.4)" stroke-width="1"/>
+  <text x="1020" y="278" font-family="Inter,sans-serif" font-size="10" fill="rgba(239,68,68,0.8)" text-anchor="end">86% ↑</text>
+
+  <!-- Warning insight -->
+  <rect x="784" y="302" width="236" height="48" rx="10" fill="rgba(239,68,68,0.07)"/>
+  <rect x="784" y="302" width="236" height="48" rx="10" fill="none" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="902" y="322" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle" font-weight="500">Running over budget 🚨</text>
+  <text x="902" y="340" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.3)" text-anchor="middle">₹244/day keeps you at ₹14,100.</text>
+
+  <!-- Stats -->
+  <rect x="784" y="362" width="110" height="68" rx="10" fill="rgba(239,68,68,0.07)"/>
+  <text x="839" y="386" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="0.8">DAILY BUDGET</text>
+  <text x="839" y="412" font-family="Inter,sans-serif" font-size="22" fill="#EF4444" font-weight="800" text-anchor="middle">₹133</text>
+
+  <rect x="910" y="362" width="110" height="68" rx="10" fill="rgba(239,68,68,0.07)"/>
+  <text x="965" y="386" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="0.8">DAYS LEFT</text>
+  <text x="965" y="412" font-family="Inter,sans-serif" font-size="22" fill="#EF4444" font-weight="800" text-anchor="middle">8</text>
+
+  <!-- Mini bar chart -->
+  <text x="784" y="454" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.25)" font-weight="600" letter-spacing="0.8">DAILY SPEND</text>
+  <rect x="784" y="464" width="236" height="80" rx="8" fill="rgba(255,255,255,0.02)"/>
+  <rect x="798" y="516" width="10" height="20" rx="2" fill="rgba(99,102,241,0.4)"/>
+  <rect x="814" y="508" width="10" height="28" rx="2" fill="rgba(99,102,241,0.4)"/>
+  <rect x="830" y="514" width="10" height="22" rx="2" fill="rgba(99,102,241,0.4)"/>
+  <rect x="846" y="496" width="10" height="40" rx="2" fill="rgba(239,68,68,0.6)"/>
+  <rect x="862" y="502" width="10" height="34" rx="2" fill="rgba(239,68,68,0.5)"/>
+  <rect x="878" y="490" width="10" height="46" rx="2" fill="rgba(239,68,68,0.6)"/>
+  <rect x="894" y="498" width="10" height="38" rx="2" fill="rgba(239,68,68,0.5)"/>
+  <rect x="910" y="504" width="10" height="32" rx="2" fill="rgba(239,68,68,0.5)"/>
+  <rect x="926" y="510" width="10" height="26" rx="2" fill="rgba(239,68,68,0.4)"/>
+  <rect x="942" y="506" width="10" height="30" rx="2" fill="rgba(99,102,241,0.4)"/>
+  <rect x="958" y="512" width="10" height="24" rx="2" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="974" y="514" width="10" height="22" rx="2" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+
+  <rect x="784" y="562" width="236" height="36" rx="18" fill="rgba(239,68,68,0.12)"/>
+  <rect x="784" y="562" width="236" height="36" rx="18" fill="none" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="902" y="585" font-family="Inter,sans-serif" font-size="12" fill="#EF4444" font-weight="600" text-anchor="middle">Enable Calm Mode →</text>
+
+  <!-- ====================== STATE 4: Day 28 — Relief ====================== -->
+  <rect x="1116" y="126" width="288" height="580" rx="20" fill="rgba(22,22,42,0.8)"/>
+  <rect x="1116" y="126" width="288" height="580" rx="20" fill="none" stroke="rgba(45,212,191,0.25)" stroke-width="1.5"/>
+
+  <rect x="1116" y="126" width="288" height="48" rx="20" fill="rgba(28,28,46,0.9)"/>
+  <rect x="1116" y="154" width="288" height="20" fill="rgba(28,28,46,0.9)"/>
+  <rect x="1200" y="132" width="48" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <text x="1260" y="162" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle">Bill Preview</text>
+
+  <text x="1144" y="200" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" font-weight="600" letter-spacing="1">FINAL BILL</text>
+  <text x="1144" y="230" font-family="Inter,sans-serif" font-size="30" fill="white" font-weight="800" letter-spacing="-1">₹13,640</text>
+  <text x="1144" y="250" font-family="Inter,sans-serif" font-size="11" fill="rgba(45,212,191,0.8)" font-weight="600">Under projection! 🎉</text>
+  <text x="1144" y="268" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.25)">2 days left · Due in 2 days</text>
+
+  <!-- Progress bar: Day 28 = 97%, under limit -->
+  <rect x="1144" y="280" width="236" height="8" rx="4" fill="rgba(255,255,255,0.07)"/>
+  <rect x="1144" y="280" width="229" height="8" rx="4" fill="url(#bar-end)"/>
+  <text x="1380" y="278" font-family="Inter,sans-serif" font-size="10" fill="rgba(45,212,191,0.8)" text-anchor="end">97% ✓</text>
+
+  <!-- Relief insight -->
+  <rect x="1144" y="302" width="236" height="48" rx="10" fill="rgba(45,212,191,0.07)"/>
+  <rect x="1144" y="302" width="236" height="48" rx="10" fill="none" stroke="rgba(45,212,191,0.2)" stroke-width="1"/>
+  <text x="1262" y="322" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle" font-weight="500">Saved ₹460 vs projection 🎉</text>
+  <text x="1262" y="340" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.3)" text-anchor="middle">Calm Mode helped cut food spend.</text>
+
+  <!-- Stats -->
+  <rect x="1144" y="362" width="110" height="68" rx="10" fill="rgba(45,212,191,0.07)"/>
+  <text x="1199" y="386" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="0.8">SAVED VS PROJ.</text>
+  <text x="1199" y="412" font-family="Inter,sans-serif" font-size="22" fill="#2DD4BF" font-weight="800" text-anchor="middle">₹460</text>
+
+  <rect x="1270" y="362" width="110" height="68" rx="10" fill="rgba(99,102,241,0.07)"/>
+  <text x="1325" y="386" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="0.8">DAYS ON TRACK</text>
+  <text x="1325" y="412" font-family="Inter,sans-serif" font-size="22" fill="#6366F1" font-weight="800" text-anchor="middle">22/28</text>
+
+  <!-- Mini bar chart (full cycle) -->
+  <text x="1144" y="454" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.25)" font-weight="600" letter-spacing="0.8">DAILY SPEND — FULL CYCLE</text>
+  <rect x="1144" y="464" width="236" height="80" rx="8" fill="rgba(255,255,255,0.02)"/>
+  <rect x="1152" y="516" width="8" height="20" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="1164" y="508" width="8" height="28" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="1176" y="498" width="8" height="38" rx="2" fill="rgba(239,68,68,0.5)"/>
+  <rect x="1188" y="504" width="8" height="32" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="1200" y="510" width="8" height="26" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="1212" y="488" width="8" height="48" rx="2" fill="rgba(239,68,68,0.6)"/>
+  <rect x="1224" y="492" width="8" height="44" rx="2" fill="rgba(239,68,68,0.5)"/>
+  <rect x="1236" y="504" width="8" height="32" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="1248" y="510" width="8" height="26" rx="2" fill="rgba(99,102,241,0.5)"/>
+  <rect x="1260" y="512" width="8" height="24" rx="2" fill="rgba(45,212,191,0.5)"/>
+  <rect x="1272" y="508" width="8" height="28" rx="2" fill="rgba(45,212,191,0.5)"/>
+  <rect x="1284" y="512" width="8" height="24" rx="2" fill="rgba(45,212,191,0.5)"/>
+  <rect x="1296" y="510" width="8" height="26" rx="2" fill="rgba(45,212,191,0.5)"/>
+  <rect x="1308" y="514" width="8" height="22" rx="2" fill="rgba(45,212,191,0.5)"/>
+  <rect x="1320" y="506" width="8" height="30" rx="2" fill="rgba(45,212,191,0.6)"/>
+  <rect x="1332" y="516" width="8" height="20" rx="2" fill="rgba(45,212,191,0.12)" stroke="rgba(45,212,191,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="1344" y="518" width="8" height="18" rx="2" fill="rgba(45,212,191,0.12)" stroke="rgba(45,212,191,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+
+  <!-- Pay bill CTA -->
+  <rect x="1144" y="562" width="236" height="36" rx="18" fill="#2DD4BF"/>
+  <text x="1262" y="585" font-family="Inter,sans-serif" font-size="12" fill="#0A0A15" font-weight="700" text-anchor="middle">Pay bill now →</text>
+
+  <!-- Bottom connector labels -->
+  <text x="180" y="740" font-family="Inter,sans-serif" font-size="12" fill="rgba(99,102,241,0.6)" text-anchor="middle">Early cycle · Calm, no pressure</text>
+  <text x="540" y="740" font-family="Inter,sans-serif" font-size="12" fill="rgba(251,191,36,0.6)" text-anchor="middle">Mid cycle · Gentle category nudge</text>
+  <text x="900" y="740" font-family="Inter,sans-serif" font-size="12" fill="rgba(239,68,68,0.6)" text-anchor="middle">Late cycle · Clear warning + Calm Mode offer</text>
+  <text x="1260" y="740" font-family="Inter,sans-serif" font-size="12" fill="rgba(45,212,191,0.6)" text-anchor="middle">End cycle · Relief + positive reinforcement</text>
+
+  <!-- Connecting arrow line -->
+  <line x1="324" y1="420" x2="396" y2="420" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="684" y1="420" x2="756" y2="420" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <line x1="1044" y1="420" x2="1116" y2="420" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- Footer note -->
+  <text x="720" y="790" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.2)" text-anchor="middle">Clearr adapts tone and information density to the billing cycle phase — reducing anxiety spikes while maintaining awareness.</text>
+</svg>

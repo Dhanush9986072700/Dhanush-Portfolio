@@ -3206,6 +3206,7 @@ export const projects: Project[] = [
     gradient: "from-indigo-900 via-violet-950 to-purple-950",
     caseStudy: {
       badge: "Concept · Consumer Fintech · 2026",
+      heroImage: "/case-studies/clearr/hifi-1.svg",
       brief:
         "Most credit card apps show you transactions. None of them tell you a story you can act on. For Indian college students aged 19–24 using their first or second credit card, the problem isn't that they spend too much — it's that they have no real-time awareness of where the money went. By the time the bill arrives, the number is both accurate and completely uncontextualised. Clearr is a spend awareness app built around one research finding: anxiety is proportional to uncertainty, not spend amount. The tagline: Know before the bill does.",
       pullQuote:
@@ -3339,57 +3340,109 @@ export const projects: Project[] = [
             "4 of 6 diary study participants said they'd turn off daily spend reminders within 2 weeks. Not because they don't want awareness — they do. But generic reminders feel like nagging when busy, and add anxiety when already anxious. I designed a 9pm daily digest first — confirmed to be turned off quickly in research feedback. The difference between a reminder and an insight is whether it tells you something you didn't already know. Final decision: one notification type, triggered by a specific threshold: 'Your food spend this week (₹1,840) is already at last month's weekly average. 3 weeks left.' Maximum once per category per week. The 'days remaining' signal is critical — without it, the data is a report. With it, it's a lever the student can act on. Designing when NOT to send a notification is the harder problem. If there's nothing specific to say, Clearr says nothing.",
         },
       ],
+      flow: {
+        title: "Bill Preview — Awareness across the billing cycle",
+        image: "/case-studies/clearr/interaction-states.svg",
+        caption:
+          "4 states of the Bill Preview screen across a 30-day billing cycle. Day 5: calm, no pressure — early in the cycle, daily budget is comfortable. Day 12: gentle amber nudge — food category is trending high. Day 22: explicit warning with Calm Mode offer — overprojection visible, daily budget tight. Day 28: relief + positive reinforcement — ended under projection, Calm Mode attribution. Clearr adapts its tone and information density to the billing cycle phase throughout, reducing anxiety spikes while maintaining full awareness.",
+      },
       screens: [
         {
-          title: "Home — Cycle spend overview",
-          alt: "Clearr home screen showing cycle spend total, projection line, and 5 category chips",
+          title: "Lo-fi · Home dashboard wireframe",
+          image: "/case-studies/clearr/lofi-1.svg",
+          alt: "Grayscale wireframe of the Clearr home dashboard showing spending card, category rows, daily pulse widget, and bottom nav",
           caption:
-            "Answers 'how much this month?' in under 3 seconds. Cycle spend total at 52sp bold, center screen. Below: 'At this pace: ₹14,100 by billing date' and days remaining. Below that: 5 category chips showing per-category totals. The projection line is the product thesis made visible — every time the app is opened, the student sees not just what has happened but what will happen if nothing changes. No chart on the home screen. Removing the donut chart was the hardest cut: every iteration that included a chart caused participants to focus on interpreting it rather than reading the total. Charts are interesting; the total is essential. They don't belong on the same screen.",
+            "The home wireframe established the hierarchy before any visual design: total spend card, 5 category rows, daily pulse widget, recent transactions. The key wireframe decision was removing the donut chart from this screen — every lo-fi iteration that included a chart caused participants to scan for 15–20 seconds before they could read the total. One number, front and center. Charts live on Breakdown.",
+          decision:
+            "Wireframe phase confirmed: home screen is for the 3-second read, not analysis. The donut chart survived 2 lo-fi rounds before being cut. If the layout requires interpretation, the screen has already failed.",
+          aspect: "mobile",
+        },
+        {
+          title: "Lo-fi · Spend Breakdown wireframe",
+          image: "/case-studies/clearr/lofi-2.svg",
+          alt: "Grayscale wireframe of the Clearr spend breakdown showing donut chart area and category drill-down rows",
+          caption:
+            "Breakdown wireframe explored two layouts: horizontal bar rows (which won) vs. a stacked grid of category cards. The grid created false equivalence between categories — Food and Other felt visually equal. The row layout communicates hierarchy through proportional bars. The drill-down interaction (tap segment → expand merchant rows below) was defined at wireframe stage and drove the data architecture decision to cluster transactions by category before surfacing them.",
+          decision:
+            "Row layout over card grid. Proportional bars communicate what percentages alone cannot: the relationship between categories. This was a layout argument made before any hi-fi work started.",
+          aspect: "mobile",
+        },
+        {
+          title: "Lo-fi · Bill Preview wireframe",
+          image: "/case-studies/clearr/lofi-3.svg",
+          alt: "Grayscale wireframe of the Clearr Bill Preview showing billing cycle timeline, zone markers, and daily allowance stats",
+          caption:
+            "The wireframe phase revealed the most important structural decision in Bill Preview: a timeline with zone markers (safe, caution, danger) communicates both position and remaining runway in one visual. A number-only display required participants to do mental arithmetic. The dashed projection zone — representing the days where decisions still matter — was confirmed at wireframe stage as essential. Without it, Bill Preview is just a report.",
+          decision:
+            "Zone markers on the timeline over color-coded numbers. Zones communicate whether the situation is under control; the dashed future zone communicates agency. Both decisions made at grayscale stage.",
+          aspect: "mobile",
+        },
+        {
+          title: "Lo-fi · Calm Mode wireframe",
+          image: "/case-studies/clearr/lofi-4.svg",
+          alt: "Grayscale wireframe of Clearr Calm Mode showing toggle, hidden elements marked with dashed borders, and visible summary items",
+          caption:
+            "The wireframe used dashed borders to mark what Calm Mode hides and solid fills for what it shows — making the distinction immediately clear in critique. The toggle placement at the top confirms it's a mode, not a filter. Three visible items (status, category label, bill health) defined the minimum viable context before any hi-fi work started. The wireframe annotation 'NO NUMBERS SHOWN IN CALM MODE' survived all the way to the final design without change.",
+          decision:
+            "Wireframe phase defined the information budget for Calm Mode: 3 status facts, no quantities. More than 3 items broke the calm response in early reviews. Fewer than 3 left participants unsure whether the app was actually working.",
+          aspect: "mobile",
+        },
+        {
+          title: "Home — Cycle spend overview",
+          image: "/case-studies/clearr/hifi-1.svg",
+          alt: "Clearr home screen showing ₹9,620 cycle spend total, projected ₹14,100, 5 category rows with spend bars, Daily Pulse widget, and recent transactions",
+          caption:
+            "Answers 'how much this month?' in under 3 seconds. Cycle spend total at 42sp bold, center screen. Below: 'Projected total ₹14,100 · 18 days left' and a progress bar at 68%. Below that: 5 category rows with emoji icons, spend amounts, and proportional color bars. Daily Pulse widget shows today's spend vs. day-of-week average. The projection line is the product thesis made visible — every time the app is opened, the student sees not just what has happened but what will happen if nothing changes. No chart on the home screen.",
           decision:
             "One number. Not a dashboard. The home screen's job is the 3-second check — 'how am I doing?' — not analysis. Everything analytical lives on Breakdown. This hierarchy is a product decision before it's a layout decision.",
           aspect: "mobile",
         },
         {
           title: "Spend Breakdown — Category-level analysis",
-          alt: "Clearr breakdown screen showing 5 category rows with personal-history comparison badges",
+          image: "/case-studies/clearr/hifi-2.svg",
+          alt: "Clearr breakdown screen showing donut chart with ₹9,620 center, Food category expanded with Swiggy merchant rows, and 4 collapsed category rows",
           caption:
-            "Five category rows, each with: spend amount, a proportional horizontal bar, and a comparison badge ('↑ ₹420 more than last month'). This Month / Last Month toggle at the top. 'Show transactions' expands the transaction list in-place without navigation. Comparison badges reference personal history, not budget targets — a student who always spends ₹3,000 on food isn't told it's '28% of spending,' they're told whether it's more or less than their own normal. The toggle to Last Month exists specifically for users like Priya who want to understand patterns across time, not just see current state. Small toggle, reflects a clear understanding of two distinct use cases in the same user base.",
+            "Donut chart shows category share at a glance — ₹9,620 center, 5 segments in brand colors. Food is expanded (tapped): shows ₹3,420 total, 35.5% of total, and merchant rows (Swiggy ₹1,240, Starbucks ₹840). Comparison badges reference personal history. The This Month / Last Month toggle at the top enables pattern comparison for users like Priya who want to understand trends, not just current state.",
           decision:
             "Comparison to personal history over budget benchmarks. External references create shame. Personal references create context. The same ₹3,200 food spend can feel fine ('less than usual') or alarming ('way over budget') depending entirely on the reference frame. Clearr always chooses the frame that informs without judging.",
           aspect: "mobile",
         },
         {
           title: "Daily Pulse — Today's spend at a glance",
-          alt: "Clearr Daily Pulse screen showing today's spend, today's transactions, and day-of-week comparison",
+          image: "/case-studies/clearr/hifi-3.svg",
+          alt: "Clearr Daily Pulse screen showing ₹640 today highlighted in amber vs Tuesday average ₹380, weekly bar chart with today's bar prominently lit, and 3 today transactions",
           caption:
-            "Today's date. Today's total at large scale. The 3 transactions from today. One contextual comparison: 'Your Tuesdays average ₹380. This one's a bit higher.' No input required — populated entirely from transaction sync. The day-of-week comparison ('Your Tuesdays') came directly from the diary study: spending patterns follow weekly rhythms for students, lower on weekdays, higher Thursday–Friday. Comparing Tuesday to the general daily average is less useful than comparing Tuesday to the average Tuesday. Daily Pulse is passive-first by design — any screen that requires manual input will not survive 2 weeks with users who don't track by habit.",
+            "Today's total at 38sp bold with a '+68% vs Tue avg ₹380' badge. Weekly bar chart highlights today's bar in amber — all other bars in indigo. Insight chip: 'You spend the most on Tuesdays. ₹380 avg — usually Swiggy orders after college.' Three transactions below with timestamps and category tags. The day-of-week comparison ('Your Tuesdays') came directly from the diary study: spending patterns follow weekly rhythms, and comparing Tuesday to the daily average is far less useful than comparing it to the average Tuesday.",
           decision:
             "Passive-first, zero required input. Students who most need spend awareness are the least likely to build a new data-entry habit. The product has to meet them where they are. If Daily Pulse required any action to show content, Rahul would open it three times and stop.",
           aspect: "mobile",
         },
         {
           title: "Bill Preview — Upcoming bill made familiar",
-          alt: "Clearr Bill Preview showing billing cycle timeline with actual and projected zones",
+          image: "/case-studies/clearr/hifi-4.svg",
+          alt: "Clearr Bill Preview showing ₹14,100 estimated bill, billing cycle progress bar at 68%, daily allowance ₹244 and days-on-track 9/12 stat cards, forecast bar chart, and calm insight chip",
           caption:
-            "'Your bill so far: ₹8,420 — due in 18 days.' A horizontal billing cycle timeline distinguishes spent (solid line) from the remaining projected period (dashed line). Below: category breakdown of the current bill total. 'At this pace your bill will be ₹14,100 — ₹1,200 more than last month.' The solid vs. dashed distinction communicates — without text — that the current number is real but the final number is still under influence. The dashed projection represents the space where decisions still matter. A number-only countdown ('18 days until billing') creates urgency. A visual timeline with a large dashed zone ahead communicates the same information as opportunity rather than pressure.",
+            "'Your bill so far: ₹9,620 — due in 8 days.' Progress bar at 68% with safe and caution zone markers. Daily allowance card shows ₹244/day remaining. Days-on-track card shows 9/12 (75%). Forecast bar chart distinguishes solid past bars from dashed projection. Calm insight chip: 'You're on track. 😌 Spend ≤₹244/day and you'll stay under ₹14,100.' Top merchants this cycle. A number-only countdown creates urgency; a timeline with a large dashed zone ahead communicates the same information as opportunity rather than pressure.",
           decision:
             "Timeline over number-only projection. Time you can act in looks different from time running out. The dashed zone is a design argument: you are not done yet. There are still decisions to make. This framing is the difference between a warning and an invitation.",
           aspect: "mobile",
         },
         {
           title: "Calm Mode — Spend in context of your own history",
-          alt: "Clearr Calm Mode showing 3 category comparison cards and single action CTA",
+          image: "/case-studies/clearr/hifi-5.svg",
+          alt: "Clearr Calm Mode showing teal toggle on, reassurance text 'Spending is under control', 3 status fact rows with no amounts, and hidden elements listed below",
           caption:
-            "Accessed via 'How am I doing?' on the home screen after Day 10. Three comparison cards: category, this month vs. last month, one-line interpretation. 'Less than usual. On track.' / 'About the same as last month.' / 'A bit more than usual this month.' No red. Above-usual categories show in amber. One CTA: 'Show me my food spending.' The copy is the design here — 'A bit more than usual this month' does exactly the same analytical work as '17% over category average' but one produces a human response and one produces anxiety. A consumer fintech team will know how much work goes into UI copy that is simultaneously accurate, actionable, and emotionally calibrated. This screen is where that work is most visible.",
+            "Calm Mode toggle slides on. Hero text: 'You're doing great. Spending is under control. No numbers. No stress. Just clarity.' Three status rows below: spending status (On track), food spending (Moderate), bill health (Good). No amounts on any of these. Hidden items listed with dashed borders. Single CTA: 'Turn off Calm Mode.' The copy is the design — 'A bit more than usual this month' does the same analytical work as '17% over category average' but one produces a human response and one produces anxiety.",
           decision:
             "Single action button. Calm Mode is a reassurance screen — but reassurance without a next step is sedation. Offering multiple options here would break the calm and signal that the situation requires more response than it does. One button, directly to the relevant category detail.",
           aspect: "mobile",
         },
         {
           title: "Smart Notification — Specific, threshold-triggered, comparative",
-          alt: "Clearr smart notification showing food spend threshold alert with days-remaining signal",
+          image: "/case-studies/clearr/hifi-notification.svg",
+          alt: "Clearr smart notification on lock screen showing 'Food's running hot' with ₹3,420 food spend and 68% over last June, plus stacked bill reminder below",
           caption:
-            "Format: [Category] + [specific comparative fact] + [days remaining]. 'Food this week: ₹1,840 — already at last month's weekly average. 3 weeks left.' Or: 'Shopping: ₹4,200 this month, already more than any previous month. 11 days left.' No emoji. No alarm language. No imperatives. Just facts in personal context. Tapping goes directly to the relevant Breakdown category. The 'days remaining' signal is the most important element: without it, the data is a report. 'You've spent ₹1,840 on food' prompts no response. 'You've spent ₹1,840 on food — 3 weeks left' lets the student calculate their own pace and decide their own next move. Maximum once per category per week. If there's nothing specific to say, Clearr says nothing.",
+            "Format: [Category] + [specific comparative fact] + [days remaining]. 'Food's running hot 🍔 — You've spent ₹3,420 on food this month. That's 68% more than last June. Mostly Swiggy. 4 orders this week.' Action buttons: 'See breakdown' and 'Dismiss.' Below: stacked bill reminder notification. The 'days remaining' signal is the most critical element: without it, the data is a report. 'You've spent ₹3,420 on food' prompts no response. 'You've spent ₹3,420 on food — 3 weeks left' lets the student calculate their own pace and decide their own next move.",
           decision:
             "Designing when NOT to send a notification was harder than designing the notification itself. Notification fatigue — not the content of any single alert — is what kills engagement with finance apps at 30 days. Clearr never sends a notification to stay top-of-mind. Threshold-triggered, never time-triggered.",
           aspect: "mobile",

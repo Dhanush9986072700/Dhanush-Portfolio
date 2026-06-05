@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844">
+  <rect width="390" height="844" fill="#E8E8E8"/>
+
+  <!-- Screen label -->
+  <rect width="390" height="28" fill="#CCCCCC"/>
+  <text x="195" y="18" font-family="monospace" font-size="9" fill="#666" font-weight="700" letter-spacing="0.8" text-anchor="middle">LO-FI · CLEARR · CALM MODE</text>
+
+  <!-- Status bar -->
+  <rect y="28" width="390" height="24" fill="#D8D8D8"/>
+  <text x="16" y="44" font-family="monospace" font-size="9" fill="#999" font-weight="700">9:41</text>
+
+  <!-- Mode toggle header -->
+  <rect y="52" width="390" height="60" fill="#E0E0E0"/>
+  <text x="195" y="78" font-family="monospace" font-size="9" fill="#999" font-weight="700" letter-spacing="0.8" text-anchor="middle">CALM MODE TOGGLE</text>
+  <rect x="60" y="88" width="270" height="16" rx="8" fill="#D0D0D0"/>
+  <rect x="60" y="88" width="135" height="16" rx="8" fill="#BBBBBB"/>
+  <text x="127" y="100" font-family="monospace" font-size="8" fill="#888" font-weight="700" letter-spacing="0.5" text-anchor="middle">CALM ON</text>
+  <text x="262" y="100" font-family="monospace" font-size="8" fill="#999" font-weight="700" letter-spacing="0.5" text-anchor="middle">FULL VIEW</text>
+
+  <!-- Calm hero area -->
+  <rect x="16" y="124" width="358" height="180" rx="12" fill="#D0D0D0"/>
+  <text x="195" y="180" font-family="monospace" font-size="9" fill="#999" font-weight="700" letter-spacing="0.8" text-anchor="middle">CALM SUMMARY WIDGET</text>
+  <rect x="80" y="196" width="230" height="44" rx="8" fill="#CCCCCC"/>
+  <text x="195" y="222" font-family="monospace" font-size="9" fill="#999" font-weight="700" letter-spacing="0.8" text-anchor="middle">LARGE REASSURANCE TEXT</text>
+  <rect x="100" y="252" width="190" height="10" rx="3" fill="#DDDDDD"/>
+  <rect x="120" y="267" width="150" height="8" rx="3" fill="#DDDDDD"/>
+  <text x="195" y="295" font-family="monospace" font-size="8" fill="#AAAAAA" font-weight="700" letter-spacing="0.5" text-anchor="middle">↑ NO NUMBERS SHOWN IN CALM MODE</text>
+
+  <!-- What calm mode hides label -->
+  <text x="16" y="330" font-family="monospace" font-size="9" fill="#999" font-weight="700" letter-spacing="0.8">CALM MODE HIDES:</text>
+
+  <!-- Hidden element cards -->
+  <rect x="16" y="340" width="170" height="52" rx="6" fill="#D8D8D8" stroke="#CCCCCC" stroke-width="1" stroke-dasharray="4,3"/>
+  <rect x="32" y="354" width="90" height="10" rx="2" fill="#CCCCCC"/>
+  <rect x="32" y="368" width="60" height="8" rx="2" fill="#D0D0D0"/>
+  <text x="101" y="395" font-family="monospace" font-size="7" fill="#AAAAAA" font-weight="700" letter-spacing="0.4" text-anchor="middle">EXACT BALANCES</text>
+
+  <rect x="204" y="340" width="170" height="52" rx="6" fill="#D8D8D8" stroke="#CCCCCC" stroke-width="1" stroke-dasharray="4,3"/>
+  <rect x="220" y="354" width="90" height="10" rx="2" fill="#CCCCCC"/>
+  <rect x="220" y="368" width="60" height="8" rx="2" fill="#D0D0D0"/>
+  <text x="289" y="395" font-family="monospace" font-size="7" fill="#AAAAAA" font-weight="700" letter-spacing="0.4" text-anchor="middle">TRANSACTION LIST</text>
+
+  <rect x="16" y="400" width="170" height="52" rx="6" fill="#D8D8D8" stroke="#CCCCCC" stroke-width="1" stroke-dasharray="4,3"/>
+  <rect x="32" y="414" width="90" height="10" rx="2" fill="#CCCCCC"/>
+  <rect x="32" y="428" width="60" height="8" rx="2" fill="#D0D0D0"/>
+  <text x="101" y="455" font-family="monospace" font-size="7" fill="#AAAAAA" font-weight="700" letter-spacing="0.4" text-anchor="middle">PERCENTAGE BARS</text>
+
+  <rect x="204" y="400" width="170" height="52" rx="6" fill="#D8D8D8" stroke="#CCCCCC" stroke-width="1" stroke-dasharray="4,3"/>
+  <rect x="220" y="414" width="90" height="10" rx="2" fill="#CCCCCC"/>
+  <rect x="220" y="428" width="60" height="8" rx="2" fill="#D0D0D0"/>
+  <text x="289" y="455" font-family="monospace" font-size="7" fill="#AAAAAA" font-weight="700" letter-spacing="0.4" text-anchor="middle">PROJECTION NUMBERS</text>
+
+  <!-- What calm mode shows -->
+  <text x="16" y="480" font-family="monospace" font-size="9" fill="#999" font-weight="700" letter-spacing="0.8">CALM MODE SHOWS:</text>
+
+  <rect x="16" y="490" width="358" height="44" rx="6" fill="#D8D8D8"/>
+  <rect x="28" y="502" width="16" height="16" rx="3" fill="#BBBBBB"/>
+  <rect x="54" y="504" width="160" height="8" rx="2" fill="#CCCCCC"/>
+  <rect x="54" y="516" width="100" height="6" rx="2" fill="#D0D0D0"/>
+
+  <rect x="16" y="540" width="358" height="44" rx="6" fill="#D8D8D8"/>
+  <rect x="28" y="552" width="16" height="16" rx="3" fill="#BBBBBB"/>
+  <rect x="54" y="554" width="160" height="8" rx="2" fill="#CCCCCC"/>
+  <rect x="54" y="566" width="100" height="6" rx="2" fill="#D0D0D0"/>
+
+  <rect x="16" y="590" width="358" height="44" rx="6" fill="#D8D8D8"/>
+  <rect x="28" y="602" width="16" height="16" rx="3" fill="#BBBBBB"/>
+  <rect x="54" y="604" width="160" height="8" rx="2" fill="#CCCCCC"/>
+  <rect x="54" y="616" width="100" height="6" rx="2" fill="#D0D0D0"/>
+
+  <!-- Exit calm mode -->
+  <rect x="80" y="656" width="230" height="40" rx="20" fill="#D0D0D0" stroke="#BBBBBB" stroke-width="1.5"/>
+  <text x="195" y="680" font-family="monospace" font-size="9" fill="#999" font-weight="700" letter-spacing="0.8" text-anchor="middle">TURN OFF CALM MODE</text>
+
+  <!-- Annotation -->
+  <text x="16" y="718" font-family="monospace" font-size="8" fill="#AAAAAA" font-weight="700" letter-spacing="0.5">↑ ONE-TAP TOGGLE — STATE PERSISTS UNTIL USER CHANGES</text>
+  <text x="16" y="730" font-family="monospace" font-size="8" fill="#AAAAAA" font-weight="700" letter-spacing="0.5">DESIGNED FOR ANXIETY SPIKES (EXAM WEEK, END OF MONTH)</text>
+
+  <!-- Bottom nav -->
+  <rect y="780" width="390" height="64" fill="#D0D0D0"/>
+  <rect x="22" y="804" width="34" height="24" rx="4" fill="#CCCCCC"/>
+  <rect x="100" y="804" width="34" height="24" rx="4" fill="#CCCCCC"/>
+  <rect x="178" y="804" width="34" height="24" rx="4" fill="#CCCCCC"/>
+  <rect x="256" y="804" width="34" height="24" rx="4" fill="#CCCCCC"/>
+  <rect x="334" y="804" width="34" height="24" rx="4" fill="#BBBBBB"/>
+  <text x="351" y="796" font-family="monospace" font-size="8" fill="#888" font-weight="700" letter-spacing="0.5" text-anchor="middle">● ACTIVE</text>
+</svg>

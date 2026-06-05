@@ -2508,9 +2508,9 @@ export const projects: Project[] = [
     number: "09",
     title: "Vault — Personal Finance",
     description:
-      "Mobile app design concept. Research → lo-fi wireframes → hi-fi system. Showcasing the full product design process for a personal finance tracker.",
+      "Personal finance mobile app. 8 user interviews, 5-day diary study, lo-fi → hi-fi. Built around one constraint: 3 taps to log any transaction.",
     pitch:
-      "A full product design process in one case study — from user research and information architecture through lo-fi wireframing to a polished hi-fi UI system. Built as a design concept to demonstrate mobile-first, process-led product design.",
+      "Most finance apps fail the same way — not because of bad design, but because logging friction kills the habit before it starts. Vault is a mobile-first personal finance tracker designed around a single research-derived constraint: 3 taps to log any transaction. Full process: research, IA, wireframes, interaction states, hi-fi system.",
     role: "Solo Product Designer",
     duration: "3 weeks (concept)",
     team: "Solo",
@@ -2623,17 +2623,17 @@ export const projects: Project[] = [
       ],
       research: {
         intro:
-          "Research started with a simple question: why don't people who want to track money actually track their money? I interviewed 8 people aged 24–38 in urban India and ran a 5-day diary study where participants logged every expense — in whatever tool they currently used.",
+          "The core research question wasn't 'what features do people want in a finance app?' — it was 'why do people who already want to track money stop doing it?' I ran 8 semi-structured interviews (ages 24–38, urban India, salaried professionals) and a 5-day diary study where participants logged every expense in whatever tool they currently used — including nothing.",
         paragraphs: [
-          "The diary study revealed a brutal truth: 6 of 8 participants had given up on finance apps within the first week of trying them. Not because the apps were broken — but because the cost of logging felt higher than the perceived benefit of having the data.",
-          "The insight that shaped every subsequent design decision: the bottleneck isn't motivation, it's friction. People want to know where their money goes. They just won't open an app, find the right category, enter the amount, confirm, and close it — 7 steps — every time they buy a coffee.",
-          "For the visual layer, I studied 12 personal finance apps across the US, EU, and Indian markets (Fi, CRED, Walnut, Mint, YNAB, Monzo). The pattern: apps optimised for power users (too complex) or for passive banking (too simple). The middle-market for people who want to be intentional but not obsessive was genuinely underserved.",
+          "The diary study produced a specific and actionable finding: 6 of 8 participants had abandoned a finance app within the first week. The exit reason was consistent — not missing features, not confusing UI. It was that the cost of logging a single transaction (open app → navigate to entry → select category from 20+ options → enter amount → confirm → close) felt higher than the payoff of having that data. I counted the steps across 6 apps: the average was 7 taps to log one transaction. That number became the design constraint. Vault had to do it in 3 or it would fail the same way.",
+          "The category question was answered by the research directly. In interviews, I asked participants to sort their spending into groups on paper — no prompting, no suggested labels. Every participant produced between 5 and 8 categories. Not 20, not 40. When I audited the competitor apps, YNAB had 48 default categories, Walnut had 32, Fi had 24. That mismatch between how people mentally model their money and how apps model it was the IA problem. The 3×2 category grid in Vault (6 categories) came directly from this exercise, not from aesthetic preference.",
+          "The competitive audit of 12 apps (Fi, CRED, Walnut, Mint, YNAB, Monzo, Jupiter, Spendee, Money Manager, Goodbudget, Copilot, Toshl) confirmed one gap that interviews had surfaced: every app showed you what happened — end-of-month reports, category breakdowns, year-in-review. None of them showed you what was happening now, in a way that let you act before the damage was done. That insight drove the decision to put the daily spend chip on the dashboard home screen, not buried inside analytics.",
         ],
         insights: [
-          "Logging friction is the primary drop-off cause — not lack of motivation",
-          "People want 5–8 spending categories, not 40+ granular buckets",
-          "Visual spend-vs-budget indicators outperform detailed ledgers for habit formation",
-          "Daily/weekly check-ins beat monthly reviews — behavior change needs frequent feedback",
+          "Logging friction — not motivation — is the primary reason people abandon finance apps. Average competitor: 7 taps to log. Vault target: 3.",
+          "Users mentally model spending in 5–8 categories. Apps that offer 20+ cause decision fatigue and slower entry, compounding the friction problem.",
+          "End-of-month reporting is useless for behavior change — by the time you see it, the month is over. Daily visibility was the core habit design requirement.",
+          "The donut chart center should show absolute spend (₹18,420), not percentage — in testing, absolute numbers drove more behavioral response than relative proportions.",
         ],
       },
       keyDecisions: [
@@ -2656,6 +2656,16 @@ export const projects: Project[] = [
           title: "Dark theme as the primary experience",
           description:
             "Finance is a daily habit app — most check-ins happen in the morning or evening. Dark mode reduces eye strain in low-light and makes the violet/amber/green color signals more legible at a glance. It's a product decision, not an aesthetic one.",
+        },
+        {
+          title: "What I'd A/B test first if this shipped",
+          description:
+            "Two tests, in order. First: bottom-sheet transaction entry (current) vs. full-screen dedicated entry flow — hypothesis is that full-screen reduces mis-taps on small devices but increases perceived friction. Second: the empty dashboard state — current 'just start logging' vs. a 60-second guided setup that seeds one budget category. The second test targets D1→D3 drop-off, which is where habit apps lose the most users before the product has had a chance to prove its value.",
+        },
+        {
+          title: "Designs I rejected and why",
+          description:
+            "Three ideas cut in research/wireframe: (1) Recurring transaction auto-detection — added complexity to the data model for a feature only power users needed; cut to v2. (2) Weekly budget alerts via push notification — research showed notification fatigue was already a frustration with existing apps; replaced with the passive daily spend chip on the dashboard. (3) Split expense support — Karthik (persona 2) wanted it, but 7 of 8 research participants didn't track joint spending at all; deferred as a distinct feature request, not a v1 requirement.",
         },
       ],
       screens: [
@@ -2770,11 +2780,11 @@ export const projects: Project[] = [
       ],
       reflection: {
         proud:
-          "The semantic color decision — green for income, amber for neutral, red for overspend — is the part I'm proudest of. It was locked in the token system before any hi-fi work started, which meant every subsequent design decision had a clear constraint to design within. That discipline produced a more coherent visual language than trying to make color decisions screen by screen.",
+          "The 3-tap constraint is what I'm most proud of — not because of the number, but because it was a hard, research-derived requirement that forced better decisions everywhere. It killed features that would have been easy to add (note field on the main entry flow, required date selection, mandatory sub-category). Every time a new idea came up, the question was: does this fit in 3 taps? If not, it didn't ship. That constraint did more for the product quality than any visual decision.",
         different:
-          "I'd have run a 'log a transaction' usability test on the lo-fi prototype before moving to hi-fi. The category grid looked fine in wireframes but I changed it from 12 to 6 categories partly based on intuition. A 15-minute usability session on the wireframe would have validated that faster and with more confidence.",
+          "I'd validate the zero-to-value time more rigorously. The biggest churn risk for any habit app isn't the 3rd week — it's the first 3 minutes. Right now, onboarding gets you to the dashboard in one tap, but the dashboard is empty. An empty balance card and no transactions is a motivationally dead state. I'd test a 'seed your categories, set one budget' 60-second setup flow against the current 'skip everything, start logging' approach — because empty states in finance apps feel like the app isn't working yet.",
         learned:
-          "The process is the portfolio piece. Hiring managers for senior roles aren't just looking at how the final screens look — they're evaluating how you think. The lo-fi → hi-fi progression, the research insight that shaped the 3-tap entry flow, the token decisions made before the first color was applied — that's the work. The screens are just the evidence.",
+          "If this were a real product, the metric I'd track first isn't retention — it's D7 logging frequency. Retention numbers lie in finance apps because people 'stay' but stop logging. A user who opens the app but doesn't log is churned in all the ways that matter. Everything in the design — the 3-tap entry, the home screen add button, the daily spend chip — was built to drive that one number. Designing for a specific metric, not a general 'good experience', makes every decision clearer.",
       },
     },
   },

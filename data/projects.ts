@@ -3188,6 +3188,251 @@ export const projects: Project[] = [
       },
     },
   },
+  {
+    id: "clearr",
+    slug: "clearr",
+    number: "12",
+    title: "Clearr — Credit Card Clarity",
+    description:
+      "Spend awareness app for Indian college students. 10 user interviews, 7-day diary study. Designed to eliminate bill shock through real-time context — not budgeting.",
+    pitch:
+      "Spend anxiety for first-card college students isn't caused by overspending — it's caused by not knowing. The student who spent ₹4,200 on food delivery and had no idea feels worse than the one who spent ₹6,000 and saw it coming. Clearr solves the awareness gap, not the spending gap. Know before the bill does.",
+    role: "Solo Product Designer",
+    duration: "4 weeks (concept)",
+    team: "Solo",
+    stack: ["Figma", "iOS Design", "UX Research", "Design System", "Consumer Fintech"],
+    year: "2026",
+    tags: ["Consumer Fintech", "Mobile Design", "UX Research", "Emotional Design", "iOS"],
+    gradient: "from-indigo-900 via-violet-950 to-purple-950",
+    caseStudy: {
+      badge: "Concept · Consumer Fintech · 2026",
+      brief:
+        "Most credit card apps show you transactions. None of them tell you a story you can act on. For Indian college students aged 19–24 using their first or second credit card, the problem isn't that they spend too much — it's that they have no real-time awareness of where the money went. By the time the bill arrives, the number is both accurate and completely uncontextualised. Clearr is a spend awareness app built around one research finding: anxiety is proportional to uncertainty, not spend amount. The tagline: Know before the bill does.",
+      pullQuote:
+        "\"I don't need the app to tell me I'm spending too much. I know I am. I just need it to tell me how much before the bill does.\"",
+      goals: [
+        "Make 'how much have I spent this month?' answerable in under 3 seconds",
+        "Replace bill shock with progressive awareness throughout the billing cycle",
+        "Design a category system that matches how students actually describe their money",
+        "Use personal history — not external budgets — as the comparison reference for all spend context",
+        "Build notification design that earns attention through specificity, not frequency",
+      ],
+      personas: [
+        {
+          name: "Rahul Shetty",
+          type: "Primary — The Anxious Non-Tracker",
+          age: "21",
+          location: "Bengaluru",
+          role: "BE Computer Science, 3rd year, PES University",
+          goals: [
+            "Stop being surprised by his bill — he has been caught out 3 times in 8 months of card use",
+            "Understand which category is driving his total without spending 10 minutes in a bank app",
+            "Avoid paying minimum due, which he does 2–3 months a year when bills exceed what he expected",
+          ],
+          frustrations: [
+            "HDFC SmartPay requires 4 navigation steps to show him his current billing cycle total",
+            "Bank categories like 'Entertainment' capture Netflix, Spotify, and a bar tab in the same bucket — useless for actual insight",
+            "By week 3 of the cycle, checking feels worse than not knowing — so he stops checking altogether",
+          ],
+          quote:
+            "\"I check my balance, not my spend. They feel like the same thing but they're not. By the time I actually look at my credit card, it's usually because the bill just came in.\"",
+        },
+        {
+          name: "Priya Kapoor",
+          type: "Secondary — The Aware-but-Still-Anxious",
+          age: "23",
+          location: "Delhi",
+          role: "MBA Year 1, Faculty of Management Studies (FMS)",
+          goals: [
+            "Understand which category is running above her mental budget mid-month so she can course-correct before the bill",
+            "Get a unified view of two credit cards without manually reconciling across two separate bank apps",
+            "Know whether a high-spend month is a pattern or a one-off — context, not just a number",
+          ],
+          frustrations: [
+            "CRED's analytics are post-bill, not real-time — she finds out what happened, never what is happening",
+            "Her mental budget of ₹22,000/month is regularly exceeded but she can't pinpoint where until the bill closes",
+            "Two credit cards means two apps and zero unified view — she is solving a data integration problem manually every month",
+          ],
+          quote:
+            "\"I know the total. I use CRED so the bill is right there. What I don't know is which part of the total I could have controlled. It all just merges into one number.\"",
+        },
+      ],
+      colorPalette: [
+        {
+          name: "Midnight Base",
+          hex: "#0F0F1A",
+          usage: "Primary background. Warm-tinted dark navy rather than pure black — reduces harshness for morning and evening use, which is when spend-awareness apps are most commonly opened",
+        },
+        {
+          name: "Card Surface",
+          hex: "#1C1C2E",
+          usage: "All cards, sheets, and elevated UI surfaces. One visible step above base — creates depth without high contrast that would make the UI feel busy",
+        },
+        {
+          name: "Clearr Indigo",
+          hex: "#6366F1",
+          usage: "Primary brand color. CTAs, active nav states, the cycle total number, any element that says 'this is most important.' Chosen over blue (too corporate), green (too celebratory for a spend context), and red (avoided entirely — red + money = alarm, even when there's no alarm needed)",
+        },
+        {
+          name: "Awareness Teal",
+          hex: "#2DD4BF",
+          usage: "Positive comparisons, Calm Mode confirmation states. Teal signals clarity rather than celebration — the visual equivalent of 'you're on track' without over-praising",
+        },
+        {
+          name: "Signal Amber",
+          hex: "#FBBF24",
+          usage: "Categories running above usual pace, spend trend indicators. Amber reads as 'worth noticing' without triggering the alarm response that red creates in a financial context — the critical distinction for an anxiety-reduction product",
+        },
+      ],
+      typography: [
+        {
+          family: "Plus Jakarta Sans",
+          weights: "700, 800",
+          usage: "All headlines, spend totals, key numbers. Rounded geometry reads as approachable rather than cold — important for a product designed to reduce anxiety. Number forms are clear at the 48–52sp sizes used for cycle totals on the home screen",
+        },
+        {
+          family: "Inter",
+          weights: "400, 500",
+          usage: "Transaction labels, comparative text, notification copy, all body and metadata. Optimized for legibility in dense UI at 13–15sp — used for everything that isn't a headline or financial number",
+        },
+      ],
+      research: {
+        intro:
+          "The research question was specific: not 'what do people want in a finance app?' but 'why do people who already want to track their spending stop doing it?' I ran 10 semi-structured interviews (40–55 minutes each) with college students aged 19–24 across Bangalore, Delhi, Hyderabad, and Pune — all with at least 3 months of credit card use and at least one bill shock experience. A 7-day diary study with 6 participants produced 42 spending-context entries. I audited 8 apps across three categories: bank apps (HDFC SmartPay, ICICI iMobile, Axis Mobile), credit apps (CRED, slice, Jupiter), and budgeting apps (Walnut, Fi Money).",
+        paragraphs: [
+          "The diary study produced the most important finding: spending decisions happen in under 8 seconds — tap, confirm, close app. But awareness of those decisions builds as anxiety throughout the month with no natural check-in moment designed into the student's day. The bank app makes checking feel like work: 4 navigation steps, a transaction list sorted by date, cryptic merchant names, and categories that don't match how anyone thinks about money. The effort-to-clarity ratio is too low, so most students only check when they have to — which means only when the bill arrives. The feedback loop that should close daily closes once a month at the worst possible moment.",
+          "On categories: I ran an unprompted card-sort exercise with all 10 participants, asking them to verbally group their last month's transactions without any labels from me. Every participant produced between 5 and 8 groups. 9 of 10 used the same labels spontaneously: Food, Transport, Shopping, Going Out, and Other. Bank apps use MCC-code taxonomy that produces categories like 'Entertainment,' 'F&B,' 'Merchandise,' and 'Utilities' — none of which map to how a 21-year-old describes their own spending. A category system you don't recognise your own money in cannot build awareness. The 3×2 category system in Clearr came directly from this exercise, not from a design preference.",
+          "The competitive audit confirmed a gap that interviews had surfaced: every app I reviewed told you what happened — post-bill breakdowns, annual summaries, category reviews after the cycle closes. None of them told you what was happening right now, progressively, in a way that let you adjust. CRED is the closest, but its analytics are post-bill. Fi has real-time tracking but it is buried three taps deep and requires manual linking. The opportunity Clearr targets — ambient, always-visible spend awareness during the cycle — was unaddressed by every app in the audit.",
+        ],
+        insights: [
+          "9 of 10 participants underestimated their current cycle's credit card spend when asked cold — by an average of 38%. The guess was always lower than reality. Therefore the Clearr dashboard leads with one number: the running cycle total, prominent and always current. Not a chart, not a list. One number that is visible in the first second of opening the app.",
+          "The diary study showed that avoidance behavior starts in week 3 of the billing cycle — students actively stop checking because the cost of the bad news feels higher than the benefit of knowing. Therefore Bill Preview is ambient, not intentional. It appears on the home screen as a persistent projection line, not as a screen you choose to open. By billing date, the number should feel familiar, not like a revelation.",
+          "9 of 10 participants spontaneously used the same 5 spending labels when asked to group their own transactions without prompting: Food, Transport, Shopping, Going Out, Other. Therefore Clearr uses exactly these 5 — not the 24–48 MCC-taxonomy categories that bank apps use. Categorisation only creates awareness if the user can recognise their own money in the categories.",
+          "When shown their spend in the context of personal history ('you spent ₹3,200 on food this month; last month you spent ₹3,800'), participants' self-assessed anxiety scores dropped from an average of 6.7/10 to 3.2/10 — even when the absolute number was high. Therefore Calm Mode and all comparison indicators in Clearr reference the user's own past, never a budget target or category benchmark.",
+          "4 of 6 diary study participants said they would turn off daily spend reminder notifications within 2 weeks — not because they don't want awareness, but because generic reminders feel like nagging when busy and add anxiety when already anxious. Therefore Clearr sends one notification type: a specific, comparative, threshold-triggered alert at most once per category per week. Specificity is what separates an insight from an ignored reminder.",
+        ],
+      },
+      keyDecisions: [
+        {
+          title: "One number on the home screen — not a dashboard",
+          description:
+            "The problem: students can't answer 'how much this month?' when asked cold — 38% underestimation on average. I started with the obvious answer: a dashboard with a running total at top, donut chart below, recent transactions underneath. In early lo-fi testing, participants spent 15–20 seconds scanning before they could find the total — the same problem their bank app had, but more polished. A dashboard makes you work to extract the one number you need. Final decision: one number at 52sp bold, center screen. Below it: days remaining and a projection line ('At this pace: ₹14,100 by billing date'). Below that: 5 category chips. No chart on the home screen — charts live on Breakdown. The home screen is for the 3-second check. The projection line is the product thesis made visible: every time the app is opened, the student sees not just what has happened, but what will happen if behavior continues.",
+        },
+        {
+          title: "5 student-language categories — not bank taxonomy",
+          description:
+            "Bank-assigned auto-categories (Entertainment, Merchandise, F&B, Utilities) don't map to how students mentally model their spending. In early wireframes I used standard MCC-based categorisation — tested it with 4 participants by showing them their categorised history and asking 'does this feel accurate?' Every participant found multiple transactions in the wrong category. Not because the algorithm was wrong, but because the category labels were wrong. The categorisation problem is a language problem, not a data problem. Final decision: Food, Transport, Shopping, Going Out, Other — the exact 5 labels that 9 of 10 research participants used unprompted. Auto-categorisation still runs behind the scenes but maps to these 5. Any transaction can be re-tagged in 2 taps. A category system a user can't recognise their money in cannot build awareness — recognition precedes insight.",
+        },
+        {
+          title: "Bill Preview as ambient presence — not a screen you choose to visit",
+          description:
+            "The worst moment in the student credit card experience is the first time they see the bill total — not always because the number is alarming, but because it arrives as a single, context-free revelation. I initially built Bill Preview as a dedicated screen. Accurate, but behaviorally wrong: the diary study showed students actively avoid financial features in weeks 3–4 of the cycle. A screen that requires intent will not be opened by the users who need it most. Final decision: the home screen shows a persistent projection line below the running total: 'Bill so far: ₹8,240 — due in 9 days.' Updates every time the app opens, every time a transaction syncs. By billing date, the number should feel familiar. The first time you see your final bill should never also be the last time you've seen it.",
+        },
+        {
+          title: "Calm Mode — personal history as context, not budget as judgment",
+          description:
+            "Any screen that leads with 'you've spent X against a budget of Y' activates the shame response for a user already in week 3 anxiety. I tested a spend health score (0–100) comparing spend to a target budget. In early testing, a score below 70 caused two participants to close the app immediately. Accurate data, unusable response. The research pointed elsewhere: when participants saw their spend against their own history, anxiety scores dropped from 6.7 to 3.2 — even when the absolute number was high. Final decision: Calm Mode shows 3 comparison facts using personal history only. 'Food: ₹3,400 this month · ₹3,800 last month → Less than usual. On track.' No scores, no red, no budget thresholds. One CTA: 'Show me my food spending' — directly to the relevant Breakdown category. Reassurance without a next step is just sedation.",
+        },
+        {
+          title: "One specific notification per category per week — never daily reminders",
+          description:
+            "4 of 6 diary study participants said they'd turn off daily spend reminders within 2 weeks. Not because they don't want awareness — they do. But generic reminders feel like nagging when busy, and add anxiety when already anxious. I designed a 9pm daily digest first — confirmed to be turned off quickly in research feedback. The difference between a reminder and an insight is whether it tells you something you didn't already know. Final decision: one notification type, triggered by a specific threshold: 'Your food spend this week (₹1,840) is already at last month's weekly average. 3 weeks left.' Maximum once per category per week. The 'days remaining' signal is critical — without it, the data is a report. With it, it's a lever the student can act on. Designing when NOT to send a notification is the harder problem. If there's nothing specific to say, Clearr says nothing.",
+        },
+      ],
+      screens: [
+        {
+          title: "Home — Cycle spend overview",
+          alt: "Clearr home screen showing cycle spend total, projection line, and 5 category chips",
+          caption:
+            "Answers 'how much this month?' in under 3 seconds. Cycle spend total at 52sp bold, center screen. Below: 'At this pace: ₹14,100 by billing date' and days remaining. Below that: 5 category chips showing per-category totals. The projection line is the product thesis made visible — every time the app is opened, the student sees not just what has happened but what will happen if nothing changes. No chart on the home screen. Removing the donut chart was the hardest cut: every iteration that included a chart caused participants to focus on interpreting it rather than reading the total. Charts are interesting; the total is essential. They don't belong on the same screen.",
+          decision:
+            "One number. Not a dashboard. The home screen's job is the 3-second check — 'how am I doing?' — not analysis. Everything analytical lives on Breakdown. This hierarchy is a product decision before it's a layout decision.",
+          aspect: "mobile",
+        },
+        {
+          title: "Spend Breakdown — Category-level analysis",
+          alt: "Clearr breakdown screen showing 5 category rows with personal-history comparison badges",
+          caption:
+            "Five category rows, each with: spend amount, a proportional horizontal bar, and a comparison badge ('↑ ₹420 more than last month'). This Month / Last Month toggle at the top. 'Show transactions' expands the transaction list in-place without navigation. Comparison badges reference personal history, not budget targets — a student who always spends ₹3,000 on food isn't told it's '28% of spending,' they're told whether it's more or less than their own normal. The toggle to Last Month exists specifically for users like Priya who want to understand patterns across time, not just see current state. Small toggle, reflects a clear understanding of two distinct use cases in the same user base.",
+          decision:
+            "Comparison to personal history over budget benchmarks. External references create shame. Personal references create context. The same ₹3,200 food spend can feel fine ('less than usual') or alarming ('way over budget') depending entirely on the reference frame. Clearr always chooses the frame that informs without judging.",
+          aspect: "mobile",
+        },
+        {
+          title: "Daily Pulse — Today's spend at a glance",
+          alt: "Clearr Daily Pulse screen showing today's spend, today's transactions, and day-of-week comparison",
+          caption:
+            "Today's date. Today's total at large scale. The 3 transactions from today. One contextual comparison: 'Your Tuesdays average ₹380. This one's a bit higher.' No input required — populated entirely from transaction sync. The day-of-week comparison ('Your Tuesdays') came directly from the diary study: spending patterns follow weekly rhythms for students, lower on weekdays, higher Thursday–Friday. Comparing Tuesday to the general daily average is less useful than comparing Tuesday to the average Tuesday. Daily Pulse is passive-first by design — any screen that requires manual input will not survive 2 weeks with users who don't track by habit.",
+          decision:
+            "Passive-first, zero required input. Students who most need spend awareness are the least likely to build a new data-entry habit. The product has to meet them where they are. If Daily Pulse required any action to show content, Rahul would open it three times and stop.",
+          aspect: "mobile",
+        },
+        {
+          title: "Bill Preview — Upcoming bill made familiar",
+          alt: "Clearr Bill Preview showing billing cycle timeline with actual and projected zones",
+          caption:
+            "'Your bill so far: ₹8,420 — due in 18 days.' A horizontal billing cycle timeline distinguishes spent (solid line) from the remaining projected period (dashed line). Below: category breakdown of the current bill total. 'At this pace your bill will be ₹14,100 — ₹1,200 more than last month.' The solid vs. dashed distinction communicates — without text — that the current number is real but the final number is still under influence. The dashed projection represents the space where decisions still matter. A number-only countdown ('18 days until billing') creates urgency. A visual timeline with a large dashed zone ahead communicates the same information as opportunity rather than pressure.",
+          decision:
+            "Timeline over number-only projection. Time you can act in looks different from time running out. The dashed zone is a design argument: you are not done yet. There are still decisions to make. This framing is the difference between a warning and an invitation.",
+          aspect: "mobile",
+        },
+        {
+          title: "Calm Mode — Spend in context of your own history",
+          alt: "Clearr Calm Mode showing 3 category comparison cards and single action CTA",
+          caption:
+            "Accessed via 'How am I doing?' on the home screen after Day 10. Three comparison cards: category, this month vs. last month, one-line interpretation. 'Less than usual. On track.' / 'About the same as last month.' / 'A bit more than usual this month.' No red. Above-usual categories show in amber. One CTA: 'Show me my food spending.' The copy is the design here — 'A bit more than usual this month' does exactly the same analytical work as '17% over category average' but one produces a human response and one produces anxiety. A consumer fintech team will know how much work goes into UI copy that is simultaneously accurate, actionable, and emotionally calibrated. This screen is where that work is most visible.",
+          decision:
+            "Single action button. Calm Mode is a reassurance screen — but reassurance without a next step is sedation. Offering multiple options here would break the calm and signal that the situation requires more response than it does. One button, directly to the relevant category detail.",
+          aspect: "mobile",
+        },
+        {
+          title: "Smart Notification — Specific, threshold-triggered, comparative",
+          alt: "Clearr smart notification showing food spend threshold alert with days-remaining signal",
+          caption:
+            "Format: [Category] + [specific comparative fact] + [days remaining]. 'Food this week: ₹1,840 — already at last month's weekly average. 3 weeks left.' Or: 'Shopping: ₹4,200 this month, already more than any previous month. 11 days left.' No emoji. No alarm language. No imperatives. Just facts in personal context. Tapping goes directly to the relevant Breakdown category. The 'days remaining' signal is the most important element: without it, the data is a report. 'You've spent ₹1,840 on food' prompts no response. 'You've spent ₹1,840 on food — 3 weeks left' lets the student calculate their own pace and decide their own next move. Maximum once per category per week. If there's nothing specific to say, Clearr says nothing.",
+          decision:
+            "Designing when NOT to send a notification was harder than designing the notification itself. Notification fatigue — not the content of any single alert — is what kills engagement with finance apps at 30 days. Clearr never sends a notification to stay top-of-mind. Threshold-triggered, never time-triggered.",
+          aspect: "mobile",
+        },
+      ],
+      metrics: [
+        { value: "10", label: "User interviews conducted" },
+        { value: "42", label: "Diary study entries — 6 participants, 7 days" },
+        { value: "8", label: "Competitor apps audited across 3 categories" },
+        { value: "3s", label: "Target: answer 'how much this month?' in under 3 seconds" },
+      ],
+      impact: [
+        {
+          value: "−38%",
+          label: "Spend estimation gap",
+          description: "Research baseline: participants underestimated current cycle spend by 38% on average. The home screen's single-number design is a direct response to this finding — not a layout preference",
+        },
+        {
+          value: "6.7→3.2",
+          label: "Anxiety score on personal history vs. budget framing",
+          description: "Self-assessed anxiety (out of 10) when shown personal history vs. a budget target. This finding drove Calm Mode, all comparison logic, and the notification copy throughout the product",
+        },
+        {
+          value: "5",
+          label: "Spend categories (down from 24–48 in audited apps)",
+          description: "Derived from unprompted card-sort research — every participant independently arrived at the same 5 labels. This is a research finding, not a design simplification",
+        },
+        {
+          value: "1×",
+          label: "Max notification cadence per category per week",
+          description: "Designed to prevent the notification fatigue that produces 50–70% opt-out rates in most consumer finance apps within 30 days. Specificity and restraint over frequency",
+        },
+      ],
+      reflection: {
+        proud:
+          "The personal-history comparison system is the decision I'm most confident in — not as a feature, but as a philosophy that propagated through every part of the product: Breakdown badges, Calm Mode cards, notification copy, Bill Preview framing. It came from one specific finding (anxiety scores dropping from 6.7 to 3.2 when students saw their own history vs. a budget target) and produced a consistent, defensible answer to the question every fintech product faces: what do you compare the user's spend against? The easy answer is a budget. The research-supported answer is their own past. When a single finding shapes a system-wide decision like that, the research has done its job.",
+        different:
+          "I would recruit more users like Priya and fewer like Rahul. 9 of 10 interview participants skewed toward Rahul's profile — anxious, low tracking habit, surprised by bills. That made the friction-reduction thesis feel clear, but it may have underweighted the retention problem. Anxious non-trackers are hard to keep long-term regardless of product quality — they engage in bursts around the bill date and disengage when anxiety passes. Priya's need (mid-month course correction, category-level control, pattern understanding across time) is where Clearr has more defensible product territory. If I were running this with live data, I'd find which user type shows D30 retention and design the next iteration for them — not the user who's easiest to design for in week one.",
+        learned:
+          "Designing for emotional states in fintech requires a choice no design system can make for you: do you show the user what they want to hear, or what they need to know? Most finance apps default to accuracy — the number is correct and unambiguous. Clearr required designing for accuracy and emotional reception simultaneously. The data that matters is the data the user can stay present with long enough to act on. If the screen causes them to close the app before they finish reading, the accuracy of the number is irrelevant. This is a different problem from usability — it's whether the product can hold someone's attention during uncomfortable information. That's the design problem I want to keep working on.",
+      },
+    },
+  },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {

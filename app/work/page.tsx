@@ -35,6 +35,7 @@ const accentColors: Record<string, string> = {
   "vault": "#7C6EF8",
   "prism": "#4F46E5",
   "helm": "#00C8FF",
+  "clearr": "#6366F1",
 };
 
 function MetricCard({ project }: { project: Project }) {

@@ -11,27 +11,72 @@ import Container from "@/components/ui/Container";
 
 const experience = [
   {
-    role: "UI UX Product Designer + Front-End Developer",
+    role: "Product Designer (UI/UX)",
     company: "XIPHIAS Group",
     period: "Aug 2022 — Present",
     location: "Bangalore, India",
     type: "Full-time",
     highlights: [
-      "Sole designer and front-end engineer across 5 business verticals",
-      "Shipped 10+ production products — immigration, hospitality, D2C, real estate",
-      "Rebuilt xiphiasimmigration.com: 63 pages, 30+ programmes, 3 months solo",
-      "Designed and built property management system with 46 data models",
+      "Owned design for 8+ live products across immigration, e-commerce, and real estate — research, wireframing, prototyping, and developer handoff",
+      "Rebuilt flagship immigration platform solo in 3 months — 25+ country pages, 30+ programme views, ~30% organic traffic lift post-launch",
+      "Improved conversion on key flows by replacing exit-intent popups with embedded forms, applying progressive disclosure and contextual error states — driven by user behaviour data",
+      "Built a scalable design system with tokens, components, and theming across light and dark modes for multiple products",
+      "Collaborated with PMs, engineers, and content teams across the full product lifecycle — ensuring design quality and consistency at every stage",
     ],
   },
   {
-    role: "Graphic Design + VFX",
+    role: "Product Designer",
+    company: "ASTA Healthtech",
+    period: "2025 — 2026",
+    location: "Bangalore, India",
+    type: "Contract",
+    highlights: [
+      "Designed the product website for a clinical AI patient monitoring platform — translated a complex AI workflow into clear, trust-building product storytelling for hospital buyers",
+      "Owned information architecture, visual system, and components for a regulated healthtech context — WCAG AA compliant, perfect Lighthouse scores at launch",
+    ],
+  },
+  {
+    role: "Product Designer",
+    company: "TUR Middle East FZC",
+    period: "2025 — 2026",
+    location: "Remote",
+    type: "Contract",
+    highlights: [
+      "Designed the full B2B platform website — 6 product verticals, 7 regional offices, multi-catalogue pages, and a technical blog for a GCC and South Asia institutional audience",
+      "Delivered a dual-theme responsive UI, maintaining brand consistency across a complex specification-led product range",
+    ],
+  },
+  {
+    role: "Product Designer",
+    company: "Resort Booking & Property Management",
+    period: "2023 — 2024",
+    location: "Bangalore, India",
+    type: "Project",
+    highlights: [
+      "Designed a full-stack admin suite for a boutique resort — front-desk, housekeeping, finance, and reporting modules across a dual-theme design system",
+      "Owned end-to-end UX for a 63-page, 46-data-model product solo — from information architecture and user flows through to high-fidelity components and developer handoff",
+    ],
+  },
+  {
+    role: "Product Designer",
+    company: "Harmony Luxe Spa Admin",
+    period: "2025 — 2026",
+    location: "Bangalore, India",
+    type: "Project",
+    highlights: [
+      "Designed a SaaS-style billing and operations dashboard — menu pricing, GST invoices, customer index, expense tracking, analytics, and print/PDF workflows",
+      "Owned end-to-end UX from information architecture and user flows through to high-fidelity components and developer handoff, solo",
+    ],
+  },
+  {
+    role: "B.Sc. Graphics and VFX",
     company: "Arena Animation",
-    period: "2021 — 2022",
+    period: "2021",
     location: "Bangalore, India",
     type: "Education",
     highlights: [
-      "Foundation in visual communication, typography, and motion",
-      "VFX and compositing — shaped how I think about depth and hierarchy",
+      "Foundation in visual communication, typography, and motion design",
+      "VFX and compositing — shaped how I think about depth, hierarchy, and visual storytelling",
     ],
   },
 ];
@@ -40,27 +85,37 @@ const stack = [
   {
     category: "Design",
     accent: "#c9ff6a",
-    tools: ["Figma", "FigJam", "Framer", "Protopie"],
+    tools: ["Figma", "Adobe XD", "FigJam", "Framer", "ProtoPie", "Photoshop", "Illustrator"],
+  },
+  {
+    category: "Design Systems",
+    accent: "#f3a841",
+    tools: ["Component Libraries", "Design Tokens", "Theming", "Dark Mode", "WCAG AA", "Developer Handoff", "Style Guides"],
   },
   {
     category: "Engineering",
-    accent: "#f3a841",
+    accent: "#c9ff6a",
     tools: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Prisma", "PostgreSQL"],
   },
   {
     category: "AI Tools",
-    accent: "#c9ff6a",
+    accent: "#f3a841",
     tools: ["Claude", "GitHub Copilot", "Codex", "Cursor AI", "ChatGPT", "v0"],
   },
   {
-    category: "Tooling",
+    category: "Methods",
+    accent: "#c9ff6a",
+    tools: ["Design Thinking", "User Research", "Information Architecture", "A/B Testing", "Conversion Optimisation", "Agile / Scrum", "Stakeholder Presentations"],
+  },
+  {
+    category: "Platforms",
     accent: "#f3a841",
-    tools: ["VS Code", "Cursor", "Vercel", "GitHub", "Linear", "Notion"],
+    tools: ["Shopify", "WordPress", "Vercel", "GitHub", "Notion", "Linear"],
   },
   {
     category: "Analytics",
     accent: "#c9ff6a",
-    tools: ["GA4", "Google Tag Manager", "Hotjar", "Lighthouse"],
+    tools: ["Google Analytics 4", "Google Tag Manager", "Hotjar", "Lighthouse"],
   },
 ];
 
@@ -69,6 +124,7 @@ const currently = [
   { label: "Exploring", value: "AI-assisted development with Claude and Codex — shipping faster without trading craft" },
   { label: "Reading", value: "Shape Up — Ryan Singer, Basecamp" },
   { label: "Listening", value: "99% Invisible, Design Details, Lenny's Podcast" },
+  { label: "Languages", value: "English, Kannada, Telugu, Hindi" },
 ];
 
 const interests = [
@@ -313,7 +369,7 @@ export default function AboutContent() {
               </h2>
             </ScrollReveal>
 
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
               {stack.map((group, index) => (
                 <ScrollReveal key={group.category} delay={index * 0.08}>
                   <div>

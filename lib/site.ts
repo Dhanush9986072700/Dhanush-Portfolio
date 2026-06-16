@@ -6,7 +6,6 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://dhanushn.vercel.app",
   email: "dhanush.n698@gmail.com",
   phone: "+919986072700",
-  // TODO: Add the final PDF at public/resume.pdf before launch.
-  resumePath: "/resume.pdf",
+  resumePath: "/Dhanush_resume.pdf",
   ogImage: "/opengraph-image",
 };

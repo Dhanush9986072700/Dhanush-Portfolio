@@ -89,9 +89,10 @@ export default function Hero() {
             className="mt-5 max-w-sm text-[0.9375rem] leading-relaxed sm:max-w-md"
             style={{ color: "rgba(247,247,242,0.58)" }}
           >
-            Four years building real products: immigration platforms, booking
-            systems, D2C storefronts, clinical AI narratives, SaaS dashboards,
-            and static healthcare websites.
+            12 products shipped across fintech, immigration, hospitality, and
+            healthtech — research to deployed code, end-to-end, solo. No
+            handoff. No drift. ~30% traffic lift on one. Perfect Lighthouse
+            scores on another.
           </motion.p>
 
           {/* Skill pills */}
@@ -99,7 +100,7 @@ export default function Hero() {
             {...reveal(0.45, 10, 0.45)}
             className="mt-5 flex flex-wrap justify-center gap-1.5"
           >
-            {["Design Systems", "WCAG AAA", "Figma", "Next.js"].map((tag) => (
+            {["Design Systems", "WCAG AA", "Figma", "Next.js", "User Research"].map((tag) => (
               <SkillPill key={tag} label={tag} />
             ))}
           </motion.div>

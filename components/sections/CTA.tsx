@@ -33,7 +33,7 @@ export default function CTA() {
             </h2>
 
             <p className="max-w-lg text-[0.9375rem] leading-relaxed" style={{ color: "rgba(247,247,242,0.48)" }}>
-              Senior product designer roles and high-impact freelance. Design, code, systems — and a clean path from idea to launch.
+              Senior IC roles in product design — fintech, healthtech, B2B SaaS. I bring research, systems thinking, and production code. Brief to browser, no handoff required.
             </p>
           </div>
         </ScrollReveal>

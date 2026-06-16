@@ -2,9 +2,9 @@ import ScrollReveal from "@/components/animations/ScrollReveal";
 
 const stats = [
   { value: "04+", label: "Years shipping", color: "#c9ff6a" },
-  { value: "10+", label: "Products built", color: "#f3a841" },
-  { value: "11", label: "Case studies", color: "#c9ff6a" },
-  { value: "01", label: "Designer + engineer", color: "#f3a841" },
+  { value: "12", label: "Products shipped", color: "#f3a841" },
+  { value: "~30%", label: "Organic traffic lift", color: "#c9ff6a" },
+  { value: "Solo", label: "Brief to deployed code", color: "#f3a841" },
 ] as const;
 
 export default function StatsBar() {

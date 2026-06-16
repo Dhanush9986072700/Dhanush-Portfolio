@@ -120,7 +120,7 @@ const stack = [
 ];
 
 const currently = [
-  { label: "Building", value: "XIPHIAS Resort Property Management System — 46 data models, full ops suite" },
+  { label: "Building", value: "Resort Property Management System — 46 data models, full ops suite for a boutique hospitality client" },
   { label: "Exploring", value: "AI-assisted development with Claude and Codex — shipping faster without trading craft" },
   { label: "Reading", value: "Shape Up — Ryan Singer, Basecamp" },
   { label: "Listening", value: "99% Invisible, Design Details, Lenny's Podcast" },
@@ -256,7 +256,7 @@ export default function AboutContent() {
               <div className="space-y-6">
                 {[
                   "My roots are in visual communication — a year at Arena Animation that taught me every pixel is a decision and every decision sends a message. That thinking didn't leave when I moved into product. It became the foundation.",
-                  "Since 2022, I've been the entire design and front-end function at XIPHIAS Group. Five business verticals, zero teammates, real stakes. Immigration platforms, resort management systems, D2C storefronts, marketing sites. Brief to browser, solo — not because I had to, but because I wanted to own the whole chain.",
+                  "Since 2022, I've been the entire design and front-end function at XIPHIAS Group. Five business verticals, zero teammates, real stakes. Immigration platforms, D2C storefronts, marketing sites — brief to browser, solo. Alongside that I've taken on freelance clients in healthtech, hospitality, and B2B — same standard, different domains.",
                   "I design and build in the same breath. On top of that, I use AI tools — Claude, Codex, Copilot — as genuine collaborators in my development workflow. Not to skip thinking, but to move at a pace that keeps up with how fast ideas should ship. The craft stays mine. The speed multiplies.",
                 ].map((para, i) => (
                   <ScrollReveal key={i} delay={i * 0.08}>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { siteConfig } from "@/lib/site";
 import Navigation from "@/components/sections/Navigation";
@@ -141,15 +142,18 @@ export default function AboutContent() {
                   {/* Identity card */}
                   <div className="w-full max-w-[260px] lg:w-[260px] flex-shrink-0">
                     <div className="border border-white/[0.09] bg-white/[0.02] p-5 flex flex-col gap-5">
-                      {/* Monogram */}
-                      <div className="premium-grid aspect-square flex flex-col justify-between bg-[#020202] p-5 border border-white/[0.06]">
-                        <span className="font-mono text-[9px] uppercase tracking-widest" style={{ color: "rgba(201,255,106,0.65)" }}>
-                          Product Design + Code
-                        </span>
-                        <span className="text-7xl font-black leading-none text-white">
-                          DN
-                        </span>
-                        <span className="font-mono text-[9px] uppercase" style={{ color: "rgba(247,247,242,0.28)" }}>
+                      {/* Photo */}
+                      <div className="relative aspect-square overflow-hidden border border-white/[0.06]">
+                        <Image
+                          src="/dhanush_image.jpeg"
+                          alt="Dhanush N — Product Designer"
+                          fill
+                          sizes="260px"
+                          className="object-cover object-top"
+                          priority
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                        <span className="absolute bottom-3 left-3 font-mono text-[9px] uppercase tracking-widest" style={{ color: "rgba(247,247,242,0.55)" }}>
                           Bangalore · India
                         </span>
                       </div>

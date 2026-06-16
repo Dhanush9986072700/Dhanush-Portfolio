@@ -34,7 +34,11 @@
       "Bash(ls \"C:\\\\Users\\\\dha\\\\.claude\\\\projects\\\\g--porofolio\\\\\" | Sort-Object LastWriteTime -Descending | Select-Object -First 5)",
       "Read(//c/Users/dha/.claude/projects/**)",
       "PowerShell($f = Get-Item \"C:\\\\Users\\\\dha\\\\.claude\\\\projects\\\\g--porofolio\\\\deaf8e57-6bdf-43d9-a86e-01e61dc84ccc.jsonl\"; Write-Host \"Size: $\\($f.Length\\) bytes, Modified: $\\($f.LastWriteTime\\)\")",
-      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\dha\\\\.claude\\\\projects\\\\g--porofolio\" -File | Where-Object { $_.LastWriteTime -gt \\(Get-Date \"2026-05-06 12:50:00\"\\) } | Format-Table Name, LastWriteTime)"
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\dha\\\\.claude\\\\projects\\\\g--porofolio\" -File | Where-Object { $_.LastWriteTime -gt \\(Get-Date \"2026-05-06 12:50:00\"\\) } | Format-Table Name, LastWriteTime)",
+      "PowerShell(New-Item -ItemType Directory -Path \"g:\\\\porofolio\\\\public\\\\case-studies\\\\prism\" -Force)",
+      "PowerShell(\\(Get-Content g:\\\\porofolio\\\\data\\\\projects.ts | Measure-Object -Line\\).Lines)",
+      "Bash(node -e ' *)",
+      "Bash(git config *)"
     ],
     "additionalDirectories": [
       "g:\\porofolio\\app\\work"

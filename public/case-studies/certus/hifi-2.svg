@@ -1,0 +1,239 @@
+<svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="1440" height="900" fill="#F8FAFC"/>
+
+  <!-- Sidebar -->
+  <rect width="220" height="900" fill="#0F172A"/>
+  <rect x="24" y="24" width="28" height="28" rx="6" fill="#2563EB"/>
+  <text x="38" y="43" text-anchor="middle" font-size="14" font-weight="800" fill="white">C</text>
+  <text x="62" y="43" font-size="14" font-weight="700" fill="white">Certus</text>
+  <rect x="24" y="98" width="16" height="16" rx="3" fill="#475569"/>
+  <text x="48" y="111" font-size="13" fill="#94A3B8">Dashboard</text>
+  <rect x="24" y="134" width="16" height="16" rx="3" fill="#475569"/>
+  <text x="48" y="147" font-size="13" fill="#94A3B8">Suppliers</text>
+  <rect x="12" y="160" width="196" height="36" rx="6" fill="#2563EB"/>
+  <rect x="24" y="170" width="16" height="16" rx="3" fill="white" opacity="0.9"/>
+  <text x="48" y="183" font-size="13" font-weight="600" fill="white">Query Tracker</text>
+  <rect x="24" y="206" width="16" height="16" rx="3" fill="#475569"/>
+  <text x="48" y="219" font-size="13" fill="#94A3B8">Certificates</text>
+  <rect x="24" y="242" width="16" height="16" rx="3" fill="#475569"/>
+  <text x="48" y="255" font-size="13" fill="#94A3B8">Reports</text>
+  <rect x="24" y="278" width="16" height="16" rx="3" fill="#475569"/>
+  <text x="48" y="291" font-size="13" fill="#94A3B8">Audit Log</text>
+  <circle cx="32" cy="870" r="14" fill="#1E293B"/>
+  <text x="32" y="875" text-anchor="middle" font-size="11" font-weight="600" fill="#94A3B8">QM</text>
+  <text x="54" y="866" font-size="12" font-weight="600" fill="#CBD5E1">Quality Manager</text>
+  <text x="54" y="880" font-size="11" fill="#64748B">qm@acme.com</text>
+
+  <!-- Top bar -->
+  <rect x="220" y="0" width="1220" height="60" fill="white"/>
+  <rect x="220" y="59" width="1220" height="1" fill="#E2E8F0"/>
+  <text x="244" y="36" font-size="20" font-weight="700" fill="#0F172A">Query Tracker</text>
+  <text x="244" y="52" font-size="12" fill="#64748B">Manage and resolve supplier compliance queries</text>
+  <rect x="1280" y="16" width="120" height="32" rx="6" fill="#2563EB"/>
+  <text x="1340" y="36" text-anchor="middle" font-size="12" font-weight="600" fill="white">+ Raise Query</text>
+  <!-- Search -->
+  <rect x="1096" y="16" width="172" height="32" rx="6" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="1112" y="36" font-size="12" fill="#94A3B8">Search queries…</text>
+
+  <!-- Status tabs -->
+  <rect x="232" y="68" width="1196" height="48" fill="white"/>
+  <rect x="232" y="116" width="1196" height="1" fill="#E2E8F0"/>
+  <!-- All tab (active) -->
+  <rect x="244" y="80" width="80" height="32" rx="6" fill="#EFF6FF"/>
+  <text x="284" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="#2563EB">All</text>
+  <rect x="296" y="86" width="22" height="18" rx="9" fill="#2563EB"/>
+  <text x="307" y="99" text-anchor="middle" font-size="10" font-weight="700" fill="white">34</text>
+  <!-- Pending tab -->
+  <text x="360" y="100" font-size="13" fill="#64748B">Pending</text>
+  <rect x="408" y="86" width="22" height="18" rx="9" fill="#F1F5F9"/>
+  <text x="419" y="99" text-anchor="middle" font-size="10" font-weight="600" fill="#64748B">12</text>
+  <!-- In Review tab -->
+  <text x="450" y="100" font-size="13" fill="#64748B">In Review</text>
+  <rect x="510" y="86" width="16" height="18" rx="8" fill="#F1F5F9"/>
+  <text x="518" y="99" text-anchor="middle" font-size="10" font-weight="600" fill="#64748B">8</text>
+  <!-- Resolved tab -->
+  <text x="548" y="100" font-size="13" fill="#64748B">Resolved</text>
+  <rect x="606" y="86" width="22" height="18" rx="9" fill="#F1F5F9"/>
+  <text x="617" y="99" text-anchor="middle" font-size="10" font-weight="600" fill="#64748B">11</text>
+  <!-- Overdue tab -->
+  <text x="650" y="100" font-size="13" font-weight="600" fill="#DC2626">Overdue</text>
+  <rect x="710" y="86" width="16" height="18" rx="8" fill="#FEE2E2"/>
+  <text x="718" y="99" text-anchor="middle" font-size="10" font-weight="700" fill="#DC2626">3</text>
+  <!-- Active tab underline -->
+  <rect x="244" y="112" width="80" height="3" rx="2" fill="#2563EB"/>
+
+  <!-- Filter bar -->
+  <rect x="232" y="117" width="1196" height="48" fill="#F8FAFC"/>
+  <rect x="232" y="165" width="1196" height="1" fill="#E2E8F0"/>
+  <text x="256" y="146" font-size="12" fill="#64748B">Filter by:</text>
+  <rect x="308" y="129" width="100" height="28" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="358" y="147" text-anchor="middle" font-size="12" fill="#475569">Priority ▾</text>
+  <rect x="418" y="129" width="100" height="28" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="468" y="147" text-anchor="middle" font-size="12" fill="#475569">Supplier ▾</text>
+  <rect x="528" y="129" width="100" height="28" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="578" y="147" text-anchor="middle" font-size="12" fill="#475569">Date range ▾</text>
+  <rect x="638" y="129" width="100" height="28" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="688" y="147" text-anchor="middle" font-size="12" fill="#475569">Assignee ▾</text>
+
+  <!-- Table header -->
+  <rect x="232" y="166" width="1196" height="38" fill="#F1F5F9"/>
+  <rect x="232" y="204" width="1196" height="1" fill="#E2E8F0"/>
+  <text x="256" y="189" font-size="11" font-weight="600" fill="#64748B" letter-spacing="0.5">QUERY ID</text>
+  <text x="360" y="189" font-size="11" font-weight="600" fill="#64748B" letter-spacing="0.5">SUBJECT</text>
+  <text x="680" y="189" font-size="11" font-weight="600" fill="#64748B" letter-spacing="0.5">SUPPLIER</text>
+  <text x="860" y="189" font-size="11" font-weight="600" fill="#64748B" letter-spacing="0.5">PRIORITY</text>
+  <text x="960" y="189" font-size="11" font-weight="600" fill="#64748B" letter-spacing="0.5">STATUS</text>
+  <text x="1080" y="189" font-size="11" font-weight="600" fill="#64748B" letter-spacing="0.5">ASSIGNED TO</text>
+  <text x="1240" y="189" font-size="11" font-weight="600" fill="#64748B" letter-spacing="0.5">DUE DATE</text>
+  <text x="1360" y="189" font-size="11" font-weight="600" fill="#64748B" letter-spacing="0.5">DAYS</text>
+
+  <!-- Row 1 — Overdue Critical (highlighted) -->
+  <rect x="232" y="205" width="1196" height="56" fill="#FEF2F2"/>
+  <rect x="232" y="205" width="3" height="56" fill="#DC2626"/>
+  <rect x="232" y="261" width="1196" height="1" fill="#FECACA"/>
+  <text x="256" y="229" font-size="12" font-weight="600" fill="#DC2626">QRY-0228</text>
+  <text x="256" y="248" font-size="11" fill="#94A3B8">Overdue · 3 days</text>
+  <text x="360" y="229" font-size="13" font-weight="600" fill="#0F172A">ISO 9001 Certificate — Renewal Docs Missing</text>
+  <text x="360" y="248" font-size="12" fill="#94A3B8">Certificate renewal incomplete; missing signed QMS checklist</text>
+  <text x="680" y="233" font-size="13" font-weight="600" fill="#0F172A">Tektra Polymers</text>
+  <rect x="860" y="219" width="80" height="22" rx="4" fill="#FEE2E2"/>
+  <text x="900" y="234" text-anchor="middle" font-size="11" font-weight="700" fill="#DC2626">CRITICAL</text>
+  <rect x="960" y="219" width="80" height="22" rx="4" fill="#FEE2E2"/>
+  <text x="1000" y="234" text-anchor="middle" font-size="11" font-weight="600" fill="#DC2626">Overdue</text>
+  <text x="1080" y="233" font-size="12" fill="#475569">Priya R.</text>
+  <text x="1240" y="229" font-size="12" font-weight="600" fill="#DC2626">15 Jun 2026</text>
+  <text x="1240" y="246" font-size="11" fill="#EF4444">3 days ago</text>
+  <rect x="1360" y="219" width="44" height="22" rx="4" fill="#FEE2E2"/>
+  <text x="1382" y="234" text-anchor="middle" font-size="11" font-weight="700" fill="#DC2626">+3</text>
+
+  <!-- Row 2 — Overdue High -->
+  <rect x="232" y="262" width="1196" height="56" fill="#FFFBEB"/>
+  <rect x="232" y="262" width="3" height="56" fill="#D97706"/>
+  <rect x="232" y="318" width="1196" height="1" fill="#FDE68A"/>
+  <text x="256" y="286" font-size="12" font-weight="600" fill="#D97706">QRY-0219</text>
+  <text x="256" y="305" font-size="11" fill="#94A3B8">Overdue · 1 day</text>
+  <text x="360" y="286" font-size="13" font-weight="600" fill="#0F172A">REACH Compliance Declaration — Q2 2026</text>
+  <text x="360" y="305" font-size="12" fill="#94A3B8">Supplier has not submitted updated chemical compliance declaration</text>
+  <text x="680" y="290" font-size="13" font-weight="600" fill="#0F172A">Vega Steel Ltd.</text>
+  <rect x="860" y="276" width="64" height="22" rx="4" fill="#FEF3C7"/>
+  <text x="892" y="291" text-anchor="middle" font-size="11" font-weight="700" fill="#D97706">HIGH</text>
+  <rect x="960" y="276" width="80" height="22" rx="4" fill="#FEE2E2"/>
+  <text x="1000" y="291" text-anchor="middle" font-size="11" font-weight="600" fill="#DC2626">Overdue</text>
+  <text x="1080" y="290" font-size="12" fill="#475569">Karan M.</text>
+  <text x="1240" y="286" font-size="12" font-weight="600" fill="#D97706">17 Jun 2026</text>
+  <text x="1240" y="303" font-size="11" fill="#F59E0B">1 day ago</text>
+  <rect x="1360" y="276" width="44" height="22" rx="4" fill="#FEF3C7"/>
+  <text x="1382" y="291" text-anchor="middle" font-size="11" font-weight="700" fill="#D97706">+1</text>
+
+  <!-- Row 3 — In Review -->
+  <rect x="232" y="319" width="1196" height="56" fill="white"/>
+  <rect x="232" y="375" width="1196" height="1" fill="#E2E8F0"/>
+  <text x="256" y="343" font-size="12" font-weight="600" fill="#475569">QRY-0231</text>
+  <text x="360" y="343" font-size="13" font-weight="600" fill="#0F172A">Factory Audit Report — June 2026</text>
+  <text x="360" y="362" font-size="12" fill="#94A3B8">Audit report submitted; awaiting QM review and sign-off</text>
+  <text x="680" y="347" font-size="13" fill="#0F172A">Aurum Coatings</text>
+  <rect x="860" y="333" width="64" height="22" rx="4" fill="#FEF3C7"/>
+  <text x="892" y="348" text-anchor="middle" font-size="11" font-weight="700" fill="#D97706">HIGH</text>
+  <rect x="960" y="333" width="88" height="22" rx="4" fill="#E0F2FE"/>
+  <text x="1004" y="348" text-anchor="middle" font-size="11" font-weight="600" fill="#0891B2">In Review</text>
+  <text x="1080" y="347" font-size="12" fill="#475569">Priya R.</text>
+  <text x="1240" y="343" font-size="12" fill="#475569">25 Jun 2026</text>
+  <text x="1240" y="360" font-size="11" fill="#94A3B8">7 days left</text>
+  <rect x="1360" y="333" width="44" height="22" rx="4" fill="#F1F5F9"/>
+  <text x="1382" y="348" text-anchor="middle" font-size="11" fill="#64748B">7</text>
+
+  <!-- Row 4 — Pending -->
+  <rect x="232" y="376" width="1196" height="56" fill="white"/>
+  <rect x="232" y="432" width="1196" height="1" fill="#E2E8F0"/>
+  <text x="256" y="400" font-size="12" font-weight="600" fill="#475569">QRY-0234</text>
+  <text x="360" y="400" font-size="13" font-weight="600" fill="#0F172A">Supplier Code of Conduct — Signed Copy</text>
+  <text x="360" y="419" font-size="12" fill="#94A3B8">Annual CoC signature required; reminder sent 12 Jun</text>
+  <text x="680" y="404" font-size="13" fill="#0F172A">Nexflow Chemicals</text>
+  <rect x="860" y="390" width="72" height="22" rx="4" fill="#F1F5F9"/>
+  <text x="896" y="405" text-anchor="middle" font-size="11" font-weight="600" fill="#64748B">NORMAL</text>
+  <rect x="960" y="390" width="80" height="22" rx="4" fill="#FEF9C3"/>
+  <text x="1000" y="405" text-anchor="middle" font-size="11" font-weight="600" fill="#854D0E">Pending</text>
+  <text x="1080" y="404" font-size="12" fill="#475569">Sana K.</text>
+  <text x="1240" y="400" font-size="12" fill="#475569">30 Jun 2026</text>
+  <text x="1240" y="417" font-size="11" fill="#94A3B8">12 days left</text>
+  <rect x="1360" y="390" width="44" height="22" rx="4" fill="#F1F5F9"/>
+  <text x="1382" y="405" text-anchor="middle" font-size="11" fill="#64748B">12</text>
+
+  <!-- Row 5 -->
+  <rect x="232" y="433" width="1196" height="56" fill="white"/>
+  <rect x="232" y="489" width="1196" height="1" fill="#E2E8F0"/>
+  <text x="256" y="457" font-size="12" font-weight="600" fill="#475569">QRY-0227</text>
+  <text x="360" y="457" font-size="13" font-weight="600" fill="#0F172A">Environmental Compliance Data — H1 2026</text>
+  <text x="360" y="476" font-size="12" fill="#94A3B8">Half-year environmental data submission — partially received</text>
+  <text x="680" y="461" font-size="13" fill="#0F172A">Primus Engineering</text>
+  <rect x="860" y="447" width="64" height="22" rx="4" fill="#FEF3C7"/>
+  <text x="892" y="462" text-anchor="middle" font-size="11" font-weight="700" fill="#D97706">HIGH</text>
+  <rect x="960" y="447" width="88" height="22" rx="4" fill="#E0F2FE"/>
+  <text x="1004" y="462" text-anchor="middle" font-size="11" font-weight="600" fill="#0891B2">In Review</text>
+  <text x="1080" y="461" font-size="12" fill="#475569">Karan M.</text>
+  <text x="1240" y="457" font-size="12" fill="#475569">22 Jun 2026</text>
+  <text x="1240" y="474" font-size="11" fill="#94A3B8">4 days left</text>
+  <rect x="1360" y="447" width="44" height="22" rx="4" fill="#F1F5F9"/>
+  <text x="1382" y="462" text-anchor="middle" font-size="11" fill="#64748B">4</text>
+
+  <!-- Row 6 -->
+  <rect x="232" y="490" width="1196" height="56" fill="white"/>
+  <rect x="232" y="546" width="1196" height="1" fill="#E2E8F0"/>
+  <text x="256" y="514" font-size="12" font-weight="600" fill="#475569">QRY-0214</text>
+  <text x="360" y="514" font-size="13" font-weight="600" fill="#0F172A">Insurance Certificate — Public Liability</text>
+  <text x="360" y="533" font-size="12" fill="#94A3B8">Annual insurance cert submitted and approved</text>
+  <text x="680" y="518" font-size="13" fill="#0F172A">Orion Gaskets Co.</text>
+  <rect x="860" y="504" width="64" height="22" rx="4" fill="#F1F5F9"/>
+  <text x="892" y="519" text-anchor="middle" font-size="11" font-weight="600" fill="#64748B">LOW</text>
+  <rect x="960" y="504" width="88" height="22" rx="4" fill="#DCFCE7"/>
+  <text x="1004" y="519" text-anchor="middle" font-size="11" font-weight="600" fill="#16A34A">Resolved</text>
+  <text x="1080" y="518" font-size="12" fill="#475569">Sana K.</text>
+  <text x="1240" y="514" font-size="12" fill="#475569">10 Jun 2026</text>
+  <text x="1240" y="531" font-size="11" fill="#16A34A">Closed</text>
+  <rect x="1360" y="504" width="44" height="22" rx="4" fill="#DCFCE7"/>
+  <text x="1382" y="519" text-anchor="middle" font-size="11" fill="#16A34A">✓</text>
+
+  <!-- Row 7 — Pending normal -->
+  <rect x="232" y="547" width="1196" height="56" fill="white"/>
+  <rect x="232" y="603" width="1196" height="1" fill="#E2E8F0"/>
+  <text x="256" y="571" font-size="12" font-weight="600" fill="#475569">QRY-0235</text>
+  <text x="360" y="571" font-size="13" font-weight="600" fill="#0F172A">Product Safety Data Sheet Update — Rev 4</text>
+  <text x="360" y="590" font-size="12" fill="#94A3B8">Updated MSDS required following product formula change</text>
+  <text x="680" y="575" font-size="13" fill="#0F172A">Tektra Polymers</text>
+  <rect x="860" y="561" width="80" height="22" rx="4" fill="#FEE2E2"/>
+  <text x="900" y="576" text-anchor="middle" font-size="11" font-weight="700" fill="#DC2626">CRITICAL</text>
+  <rect x="960" y="561" width="80" height="22" rx="4" fill="#FEF9C3"/>
+  <text x="1000" y="576" text-anchor="middle" font-size="11" font-weight="600" fill="#854D0E">Pending</text>
+  <text x="1080" y="575" font-size="12" fill="#475569">Priya R.</text>
+  <text x="1240" y="571" font-size="12" fill="#475569">20 Jun 2026</text>
+  <text x="1240" y="588" font-size="11" fill="#94A3B8">2 days left</text>
+  <rect x="1360" y="561" width="44" height="22" rx="4" fill="#FEF3C7"/>
+  <text x="1382" y="576" text-anchor="middle" font-size="11" font-weight="700" fill="#D97706">2</text>
+
+  <!-- Pagination footer -->
+  <rect x="232" y="604" width="1196" height="44" fill="white"/>
+  <rect x="232" y="604" width="1196" height="1" fill="#E2E8F0"/>
+  <text x="256" y="631" font-size="12" fill="#64748B">Showing 7 of 34 queries</text>
+  <rect x="1290" y="612" width="72" height="28" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="1326" y="630" text-anchor="middle" font-size="12" fill="#475569">Next →</text>
+  <rect x="1210" y="612" width="72" height="28" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="1246" y="630" text-anchor="middle" font-size="12" fill="#94A3B8">← Prev</text>
+
+  <!-- Summary cards bottom -->
+  <rect x="232" y="664" width="290" height="80" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="256" y="688" font-size="12" fill="#64748B">Avg. resolution time</text>
+  <text x="256" y="724" font-size="28" font-weight="800" fill="#0F172A">4.2 <tspan font-size="14" font-weight="500" fill="#64748B">days</tspan></text>
+
+  <rect x="534" y="664" width="290" height="80" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="558" y="688" font-size="12" fill="#64748B">On-time closure rate</text>
+  <text x="558" y="724" font-size="28" font-weight="800" fill="#16A34A">78% <tspan font-size="14" font-weight="500" fill="#64748B">this quarter</tspan></text>
+
+  <rect x="836" y="664" width="290" height="80" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="860" y="688" font-size="12" fill="#64748B">Overdue this week</text>
+  <text x="860" y="724" font-size="28" font-weight="800" fill="#DC2626">3 <tspan font-size="14" font-weight="500" fill="#64748B">queries</tspan></text>
+
+  <rect x="1138" y="664" width="290" height="80" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="1162" y="688" font-size="12" fill="#64748B">Pending supplier response</text>
+  <text x="1162" y="724" font-size="28" font-weight="800" fill="#D97706">12 <tspan font-size="14" font-weight="500" fill="#64748B">queries</tspan></text>
+</svg>

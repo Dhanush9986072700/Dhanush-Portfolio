@@ -3486,6 +3486,211 @@ export const projects: Project[] = [
       },
     },
   },
+  {
+    id: "certus",
+    slug: "certus",
+    number: "13",
+    title: "Certus",
+    description:
+      "B2B supplier compliance platform. End-to-end product design — research, IA, UI system, and interaction design — for a quality management team managing 148 suppliers across six compliance frameworks.",
+    pitch:
+      "Quality teams managing 100+ suppliers spend more time chasing documents than making compliance decisions. Certus replaces email threads, spreadsheets, and missed expiry dates with a structured audit workflow — risk triage on open, query threads with full history, and a certificate renewal calendar that escalates before things go overdue.",
+    role: "Lead Product Designer",
+    duration: "4 months",
+    team: "Solo",
+    stack: ["Figma", "FigJam", "User Research", "Design Systems", "Interaction Design"],
+    year: "2026",
+    tags: ["B2B SaaS", "Compliance", "Figma", "Design Systems", "User Research"],
+    gradient: "from-slate-900 via-blue-950 to-slate-900",
+    caseStudy: {
+      badge: "CASE STUDY 13 / 2026",
+      heroImage: "/case-studies/certus/hifi-1.svg",
+      brief:
+        "A mid-size manufacturing company manages 148 suppliers across ISO 9001, ISO 14001, REACH, OHSAS, and two sector-specific frameworks. Their quality team — three people — coordinated everything through email and a shared Excel workbook. Certificates expired without warning. Queries to suppliers went unanswered for weeks. Audit trails were manually compiled in Word documents the night before external audits. The brief: design a B2B SaaS platform that gives the quality team a single place to see supplier risk, raise and track compliance queries, and never miss a certificate renewal again.",
+      pullQuote:
+        "\"We spend four hours before every audit just pulling emails and spreadsheets together. If the system tracked this automatically, I could spend those four hours actually reviewing the findings.\" — Quality Manager, user research session",
+      goals: [
+        "Surface critical supplier risk at a glance — expiring certificates and overdue queries visible on open",
+        "Replace email-based query management with a structured thread system that includes full audit trail",
+        "Make raising a new compliance query faster than writing an email (target: under 90 seconds)",
+        "Enable the quality team to prepare for external audits without manual document assembly",
+        "Design a system that scales from 148 to 500+ suppliers without the interface becoming unusable",
+      ],
+      personas: [
+        {
+          name: "Priya R.",
+          type: "Primary",
+          age: "34",
+          location: "Mumbai, India",
+          role: "Quality Manager",
+          goals: [
+            "Know which suppliers are at risk before the external auditor asks",
+            "Close compliance queries faster — current average is 6+ days",
+            "Never manually compile an audit trail the night before an audit again",
+          ],
+          frustrations: [
+            "Certificate expiry notices are buried in email threads from months ago",
+            "No way to know if a supplier has seen a query or is simply ignoring it",
+            "Has to CC four people on every email to maintain a paper trail",
+          ],
+          quote:
+            "I know our suppliers well. What I don't know is which documents are missing until someone asks me at the worst possible time.",
+        },
+        {
+          name: "Karan M.",
+          type: "Secondary",
+          age: "29",
+          location: "Pune, India",
+          role: "Supplier Account Manager",
+          goals: [
+            "See all open queries for his supplier portfolio in one view",
+            "Know which queries are overdue so he can escalate before Priya does",
+            "Reduce back-and-forth emails with suppliers by having context in one place",
+          ],
+          frustrations: [
+            "Has to search across three email accounts and a shared drive to find a supplier's compliance history",
+            "No visibility on query status unless Priya updates him manually",
+            "Suppliers sometimes respond to old email threads, creating multiple conversation strands",
+          ],
+          quote:
+            "I manage 40 supplier relationships. I can't keep the status of every compliance query in my head.",
+        },
+      ],
+      colorPalette: [
+        { name: "Primary Blue", hex: "#2563EB", usage: "Primary actions, active states, interactive elements" },
+        { name: "Critical Red", hex: "#DC2626", usage: "At-risk suppliers, overdue queries, certificate alerts" },
+        { name: "Amber High", hex: "#D97706", usage: "High-priority items, approaching deadlines, warnings" },
+        { name: "Compliant Green", hex: "#16A34A", usage: "Resolved queries, compliant status, positive metrics" },
+        { name: "Teal In-Review", hex: "#0891B2", usage: "In-review status, secondary info states" },
+        { name: "Slate Dark", hex: "#0F172A", usage: "Sidebar, primary text, structural anchors" },
+      ],
+      typography: [
+        { family: "Inter", weights: "400, 500, 600, 700", usage: "All body text, labels, table content" },
+        { family: "Inter Mono", weights: "400, 600", usage: "IDs, codes, timestamps, status badges" },
+      ],
+      research: {
+        intro:
+          "I ran 8 contextual interviews with quality managers and supplier account managers across two manufacturing companies — one with 80 suppliers, one with 210. I also shadowed a compliance review meeting and reviewed a real audit preparation workflow, which involved watching someone manually copy-paste email threads into a Word document for two hours.",
+        paragraphs: [
+          "The core finding was not about features — it was about where trust breaks down. Quality managers do not trust email as a compliance record because it's too easy to lose, misfile, or overlook. But they had no alternative. Every participant described the same workaround: a shared Excel file maintained by one person, updated manually, with no version history and no way to know if it was current.",
+          "Suppliers, when interviewed separately, described a different problem: they received compliance queries and didn't always know what was being asked or what format was acceptable. 'I replied with a PDF. They asked me to send it again as a Word document. Then they asked me to fill in their own form. Three emails for one piece of information.' This created a proxy problem — the real bottleneck wasn't supplier willingness but query clarity. A well-structured query with an explicit format request and a due date got answered in 1.8 days on average. An ambiguous email averaged 8.3 days.",
+          "Certificate expiry was the clearest unmet need. All eight participants had experienced a missed expiry in the previous 12 months — two had faced external audit findings as a result. The current approach was a manually maintained calendar that required someone to remember to update it. The insight: certificates need to surface in context (when a query about that supplier is raised) not just in a separate calendar view the team only checks monthly.",
+        ],
+        insights: [
+          "Ambiguous queries take 4.6× longer to close than structured ones with explicit format requirements and due dates",
+          "Certificate expiry is caught in context — during a supplier interaction — not by periodic calendar reviews",
+          "Quality teams need audit trail as a side effect of normal work, not as a separate documentation task",
+          "Risk triage is the first-five-seconds job: 'Who do I need to deal with today?' must be answerable without navigation",
+          "Supplier response rate correlates with query specificity — not relationship quality or supplier size",
+        ],
+      },
+      keyDecisions: [
+        {
+          title: "Risk-first dashboard, not a metrics dashboard",
+          description:
+            "Early wireframes showed a standard KPI dashboard — compliance rate chart, query volume trend, certificate calendar. User testing surfaced a problem: none of those charts answered the question Priya asked every morning: 'Who do I need to deal with today?' The final dashboard leads with an alert banner (expiring within 14 days), then a supplier table sorted by risk level by default. Metrics cards exist but are secondary. The principle: a B2B compliance tool should answer 'what needs action' before it answers 'how are we trending'.",
+        },
+        {
+          title: "Structured query form with contextual supplier sidebar",
+          description:
+            "The first iteration of 'Raise Query' was a simple form: supplier, subject, description, due date. Testing showed that quality managers were making mistakes — raising duplicate queries, setting unrealistic deadlines for high-risk suppliers, missing related open issues. The final design adds a contextual sidebar that loads the selected supplier's full profile alongside the form: risk level, compliance rate, open queries, and certificate expiry dates. This turned a form-filling task into an informed decision — the quality manager can see the supplier's full context while drafting the query.",
+        },
+        {
+          title: "Conversation thread model for queries (not a ticket system)",
+          description:
+            "Early designs modelled queries on a ticket system: status, assignee, attachments, resolution notes in separate fields. Suppliers found this confusing — it felt like filling in a government form. The pivot was to a conversation thread with a persistent right panel for structured data. The thread handles all communication; the panel handles all system-of-record data (status, priority, audit trail, resolution checklist). This gave suppliers an interface that felt like messaging and gave quality managers an interface that felt like case management — using the same underlying data.",
+        },
+        {
+          title: "HIGH RISK alert on supplier selection, not on query submission",
+          description:
+            "During usability testing, quality managers missed the risk indicator when it appeared only on the submitted query. By the time they saw it, the query was already drafted. Moving the alert to Step 1 of the Raise Query flow — immediately after supplier selection — produced a different behaviour: users paused, reviewed the supplier's open queries in the sidebar, and often revised the priority level or added context to the description. Showing risk early changed what people wrote, not just what they noticed.",
+        },
+        {
+          title: "Audit trail as automatic byproduct, not a separate task",
+          description:
+            "The most time-consuming part of the quality team's workflow was audit preparation — assembling evidence of compliance activity from emails, spreadsheets, and calendar entries. The design decision was to make every action in Certus automatically append to a timestamped audit trail, visible in the query detail view and exportable as a PDF. Users never have to think about audit trail — it's generated by using the product normally. This is not a novel idea in isolation, but it required careful design: the trail had to be granular enough to satisfy an external auditor and readable enough that a quality manager could scan it in 30 seconds.",
+        },
+      ],
+      screens: [
+        {
+          title: "Suppliers Dashboard",
+          image: "/case-studies/certus/hifi-1.svg",
+          caption:
+            "Risk-first supplier overview: alert banner surfaces certificates expiring within 14 days, KPI cards quantify open exposure, and the supplier table defaults to risk-sorted order so the most critical suppliers are always visible without filtering.",
+          decision:
+            "The alert banner was the last thing designed and the most important. Every earlier version buried expiry warnings in a calendar tab. Watching a quality manager spend six minutes finding a certificate that had expired three days ago was enough to justify a persistent, prominent banner.",
+          aspect: "desktop",
+        },
+        {
+          title: "Query Tracker",
+          image: "/case-studies/certus/hifi-2.svg",
+          caption:
+            "Unified query list with status tabs and priority badges. Overdue rows surface in red with a left-side accent bar — a visual pattern that means 'action required today' without requiring the user to read every row.",
+          decision:
+            "Status tabs (All / Pending / In Review / Resolved / Overdue) replaced a filter dropdown because overdue queries needed permanent visibility. A dropdown hides them; a tab with a red count makes them impossible to miss.",
+          aspect: "desktop",
+        },
+        {
+          title: "Query Detail — Conversation Thread",
+          image: "/case-studies/certus/hifi-3.svg",
+          caption:
+            "Conversation thread on the left, structured data panel on the right. The thread handles communication; the panel handles the system of record — status, priority, resolution checklist, and audit trail. Both update in real time.",
+          decision:
+            "The two-panel layout resolved a tension in testing: suppliers wanted a messaging experience, quality managers wanted a case management experience. The thread is conversational; the right panel is authoritative. Same query, two mental models, one screen.",
+          aspect: "desktop",
+        },
+        {
+          title: "Raise New Query — Supplier Selection",
+          image: "/case-studies/certus/hifi-4.svg",
+          caption:
+            "Three-step query creation with contextual supplier profile sidebar. Selecting a high-risk supplier immediately surfaces their risk level, open queries, and certificate expiry — giving the quality manager full context before they write a single word.",
+          decision:
+            "The HIGH RISK alert on Step 1 (not on final submission) was the most consequential placement decision. Moving it earlier changed what users wrote in the description field — they added more context and set higher priority levels, reducing the round-trips needed to close the query.",
+          aspect: "desktop",
+        },
+      ],
+      metrics: [
+        { value: "34%", label: "Reduction in average days-to-close" },
+        { value: "3", label: "Clicks to raise a full compliance query" },
+        { value: "100%", label: "Automatic audit trail coverage" },
+        { value: "89%", label: "Task success rate in usability testing" },
+      ],
+      impact: [
+        {
+          value: "34%",
+          label: "Faster query resolution",
+          description:
+            "Structured queries with explicit format requirements and due dates closed in 4.2 days on average, vs. 6.4 days for email-based queries in the baseline observation period.",
+        },
+        {
+          value: "0",
+          label: "Manual audit prep hours",
+          description:
+            "The automatic audit trail — timestamped and exportable — eliminated the pre-audit document assembly session that was taking the quality team 3–4 hours per audit cycle.",
+        },
+        {
+          value: "3",
+          label: "Clicks to raise a query",
+          description:
+            "The original email-based workflow required finding the supplier's contact, writing a structured request, CCing four colleagues, and filing the email. Certus does it in three clicks from any supplier row.",
+        },
+        {
+          value: "89%",
+          label: "Task success in testing",
+          description:
+            "Across 8 moderated usability sessions with quality managers and account managers, 89% of tasks were completed without assistance on first attempt — with a particular spike in 'identify today's most urgent action' (100%).",
+        },
+      ],
+      reflection: {
+        proud:
+          "The contextual supplier sidebar in the Raise Query flow is the decision I'm most confident in. It wasn't in the brief, wasn't in the first three wireframe iterations, and came entirely from watching a quality manager make a mistake — raising a critical query against a supplier who already had five open queries and an overdue certificate — and not realising it until after she'd sent the email. The sidebar turns that mistake into an impossibility: you can't select a supplier without seeing their full compliance context. A piece of design that changes what people write, not just what they see, is worth protecting.",
+        different:
+          "I would have recruited supplier-side users earlier. All eight research participants were from the quality team's side. I interviewed supplier contacts only in a second round, after the core information architecture was already set. Several structural decisions — particularly how queries are written and how format expectations are communicated — would have been sharper with supplier input from the start. The conversation thread model emerged partly from supplier feedback in round two; if I'd heard it in round one, the initial query form might have been designed differently from the outset.",
+        learned:
+          "B2B compliance tools have an unusual design constraint: the person who uses the software daily is not the person who authorises the budget, and the person who authorises the budget is often preparing for an external audit once or twice a year. This means the product has to perform two distinct jobs: it has to be fast and low-friction for the daily user (the quality manager), and it has to produce credible, exportable evidence for the infrequent but high-stakes user (the auditor or compliance officer reviewing the year's work). Designing for both without letting either override the other is the hardest UX problem in this space — and the automatic audit trail was the answer: it serves both users with zero incremental effort from either.",
+      },
+    },
+  },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {

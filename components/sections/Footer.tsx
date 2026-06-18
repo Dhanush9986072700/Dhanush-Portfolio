@@ -27,6 +27,7 @@ const caseStudies = [
   { href: "/work/prism", label: "Prism — AI Brand Intelligence" },
   { href: "/work/helm", label: "Helm — Automotive AI OS" },
   { href: "/work/clearr", label: "Clearr — Credit Card Clarity" },
+  { href: "/work/certus", label: "Certus — Supplier Compliance" },
 ];
 
 export default function Footer() {

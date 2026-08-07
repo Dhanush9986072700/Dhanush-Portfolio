@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+
+  <rect width="1440" height="720" fill="#F0F0EB"/>
+
+  <!-- ── HEADER BAND ── -->
+  <rect width="1440" height="60" fill="#07080F"/>
+  <rect x="24" y="19" width="3" height="22" rx="1" fill="#c9ff6a"/>
+  <text x="34" y="32" font-size="10" font-weight="700" fill="#c9ff6a" letter-spacing="3" font-family="'Courier New',monospace">XIPHIAS IMMIGRATION</text>
+  <text x="34" y="49" font-size="9" fill="rgba(255,255,255,0.38)" letter-spacing="1.5">USER JOURNEY MAP · SKILLED WORKER VISA (UK) · SYNTHESISED FROM 12 DISCOVERY INTERVIEWS · FEB 2024</text>
+  <text x="1416" y="40" font-size="8" fill="rgba(255,255,255,0.18)" text-anchor="end" letter-spacing="1.5">RESEARCH ARTEFACT v1.2</text>
+
+  <!-- ── STAGE COLUMN HEADERS (y=60–108) ── -->
+  <rect x="0"    y="60" width="240" height="48" fill="#0D0E1A"/>
+  <rect x="240"  y="60" width="240" height="48" fill="#111222"/>
+  <rect x="480"  y="60" width="240" height="48" fill="#0D0E1A"/>
+  <rect x="720"  y="60" width="240" height="48" fill="#111222"/>
+  <rect x="960"  y="60" width="240" height="48" fill="#0D0E1A"/>
+  <rect x="1200" y="60" width="240" height="48" fill="#111222"/>
+
+  <text x="120"  y="80" font-size="8"  font-weight="700" fill="#c9ff6a" text-anchor="middle" letter-spacing="3" font-family="'Courier New',monospace">01</text>
+  <text x="360"  y="80" font-size="8"  font-weight="700" fill="#c9ff6a" text-anchor="middle" letter-spacing="3" font-family="'Courier New',monospace">02</text>
+  <text x="600"  y="80" font-size="8"  font-weight="700" fill="#c9ff6a" text-anchor="middle" letter-spacing="3" font-family="'Courier New',monospace">03</text>
+  <text x="840"  y="80" font-size="8"  font-weight="700" fill="#c9ff6a" text-anchor="middle" letter-spacing="3" font-family="'Courier New',monospace">04</text>
+  <text x="1080" y="80" font-size="8"  font-weight="700" fill="#c9ff6a" text-anchor="middle" letter-spacing="3" font-family="'Courier New',monospace">05</text>
+  <text x="1320" y="80" font-size="8"  font-weight="700" fill="#c9ff6a" text-anchor="middle" letter-spacing="3" font-family="'Courier New',monospace">06</text>
+
+  <text x="120"  y="98" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Discover</text>
+  <text x="360"  y="98" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Assess Eligibility</text>
+  <text x="600"  y="98" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Prepare Documents</text>
+  <text x="840"  y="98" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Submit Application</text>
+  <text x="1080" y="98" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Track &amp; Wait</text>
+  <text x="1320" y="98" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Decision</text>
+
+  <!-- column dividers -->
+  <line x1="240"  y1="108" x2="240"  y2="620" stroke="#DDDDD6" stroke-width="1"/>
+  <line x1="480"  y1="108" x2="480"  y2="620" stroke="#DDDDD6" stroke-width="1"/>
+  <line x1="720"  y1="108" x2="720"  y2="620" stroke="#DDDDD6" stroke-width="1"/>
+  <line x1="960"  y1="108" x2="960"  y2="620" stroke="#DDDDD6" stroke-width="1"/>
+  <line x1="1200" y1="108" x2="1200" y2="620" stroke="#DDDDD6" stroke-width="1"/>
+
+  <!-- ── ROW 1: THINKING (y=108–196) ── -->
+  <rect x="0" y="108" width="1440" height="18" fill="#E4E4DF"/>
+  <text x="12" y="120" font-size="8" font-weight="700" fill="#868680" letter-spacing="2.5">THINKING</text>
+
+  <!-- Quote cards -->
+  <rect x="8"    y="130" width="222" height="60" rx="5" fill="#FFFFFF" stroke="#E0E0D8" stroke-width="1"/>
+  <text x="17" y="148" font-size="10" fill="#374151">"I just got a job offer in London.</text>
+  <text x="17" y="163" font-size="10" fill="#374151">Where do I even start with</text>
+  <text x="17" y="178" font-size="10" fill="#374151">a Skilled Worker visa?"</text>
+  <text x="17" y="187" font-size="8"  fill="#9CA3AF">— Software engineer, Bangalore</text>
+
+  <rect x="248"  y="130" width="222" height="60" rx="5" fill="#FFFFFF" stroke="#E0E0D8" stroke-width="1"/>
+  <text x="257" y="148" font-size="10" fill="#374151">"The points calculator says I</text>
+  <text x="257" y="163" font-size="10" fill="#374151">need 70. I think I have 55.</text>
+  <text x="257" y="178" font-size="10" fill="#374151">Am I even eligible?"</text>
+  <text x="257" y="187" font-size="8"  fill="#9CA3AF">— UX designer, Hyderabad</text>
+
+  <rect x="488"  y="130" width="222" height="60" rx="5" fill="#FFFFFF" stroke="#E0E0D8" stroke-width="1"/>
+  <text x="497" y="148" font-size="10" fill="#374151">"23 documents. Which format?</text>
+  <text x="497" y="163" font-size="10" fill="#374151">How old can my transcripts be?</text>
+  <text x="497" y="178" font-size="10" fill="#374151">I'm tracking this in a spreadsheet."</text>
+  <text x="497" y="187" font-size="8"  fill="#9CA3AF">— Data analyst, Pune</text>
+
+  <rect x="728"  y="130" width="222" height="60" rx="5" fill="#FFFFFF" stroke="#E0E0D8" stroke-width="1"/>
+  <text x="737" y="148" font-size="10" fill="#374151">"I've submitted. Did I miss</text>
+  <text x="737" y="163" font-size="10" fill="#374151">anything? No confirmation</text>
+  <text x="737" y="178" font-size="10" fill="#374151">email for three days."</text>
+  <text x="737" y="187" font-size="8"  fill="#9CA3AF">— Product manager, Chennai</text>
+
+  <rect x="968"  y="130" width="222" height="60" rx="5" fill="#FFFFFF" stroke="#E0E0D8" stroke-width="1"/>
+  <text x="977" y="148" font-size="10" fill="#374151">"Day 38. Still says Under Review.</text>
+  <text x="977" y="163" font-size="10" fill="#374151">What does that actually mean?</text>
+  <text x="977" y="178" font-size="10" fill="#374151">Is anyone looking at my case?"</text>
+  <text x="977" y="187" font-size="8"  fill="#9CA3AF">— Backend engineer, Mumbai</text>
+
+  <rect x="1208" y="130" width="222" height="60" rx="5" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <text x="1217" y="148" font-size="10" fill="#374151">"Approved. Now I need to</text>
+  <text x="1217" y="163" font-size="10" fill="#374151">collect my BRP, sort housing,</text>
+  <text x="1217" y="178" font-size="10" fill="#374151">and book flights."</text>
+  <text x="1217" y="187" font-size="8"  fill="#9CA3AF">— Finance analyst, Delhi</text>
+
+  <!-- ── ROW 2: TOUCHPOINTS (y=196–262) ── -->
+  <rect x="0" y="196" width="1440" height="18" fill="#E4E4DF"/>
+  <text x="12" y="208" font-size="8" font-weight="700" fill="#868680" letter-spacing="2.5">TOUCHPOINTS</text>
+
+  <!-- Stage 1 -->
+  <rect x="8"   y="218" width="88" height="19" rx="9" fill="#07080F"/>
+  <text x="52"  y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">Google Search</text>
+  <rect x="102" y="218" width="52" height="19" rx="9" fill="#07080F"/>
+  <text x="128" y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">Reddit</text>
+  <rect x="8"   y="241" width="74" height="19" rx="9" fill="#07080F"/>
+  <text x="45"  y="254" font-size="9" fill="#c9ff6a" text-anchor="middle">Gov.uk site</text>
+
+  <!-- Stage 2 -->
+  <rect x="248" y="218" width="94" height="19" rx="9" fill="#07080F"/>
+  <text x="295" y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">Points calculator</text>
+  <rect x="348" y="218" width="80" height="19" rx="9" fill="#07080F"/>
+  <text x="388" y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">XIPHIAS App</text>
+  <rect x="248" y="241" width="96" height="19" rx="9" fill="#07080F"/>
+  <text x="296" y="254" font-size="9" fill="#c9ff6a" text-anchor="middle">Immigration lawyer</text>
+
+  <!-- Stage 3 -->
+  <rect x="488" y="218" width="80" height="19" rx="9" fill="#07080F"/>
+  <text x="528" y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">XIPHIAS App</text>
+  <rect x="574" y="218" width="82" height="19" rx="9" fill="#07080F"/>
+  <text x="615" y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">Email/WhatsApp</text>
+  <rect x="488" y="241" width="64" height="19" rx="9" fill="#07080F"/>
+  <text x="520" y="254" font-size="9" fill="#c9ff6a" text-anchor="middle">Notary office</text>
+
+  <!-- Stage 4 -->
+  <rect x="728" y="218" width="80" height="19" rx="9" fill="#07080F"/>
+  <text x="768" y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">XIPHIAS App</text>
+  <rect x="814" y="218" width="74" height="19" rx="9" fill="#07080F"/>
+  <text x="851" y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">Email confirm</text>
+  <rect x="728" y="241" width="72" height="19" rx="9" fill="#07080F"/>
+  <text x="764" y="254" font-size="9" fill="#c9ff6a" text-anchor="middle">UKVI portal</text>
+
+  <!-- Stage 5 -->
+  <rect x="968"  y="218" width="80" height="19" rx="9" fill="#07080F"/>
+  <text x="1008" y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">XIPHIAS App</text>
+  <rect x="1054" y="218" width="92" height="19" rx="9" fill="#07080F"/>
+  <text x="1100" y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">Case officer email</text>
+  <rect x="968"  y="241" width="62" height="19" rx="9" fill="#07080F"/>
+  <text x="999"  y="254" font-size="9" fill="#c9ff6a" text-anchor="middle">SMS alerts</text>
+
+  <!-- Stage 6 -->
+  <rect x="1208" y="218" width="80" height="19" rx="9" fill="#07080F"/>
+  <text x="1248" y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">XIPHIAS App</text>
+  <rect x="1294" y="218" width="72" height="19" rx="9" fill="#07080F"/>
+  <text x="1330" y="231" font-size="9" fill="#c9ff6a" text-anchor="middle">Decision email</text>
+  <rect x="1208" y="241" width="68" height="19" rx="9" fill="#07080F"/>
+  <text x="1242" y="254" font-size="9" fill="#c9ff6a" text-anchor="middle">BRP collection</text>
+
+  <!-- ── ROW 3: EMOTION (y=262–462) ── -->
+  <rect x="0" y="262" width="1440" height="18" fill="#E4E4DF"/>
+  <text x="12" y="274" font-size="8" font-weight="700" fill="#868680" letter-spacing="2.5">EMOTIONAL JOURNEY</text>
+
+  <!-- Chart background -->
+  <rect x="0" y="280" width="1440" height="180" fill="#F8F8F4"/>
+
+  <!-- Y-axis ticks -->
+  <text x="10" y="298" font-size="7" fill="#C0C0BA" text-anchor="middle">HIGH</text>
+  <text x="10" y="378" font-size="7" fill="#C0C0BA" text-anchor="middle">MID</text>
+  <text x="10" y="452" font-size="7" fill="#C0C0BA" text-anchor="middle">LOW</text>
+
+  <!-- Grid lines -->
+  <line x1="26" y1="294" x2="1434" y2="294" stroke="#E8E8E2" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="26" y1="370" x2="1434" y2="370" stroke="#E8E8E2" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="26" y1="450" x2="1434" y2="450" stroke="#E8E8E2" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Area fill (subtle) -->
+  <polygon
+    points="120,342 360,398 600,438 840,316 1080,428 1320,296 1320,452 1080,452 840,452 600,452 360,452 120,452"
+    fill="#c9ff6a" fill-opacity="0.08"/>
+
+  <!-- Emotion curve -->
+  <polyline
+    points="120,342 360,398 600,438 840,316 1080,428 1320,296"
+    fill="none" stroke="#c9ff6a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Dots -->
+  <circle cx="120"  cy="342" r="5" fill="#c9ff6a"  stroke="#F8F8F4" stroke-width="2"/>
+  <circle cx="360"  cy="398" r="5" fill="#F59E0B"  stroke="#F8F8F4" stroke-width="2"/>
+  <circle cx="600"  cy="438" r="6" fill="#EF4444"  stroke="#F8F8F4" stroke-width="2"/>
+  <circle cx="840"  cy="316" r="5" fill="#c9ff6a"  stroke="#F8F8F4" stroke-width="2"/>
+  <circle cx="1080" cy="428" r="5" fill="#EF4444"  stroke="#F8F8F4" stroke-width="2"/>
+  <circle cx="1320" cy="296" r="6" fill="#10B981"  stroke="#F8F8F4" stroke-width="2"/>
+
+  <!-- Emotion state labels -->
+  <text x="120"  y="336" font-size="9" fill="#374151"  text-anchor="middle">Curious</text>
+  <text x="360"  y="413" font-size="9" fill="#B45309"  text-anchor="middle">Confused</text>
+  <text x="600"  y="455" font-size="9" fill="#DC2626"  text-anchor="middle">Overwhelmed</text>
+  <text x="840"  y="310" font-size="9" fill="#374151"  text-anchor="middle">Relieved</text>
+  <text x="1080" cy="428" font-size="9" fill="#DC2626" text-anchor="middle">Anxious</text>
+  <text x="1080" y="443" font-size="9" fill="#DC2626"  text-anchor="middle">Anxious</text>
+  <text x="1320" y="290" font-size="9" fill="#059669"  text-anchor="middle">Elated</text>
+
+  <!-- ── ROW 4a: PAIN POINTS (y=462–538) ── -->
+  <rect x="0" y="462" width="1440" height="18" fill="#FEF2F2"/>
+  <text x="12" y="474" font-size="8" font-weight="700" fill="#DC2626" letter-spacing="2.5">PAIN POINTS</text>
+
+  <!-- Stage 2 pain -->
+  <rect x="248" y="482" width="222" height="52" rx="5" fill="#FFFFFF" stroke="#FECACA" stroke-width="1.5"/>
+  <rect x="248" y="482" width="4" height="52" rx="2" fill="#EF4444"/>
+  <text x="260" y="498" font-size="10" font-weight="600" fill="#DC2626">No instant eligibility answer</text>
+  <text x="260" y="512" font-size="9"  fill="#6B7280">Points system buried in 14 pages</text>
+  <text x="260" y="525" font-size="9"  fill="#6B7280">before a clear yes/no is possible</text>
+
+  <!-- Stage 3 pain -->
+  <rect x="488" y="482" width="222" height="52" rx="5" fill="#FFFFFF" stroke="#FECACA" stroke-width="1.5"/>
+  <rect x="488" y="482" width="4" height="52" rx="2" fill="#EF4444"/>
+  <text x="500" y="498" font-size="10" font-weight="600" fill="#DC2626">Document chaos — no checklist</text>
+  <text x="500" y="512" font-size="9"  fill="#6B7280">8 of 12 applicants tracked docs</text>
+  <text x="500" y="525" font-size="9"  fill="#6B7280">in their own spreadsheet</text>
+
+  <!-- Stage 5 pain -->
+  <rect x="968" y="482" width="222" height="52" rx="5" fill="#FFFFFF" stroke="#FECACA" stroke-width="1.5"/>
+  <rect x="968" y="482" width="4" height="52" rx="2" fill="#EF4444"/>
+  <text x="980" y="498" font-size="10" font-weight="600" fill="#DC2626">Zero visibility while waiting</text>
+  <text x="980" y="512" font-size="9"  fill="#6B7280">"Under Review" for 6+ weeks</text>
+  <text x="980" y="525" font-size="9"  fill="#6B7280">with no stage granularity at all</text>
+
+  <!-- ── ROW 4b: OPPORTUNITIES (y=538–620) ── -->
+  <rect x="0" y="538" width="1440" height="18" fill="#F0FDF4"/>
+  <text x="12" y="550" font-size="8" font-weight="700" fill="#15803D" letter-spacing="2.5">DESIGN OPPORTUNITIES → SHIPPED</text>
+
+  <!-- Stage 2 opportunity -->
+  <rect x="248" y="558" width="222" height="52" rx="5" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="1.5"/>
+  <rect x="248" y="558" width="4" height="52" rx="2" fill="#10B981"/>
+  <text x="260" y="574" font-size="10" font-weight="600" fill="#15803D">Instant eligibility pre-check</text>
+  <text x="260" y="588" font-size="9"  fill="#6B7280">3-question flow → confidence signal</text>
+  <text x="260" y="601" font-size="9"  fill="#6B7280">before full assessment begins</text>
+
+  <!-- Stage 3 opportunity -->
+  <rect x="488" y="558" width="222" height="52" rx="5" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="1.5"/>
+  <rect x="488" y="558" width="4" height="52" rx="2" fill="#10B981"/>
+  <text x="500" y="574" font-size="10" font-weight="600" fill="#15803D">Smart document checklist</text>
+  <text x="500" y="588" font-size="9"  fill="#6B7280">Auto-generated per visa type,</text>
+  <text x="500" y="601" font-size="9"  fill="#6B7280">employer, and nationality</text>
+
+  <!-- Stage 5 opportunity -->
+  <rect x="968" y="558" width="222" height="52" rx="5" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="1.5"/>
+  <rect x="968" y="558" width="4" height="52" rx="2" fill="#10B981"/>
+  <text x="980" y="574" font-size="10" font-weight="600" fill="#15803D">Real-time status tracker</text>
+  <text x="980" y="588" font-size="9"  fill="#6B7280">Stage-based progress view</text>
+  <text x="980" y="601" font-size="9"  fill="#6B7280">with SLA timeline at each step</text>
+
+  <!-- ── FOOTER (y=620–720) ── -->
+  <rect x="0" y="620" width="1440" height="100" fill="#07080F"/>
+
+  <text x="24" y="644" font-size="8" font-weight="700" fill="rgba(255,255,255,0.35)" letter-spacing="2.5">LEGEND</text>
+
+  <circle cx="24"  cy="663" r="4" fill="#c9ff6a"/>
+  <text x="36"  y="667" font-size="9" fill="rgba(255,255,255,0.5)">Positive / Hopeful</text>
+  <circle cx="160" cy="663" r="4" fill="#F59E0B"/>
+  <text x="172" y="667" font-size="9" fill="rgba(255,255,255,0.5)">Confusion / Friction</text>
+  <circle cx="304" cy="663" r="4" fill="#EF4444"/>
+  <text x="316" y="667" font-size="9" fill="rgba(255,255,255,0.5)">Critical pain point</text>
+  <circle cx="440" cy="663" r="4" fill="#10B981"/>
+  <text x="452" y="667" font-size="9" fill="rgba(255,255,255,0.5)">Positive outcome</text>
+
+  <rect x="24"  y="678" width="8" height="8" rx="1.5" fill="#EF4444" opacity="0.85"/>
+  <text x="40"  y="686" font-size="9" fill="rgba(255,255,255,0.5)">Pain point identified in research</text>
+  <rect x="248" y="678" width="8" height="8" rx="1.5" fill="#10B981" opacity="0.85"/>
+  <text x="264" y="686" font-size="9" fill="rgba(255,255,255,0.5)">Design opportunity → shipped feature</text>
+
+  <text x="1416" y="663" font-size="9" fill="rgba(255,255,255,0.18)" text-anchor="end">Dhanush N. · Product Designer · XIPHIAS Immigration</text>
+  <text x="1416" y="679" font-size="9" fill="rgba(255,255,255,0.18)" text-anchor="end">n=12 user interviews · 3 expert interviews · 4-week research sprint</text>
+  <text x="1416" y="695" font-size="9" fill="rgba(255,255,255,0.12)" text-anchor="end">This map was used to brief engineering on Stage 5 priority. Real-time tracking moved from Nice to Have → P0.</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="716" width="1440" height="4" fill="#c9ff6a" opacity="0.25"/>
+
+</svg>

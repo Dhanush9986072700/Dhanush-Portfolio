@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+  <rect width="390" height="844" fill="#F0F0F0"/>
+  <!-- status bar -->
+  <rect width="390" height="48" fill="#E2E2E2"/>
+  <text x="24" y="30" font-size="12" fill="#888" font-weight="600">9:41</text>
+  <rect x="318" y="18" width="56" height="12" rx="3" fill="#C8C8C8"/>
+  <!-- annotation: label strip -->
+  <rect x="0" y="48" width="390" height="20" fill="#E8E8E8"/>
+  <text x="16" y="62" font-size="9" fill="#999" font-weight="700" letter-spacing="0.8">SCREEN 1 · ONBOARDING / WELCOME</text>
+  <!-- skip -->
+  <rect x="330" y="80" width="44" height="18" rx="9" fill="#D8D8D8"/>
+  <text x="352" y="92" text-anchor="middle" font-size="9" fill="#AAA">Skip</text>
+  <!-- logo -->
+  <rect x="150" y="78" width="90" height="24" rx="5" fill="#CCCCCC"/>
+  <text x="195" y="94" text-anchor="middle" font-size="10" fill="#999" font-weight="700">WORDMARK</text>
+  <!-- illustration placeholder -->
+  <rect x="44" y="130" width="302" height="258" rx="16" fill="#E2E2E2" stroke="#C8C8C8" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <circle cx="195" cy="240" r="52" fill="#D4D4D4"/>
+  <rect x="155" y="302" width="80" height="10" rx="2" fill="#CCCCCC"/>
+  <text x="195" y="272" text-anchor="middle" font-size="12" fill="#AAAAAA">Illustration</text>
+  <!-- progress dots -->
+  <circle cx="181" cy="414" r="6" fill="#AAAAAA"/>
+  <circle cx="197" cy="414" r="4" fill="#D0D0D0"/>
+  <circle cx="211" cy="414" r="4" fill="#D0D0D0"/>
+  <!-- headline blocks -->
+  <rect x="40" y="440" width="240" height="22" rx="3" fill="#C0C0C0"/>
+  <rect x="40" y="470" width="190" height="22" rx="3" fill="#C0C0C0"/>
+  <!-- annotation -->
+  <text x="40" y="436" font-size="9" fill="#999" font-weight="700" letter-spacing="0.6">HEADLINE</text>
+  <!-- subtext -->
+  <rect x="40" y="512" width="290" height="13" rx="2" fill="#D4D4D4"/>
+  <rect x="40" y="531" width="240" height="13" rx="2" fill="#D4D4D4"/>
+  <text x="40" y="508" font-size="9" fill="#999" font-weight="700" letter-spacing="0.6">BODY TEXT</text>
+  <!-- primary CTA -->
+  <rect x="32" y="572" width="326" height="54" rx="27" fill="#C0C0C0"/>
+  <rect x="148" y="592" width="94" height="14" rx="2" fill="#A8A8A8"/>
+  <text x="32" y="568" font-size="9" fill="#999" font-weight="700" letter-spacing="0.6">PRIMARY CTA</text>
+  <!-- secondary link -->
+  <rect x="128" y="648" width="134" height="12" rx="2" fill="#D4D4D4"/>
+  <text x="128" y="644" font-size="9" fill="#999" font-weight="700" letter-spacing="0.6">SECONDARY LINK</text>
+  <!-- home indicator -->
+  <rect x="150" y="814" width="90" height="5" rx="2.5" fill="#C8C8C8"/>
+</svg>

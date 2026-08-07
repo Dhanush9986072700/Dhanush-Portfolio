@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0A15"/>
+      <stop offset="100%" stop-color="#0F0F1A"/>
+    </linearGradient>
+    <linearGradient id="calm-glow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0A0A15" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="toggle-on" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="390" height="844" fill="url(#bg5)"/>
+
+  <!-- Top ambient glow -->
+  <ellipse cx="195" cy="160" rx="200" ry="130" fill="url(#calm-glow)"/>
+
+  <!-- Status bar -->
+  <text x="16" y="24" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.5)" font-weight="600">9:41</text>
+
+  <!-- Mode toggle header -->
+  <text x="195" y="58" font-family="Inter,sans-serif" font-size="17" fill="white" font-weight="700" text-anchor="middle">Calm Mode</text>
+
+  <!-- Toggle switch -->
+  <rect x="120" y="72" width="150" height="32" rx="16" fill="url(#toggle-on)"/>
+  <circle cx="234" cy="88" r="12" fill="white"/>
+  <text x="148" y="92" font-family="Inter,sans-serif" font-size="11" fill="white" font-weight="600">Calm Mode</text>
+
+  <!-- Hero calm widget -->
+  <rect x="16" y="120" width="358" height="200" rx="20" fill="rgba(45,212,191,0.05)"/>
+  <rect x="16" y="120" width="358" height="200" rx="20" fill="none" stroke="rgba(45,212,191,0.15)" stroke-width="1.5"/>
+
+  <!-- Large reassurance text -->
+  <text x="195" y="174" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.35)" text-anchor="middle" font-weight="500">You're doing great.</text>
+  <text x="195" y="214" font-family="Inter,sans-serif" font-size="32" fill="white" font-weight="800" text-anchor="middle" letter-spacing="-0.5">Spending is</text>
+  <text x="195" y="252" font-family="Inter,sans-serif" font-size="32" fill="#2DD4BF" font-weight="800" text-anchor="middle" letter-spacing="-0.5">under control.</text>
+  <text x="195" y="290" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.3)" text-anchor="middle">No numbers. No stress. Just clarity.</text>
+  <!-- Subtle teal line -->
+  <rect x="160" y="300" width="70" height="2" rx="1" fill="rgba(45,212,191,0.3)"/>
+
+  <!-- What you see in calm mode section -->
+  <text x="20" y="348" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.3)" font-weight="600" letter-spacing="1">WHAT YOU SEE IN CALM MODE</text>
+
+  <!-- Calm item 1: status only -->
+  <rect x="16" y="360" width="358" height="52" rx="12" fill="rgba(255,255,255,0.03)"/>
+  <rect x="16" y="360" width="358" height="52" rx="12" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="28" y="372" width="28" height="28" rx="7" fill="rgba(45,212,191,0.12)"/>
+  <text x="42" y="391" font-family="sans-serif" font-size="14" text-anchor="middle">✅</text>
+  <text x="68" y="382" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.75)" font-weight="500">Spending status</text>
+  <text x="358" y="382" font-family="Inter,sans-serif" font-size="12" fill="#2DD4BF" font-weight="600" text-anchor="end">On track</text>
+  <text x="68" y="398" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.3)">No exact figures shown</text>
+
+  <!-- Calm item 2: category health -->
+  <rect x="16" y="418" width="358" height="52" rx="12" fill="rgba(255,255,255,0.03)"/>
+  <rect x="16" y="418" width="358" height="52" rx="12" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="28" y="430" width="28" height="28" rx="7" fill="rgba(99,102,241,0.12)"/>
+  <text x="42" y="449" font-family="sans-serif" font-size="14" text-anchor="middle">🍔</text>
+  <text x="68" y="440" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.75)" font-weight="500">Food spending</text>
+  <text x="358" y="440" font-family="Inter,sans-serif" font-size="12" fill="#FBBF24" font-weight="600" text-anchor="end">Moderate</text>
+  <text x="68" y="456" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.3)">Category label only — no amount</text>
+
+  <!-- Calm item 3: bill health -->
+  <rect x="16" y="476" width="358" height="52" rx="12" fill="rgba(255,255,255,0.03)"/>
+  <rect x="16" y="476" width="358" height="52" rx="12" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="28" y="488" width="28" height="28" rx="7" fill="rgba(251,191,36,0.12)"/>
+  <text x="42" y="507" font-family="sans-serif" font-size="14" text-anchor="middle">🧾</text>
+  <text x="68" y="498" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.75)" font-weight="500">Bill health</text>
+  <text x="358" y="498" font-family="Inter,sans-serif" font-size="12" fill="#2DD4BF" font-weight="600" text-anchor="end">Good</text>
+  <text x="68" y="514" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.3)">Due in 8 days · No amount shown</text>
+
+  <!-- Hidden in calm mode -->
+  <text x="20" y="556" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.2)" font-weight="600" letter-spacing="1">HIDDEN IN CALM MODE</text>
+
+  <rect x="16" y="566" width="358" height="38" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="195" y="590" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.2)" text-anchor="middle">Transaction list · exact balances · % bars · projections</text>
+
+  <!-- Exit button -->
+  <rect x="80" y="632" width="230" height="46" rx="23" fill="rgba(255,255,255,0.06)"/>
+  <rect x="80" y="632" width="230" height="46" rx="23" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="195" y="660" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.5)" text-anchor="middle" font-weight="500">Turn off Calm Mode</text>
+
+  <!-- Context note -->
+  <text x="195" y="700" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.2)" text-anchor="middle">Designed for exam week and end-of-month anxiety.</text>
+
+  <!-- Bottom nav (dimmed in calm mode) -->
+  <rect y="762" width="390" height="82" fill="rgba(10,10,21,0.97)"/>
+  <rect y="762" width="390" height="1" fill="rgba(255,255,255,0.04)"/>
+  <text x="50" y="791" font-family="sans-serif" font-size="16" text-anchor="middle" opacity="0.4">🏠</text>
+  <text x="50" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.2)" text-anchor="middle">Home</text>
+  <text x="128" y="791" font-family="sans-serif" font-size="16" text-anchor="middle" opacity="0.4">📊</text>
+  <text x="128" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.2)" text-anchor="middle">Breakdown</text>
+  <text x="195" y="791" font-family="sans-serif" font-size="16" text-anchor="middle" opacity="0.4">📈</text>
+  <text x="195" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.2)" text-anchor="middle">Pulse</text>
+  <text x="262" y="791" font-family="sans-serif" font-size="16" text-anchor="middle" opacity="0.4">🧾</text>
+  <text x="262" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.2)" text-anchor="middle">Bill</text>
+  <rect x="316" y="774" width="52" height="40" rx="10" fill="rgba(45,212,191,0.1)"/>
+  <text x="342" y="791" font-family="sans-serif" font-size="16" text-anchor="middle">👤</text>
+  <text x="342" y="808" font-family="Inter,sans-serif" font-size="9" fill="#2DD4BF" font-weight="700" text-anchor="middle">Me</text>
+</svg>

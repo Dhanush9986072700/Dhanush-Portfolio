@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F0F1A"/>
+      <stop offset="100%" stop-color="#131325"/>
+    </linearGradient>
+    <linearGradient id="card4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1C1C2E"/>
+      <stop offset="100%" stop-color="#16162A"/>
+    </linearGradient>
+    <linearGradient id="bill-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="60%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="390" height="844" fill="url(#bg4)"/>
+
+  <!-- Status bar -->
+  <text x="16" y="24" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.7)" font-weight="600">9:41</text>
+
+  <!-- Header -->
+  <rect x="16" y="36" width="32" height="32" rx="8" fill="rgba(255,255,255,0.06)"/>
+  <text x="32" y="57" font-family="sans-serif" font-size="14" text-anchor="middle" fill="rgba(255,255,255,0.6)">←</text>
+  <text x="195" y="58" font-family="Inter,sans-serif" font-size="17" fill="white" font-weight="700" text-anchor="middle">Bill Preview</text>
+  <text x="195" y="74" font-family="Inter,sans-serif" font-size="12" fill="#FBBF24" text-anchor="middle">Due in 8 days</text>
+
+  <!-- Bill summary card -->
+  <rect x="16" y="92" width="358" height="148" rx="16" fill="url(#card4)"/>
+  <rect x="16" y="92" width="358" height="148" rx="16" fill="none" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+
+  <text x="36" y="118" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.35)" font-weight="600" letter-spacing="1">ESTIMATED BILL</text>
+  <text x="36" y="155" font-family="Inter,sans-serif" font-size="40" fill="white" font-weight="800" letter-spacing="-1.5">₹14,100</text>
+  <text x="36" y="175" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.35)">Spending so far</text>
+  <text x="165" y="175" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.65)" font-weight="600">₹9,620</text>
+  <text x="238" y="175" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.25)">·</text>
+  <text x="248" y="175" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.35)">18 days left</text>
+
+  <!-- Progress bar with zones -->
+  <rect x="36" y="188" width="318" height="8" rx="4" fill="rgba(255,255,255,0.07)"/>
+  <rect x="36" y="188" width="192" height="8" rx="4" fill="url(#bill-bar)"/>
+  <!-- Safe zone marker at 60% -->
+  <line x1="227" y1="184" x2="227" y2="200" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Caution zone marker at 80% -->
+  <line x1="290" y1="184" x2="290" y2="200" stroke="rgba(251,191,36,0.4)" stroke-width="1"/>
+  <text x="227" y="210" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.2)" text-anchor="middle">safe</text>
+  <text x="290" y="210" font-family="Inter,sans-serif" font-size="9" fill="rgba(251,191,36,0.5)" text-anchor="middle">caution</text>
+  <text x="36" y="232" font-family="Inter,sans-serif" font-size="10" fill="rgba(99,102,241,0.8)" font-weight="500">68% through billing cycle</text>
+
+  <!-- Stats row -->
+  <rect x="16" y="252" width="170" height="80" rx="12" fill="rgba(99,102,241,0.08)"/>
+  <rect x="16" y="252" width="170" height="80" rx="12" fill="none" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <text x="36" y="276" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.35)" font-weight="600" letter-spacing="0.8">DAILY ALLOWANCE</text>
+  <text x="36" y="304" font-family="Inter,sans-serif" font-size="26" fill="#6366F1" font-weight="800" letter-spacing="-0.5">₹244</text>
+  <text x="36" y="322" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.3)">to stay within ₹14,100</text>
+
+  <rect x="204" y="252" width="170" height="80" rx="12" fill="rgba(45,212,191,0.07)"/>
+  <rect x="204" y="252" width="170" height="80" rx="12" fill="none" stroke="rgba(45,212,191,0.2)" stroke-width="1"/>
+  <text x="224" y="276" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.35)" font-weight="600" letter-spacing="0.8">DAYS ON TRACK</text>
+  <text x="224" y="304" font-family="Inter,sans-serif" font-size="26" fill="#2DD4BF" font-weight="800">9<text font-size="14" fill="rgba(45,212,191,0.5)">/12</text></text>
+  <text x="224" y="322" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.3)">75% of tracked days</text>
+
+  <!-- Forecast bars -->
+  <text x="20" y="360" font-family="Inter,sans-serif" font-size="13" fill="white" font-weight="700">Spend forecast</text>
+
+  <rect x="16" y="372" width="358" height="110" rx="12" fill="rgba(255,255,255,0.02)"/>
+  <rect x="16" y="372" width="358" height="110" rx="12" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Avg day line -->
+  <line x1="32" y1="430" x2="358" y2="430" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="362" y="433" font-family="Inter,sans-serif" font-size="8" fill="rgba(255,255,255,0.2)">avg</text>
+
+  <!-- Past bars (solid) -->
+  <rect x="36" y="432" width="16" height="38" rx="4" fill="rgba(99,102,241,0.6)"/>
+  <rect x="58" y="418" width="16" height="52" rx="4" fill="rgba(99,102,241,0.6)"/>
+  <rect x="80" y="425" width="16" height="45" rx="4" fill="rgba(99,102,241,0.6)"/>
+  <rect x="102" y="405" width="16" height="65" rx="4" fill="rgba(99,102,241,0.6)"/>
+  <rect x="124" y="420" width="16" height="50" rx="4" fill="rgba(99,102,241,0.6)"/>
+  <rect x="146" y="428" width="16" height="42" rx="4" fill="rgba(99,102,241,0.6)"/>
+  <rect x="168" y="414" width="16" height="56" rx="4" fill="rgba(99,102,241,0.6)"/>
+  <rect x="190" y="390" width="16" height="80" rx="4" fill="rgba(251,191,36,0.7)"/>
+  <!-- Projection bars (dashed/lighter) -->
+  <rect x="212" y="420" width="16" height="50" rx="4" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="234" y="416" width="16" height="54" rx="4" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="256" y="423" width="16" height="47" rx="4" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="278" y="428" width="16" height="42" rx="4" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="300" y="424" width="16" height="46" rx="4" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="322" y="419" width="16" height="51" rx="4" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="344" y="422" width="16" height="48" rx="4" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)" stroke-width="1" stroke-dasharray="2,2"/>
+
+  <!-- Calm insight -->
+  <rect x="16" y="494" width="358" height="56" rx="12" fill="rgba(45,212,191,0.07)"/>
+  <rect x="16" y="494" width="358" height="56" rx="12" fill="none" stroke="rgba(45,212,191,0.2)" stroke-width="1"/>
+  <text x="36" y="516" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.85)" font-weight="500">You're on track. 😌</text>
+  <text x="36" y="534" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.35)">Spend ≤₹244/day and you'll stay under ₹14,100.</text>
+
+  <!-- Top spend this cycle -->
+  <text x="20" y="578" font-family="Inter,sans-serif" font-size="13" fill="white" font-weight="700">Top this cycle</text>
+
+  <rect x="16" y="588" width="358" height="46" rx="10" fill="rgba(255,255,255,0.03)"/>
+  <rect x="28" y="600" width="22" height="22" rx="6" fill="rgba(251,191,36,0.15)"/>
+  <text x="39" y="615" font-family="sans-serif" font-size="11" text-anchor="middle">🍔</text>
+  <text x="62" y="614" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.75)">Swiggy</text>
+  <text x="358" y="614" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">₹1,240</text>
+  <text x="62" y="628" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.25)">4 orders · Food</text>
+
+  <rect x="16" y="640" width="358" height="46" rx="10" fill="rgba(255,255,255,0.03)"/>
+  <rect x="28" y="652" width="22" height="22" rx="6" fill="rgba(167,139,250,0.15)"/>
+  <text x="39" y="667" font-family="sans-serif" font-size="11" text-anchor="middle">🛍</text>
+  <text x="62" y="666" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.75)">Amazon</text>
+  <text x="358" y="666" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">₹840</text>
+  <text x="62" y="680" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.25)">2 orders · Shopping</text>
+
+  <!-- Pay button -->
+  <rect x="16" y="702" width="358" height="46" rx="23" fill="#6366F1"/>
+  <text x="195" y="730" font-family="Inter,sans-serif" font-size="14" fill="white" font-weight="700" text-anchor="middle">Set payment reminder</text>
+
+  <!-- Bottom nav -->
+  <rect y="762" width="390" height="82" fill="rgba(15,15,26,0.96)"/>
+  <rect y="762" width="390" height="1" fill="rgba(255,255,255,0.06)"/>
+  <text x="50" y="791" font-family="sans-serif" font-size="16" text-anchor="middle">🏠</text>
+  <text x="50" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle">Home</text>
+  <text x="128" y="791" font-family="sans-serif" font-size="16" text-anchor="middle">📊</text>
+  <text x="128" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle">Breakdown</text>
+  <text x="195" y="791" font-family="sans-serif" font-size="16" text-anchor="middle">📈</text>
+  <text x="195" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle">Pulse</text>
+  <rect x="236" y="774" width="52" height="40" rx="10" fill="rgba(99,102,241,0.15)"/>
+  <text x="262" y="791" font-family="sans-serif" font-size="16" text-anchor="middle">🧾</text>
+  <text x="262" y="808" font-family="Inter,sans-serif" font-size="9" fill="#6366F1" font-weight="700" text-anchor="middle">Bill</text>
+  <text x="342" y="791" font-family="sans-serif" font-size="16" text-anchor="middle">👤</text>
+  <text x="342" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle">Me</text>
+</svg>

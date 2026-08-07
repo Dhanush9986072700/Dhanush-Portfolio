@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F0F1A"/>
+      <stop offset="100%" stop-color="#131325"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1C1C2E"/>
+      <stop offset="100%" stop-color="#16162A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="390" height="844" fill="url(#bg2)"/>
+
+  <!-- Status bar -->
+  <text x="16" y="24" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.7)" font-weight="600">9:41</text>
+
+  <!-- Header -->
+  <rect x="16" y="36" width="32" height="32" rx="8" fill="rgba(255,255,255,0.06)"/>
+  <text x="32" y="57" font-family="sans-serif" font-size="14" text-anchor="middle">←</text>
+  <text x="195" y="58" font-family="Inter,sans-serif" font-size="17" fill="white" font-weight="700" text-anchor="middle">Spend Breakdown</text>
+  <text x="195" y="74" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.35)" text-anchor="middle">June 2026</text>
+
+  <!-- Donut chart area -->
+  <rect x="16" y="92" width="358" height="240" rx="16" fill="url(#card2)"/>
+  <rect x="16" y="92" width="358" height="240" rx="16" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Donut SVG chart (pie-style rings) -->
+  <!-- Background ring -->
+  <circle cx="195" cy="210" r="72" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="30"/>
+  <!-- Food segment: 35.5% = 128deg -->
+  <circle cx="195" cy="210" r="72" fill="none" stroke="#FBBF24" stroke-width="30"
+    stroke-dasharray="80 452" stroke-dashoffset="452" transform="rotate(-90 195 210)"/>
+  <!-- Shopping: 27.4% = 99deg -->
+  <circle cx="195" cy="210" r="72" fill="none" stroke="#A78BFA" stroke-width="30"
+    stroke-dasharray="62 452" stroke-dashoffset="372" transform="rotate(-90 195 210)"/>
+  <!-- Transport: 19.1% = 69deg -->
+  <circle cx="195" cy="210" r="72" fill="none" stroke="#60A5FA" stroke-width="30"
+    stroke-dasharray="43 452" stroke-dashoffset="310" transform="rotate(-90 195 210)"/>
+  <!-- Going Out: 12.9% = 46deg -->
+  <circle cx="195" cy="210" r="72" fill="none" stroke="#2DD4BF" stroke-width="30"
+    stroke-dasharray="29 452" stroke-dashoffset="267" transform="rotate(-90 195 210)"/>
+  <!-- Other: 5% -->
+  <circle cx="195" cy="210" r="72" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="30"
+    stroke-dasharray="13 452" stroke-dashoffset="238" transform="rotate(-90 195 210)"/>
+
+  <!-- Center label -->
+  <text x="195" y="204" font-family="Inter,sans-serif" font-size="22" fill="white" font-weight="800" text-anchor="middle">₹9,620</text>
+  <text x="195" y="222" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.3)" text-anchor="middle">total spent</text>
+
+  <!-- Legend pills -->
+  <rect x="32" y="308" width="8" height="8" rx="2" fill="#FBBF24"/>
+  <text x="44" y="317" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.5)">Food</text>
+  <rect x="98" y="308" width="8" height="8" rx="2" fill="#A78BFA"/>
+  <text x="110" y="317" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.5)">Shopping</text>
+  <rect x="178" y="308" width="8" height="8" rx="2" fill="#60A5FA"/>
+  <text x="190" y="317" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.5)">Transport</text>
+  <rect x="262" y="308" width="8" height="8" rx="2" fill="#2DD4BF"/>
+  <text x="274" y="317" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.5)">Going Out</text>
+
+  <!-- Expanded category: Food (active / tapped state) -->
+  <rect x="16" y="342" width="358" height="70" rx="12" fill="rgba(251,191,36,0.08)"/>
+  <rect x="16" y="342" width="358" height="70" rx="12" fill="none" stroke="rgba(251,191,36,0.3)" stroke-width="1"/>
+  <rect x="28" y="354" width="30" height="30" rx="8" fill="rgba(251,191,36,0.2)"/>
+  <text x="43" y="374" font-family="sans-serif" font-size="16" text-anchor="middle">🍔</text>
+  <text x="70" y="366" font-family="Inter,sans-serif" font-size="14" fill="rgba(255,255,255,0.9)" font-weight="600">Food &amp; Drinks</text>
+  <text x="358" y="366" font-family="Inter,sans-serif" font-size="14" fill="#FBBF24" font-weight="700" text-anchor="end">₹3,420</text>
+  <text x="70" y="382" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.35)">35.5% of total · 8 transactions</text>
+  <rect x="70" y="390" width="240" height="3" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="70" y="390" width="85" height="3" rx="2" fill="#FBBF24"/>
+  <text x="358" y="398" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.25)" text-anchor="end">▼ expanded</text>
+
+  <!-- Merchant sub-rows (inside food) -->
+  <rect x="28" y="420" width="334" height="36" rx="8" fill="rgba(255,255,255,0.03)"/>
+  <rect x="40" y="430" width="16" height="16" rx="4" fill="rgba(251,191,36,0.15)"/>
+  <text x="48" y="442" font-family="sans-serif" font-size="10" text-anchor="middle">🍔</text>
+  <text x="66" y="440" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">Swiggy</text>
+  <text x="354" y="440" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">₹1,240</text>
+  <text x="66" y="452" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.25)">4 orders</text>
+
+  <rect x="28" y="462" width="334" height="36" rx="8" fill="rgba(255,255,255,0.03)"/>
+  <rect x="40" y="472" width="16" height="16" rx="4" fill="rgba(251,191,36,0.15)"/>
+  <text x="48" y="484" font-family="sans-serif" font-size="10" text-anchor="middle">☕</text>
+  <text x="66" y="482" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">Starbucks</text>
+  <text x="354" y="482" font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">₹840</text>
+  <text x="66" y="494" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.25)">2 visits</text>
+
+  <!-- Collapsed categories -->
+  <rect x="16" y="510" width="358" height="52" rx="12" fill="rgba(255,255,255,0.03)"/>
+  <rect x="16" y="510" width="358" height="52" rx="12" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <rect x="28" y="522" width="28" height="28" rx="8" fill="rgba(167,139,250,0.12)"/>
+  <text x="42" y="541" font-family="sans-serif" font-size="14" text-anchor="middle">🛍</text>
+  <text x="68" y="534" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.8)" font-weight="500">Shopping</text>
+  <text x="358" y="534" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.65)" font-weight="600" text-anchor="end">₹2,640</text>
+  <rect x="68" y="542" width="220" height="3" rx="2" fill="rgba(255,255,255,0.06)"/>
+  <rect x="68" y="542" width="62" height="3" rx="2" fill="#A78BFA"/>
+  <text x="68" y="555" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.25)">27.4%</text>
+
+  <rect x="16" y="568" width="358" height="52" rx="12" fill="rgba(255,255,255,0.03)"/>
+  <rect x="16" y="568" width="358" height="52" rx="12" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <rect x="28" y="580" width="28" height="28" rx="8" fill="rgba(96,165,250,0.12)"/>
+  <text x="42" y="599" font-family="sans-serif" font-size="14" text-anchor="middle">🚗</text>
+  <text x="68" y="592" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.8)" font-weight="500">Transport</text>
+  <text x="358" y="592" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.65)" font-weight="600" text-anchor="end">₹1,840</text>
+  <rect x="68" y="600" width="220" height="3" rx="2" fill="rgba(255,255,255,0.06)"/>
+  <rect x="68" y="600" width="43" height="3" rx="2" fill="#60A5FA"/>
+  <text x="68" y="613" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.25)">19.1%</text>
+
+  <rect x="16" y="626" width="358" height="52" rx="12" fill="rgba(255,255,255,0.03)"/>
+  <rect x="16" y="626" width="358" height="52" rx="12" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <rect x="28" y="638" width="28" height="28" rx="8" fill="rgba(45,212,191,0.12)"/>
+  <text x="42" y="657" font-family="sans-serif" font-size="14" text-anchor="middle">🎉</text>
+  <text x="68" y="650" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.8)" font-weight="500">Going Out</text>
+  <text x="358" y="650" font-family="Inter,sans-serif" font-size="13" fill="rgba(255,255,255,0.65)" font-weight="600" text-anchor="end">₹1,240</text>
+  <rect x="68" y="658" width="220" height="3" rx="2" fill="rgba(255,255,255,0.06)"/>
+  <rect x="68" y="658" width="29" height="3" rx="2" fill="#2DD4BF"/>
+  <text x="68" y="671" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.25)">12.9%</text>
+
+  <!-- Bottom nav -->
+  <rect y="762" width="390" height="82" fill="rgba(15,15,26,0.96)"/>
+  <rect y="762" width="390" height="1" fill="rgba(255,255,255,0.06)"/>
+  <text x="50" y="791" font-family="sans-serif" font-size="16" text-anchor="middle">🏠</text>
+  <text x="50" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle">Home</text>
+  <rect x="102" y="774" width="52" height="40" rx="10" fill="rgba(99,102,241,0.15)"/>
+  <text x="128" y="791" font-family="sans-serif" font-size="16" text-anchor="middle">📊</text>
+  <text x="128" y="808" font-family="Inter,sans-serif" font-size="9" fill="#6366F1" font-weight="700" text-anchor="middle">Breakdown</text>
+  <text x="195" y="791" font-family="sans-serif" font-size="16" text-anchor="middle">📈</text>
+  <text x="195" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle">Pulse</text>
+  <text x="262" y="791" font-family="sans-serif" font-size="16" text-anchor="middle">🧾</text>
+  <text x="262" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle">Bill</text>
+  <text x="342" y="791" font-family="sans-serif" font-size="16" text-anchor="middle">👤</text>
+  <text x="342" y="808" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle">Me</text>
+</svg>

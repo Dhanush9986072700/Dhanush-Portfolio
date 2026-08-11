@@ -570,8 +570,10 @@ export default function CaseStudyContent({ project }: Props) {
       <Section>
         <Container size="lg">
           <ScrollReveal>
-            <SectionLabel>Impact</SectionLabel>
-            <SectionHeading>What this delivered</SectionHeading>
+            <SectionLabel>{caseStudy.impactLabel ?? "Impact"}</SectionLabel>
+            <SectionHeading>
+              {caseStudy.impactHeading ?? "What this delivered"}
+            </SectionHeading>
           </ScrollReveal>
 
           {/* Large numbers scattered across width */}

@@ -68,6 +68,10 @@ export interface CaseStudy {
   flow?: CaseStudyFlow;
   metrics: Metric[];
   impact: ImpactItem[];
+  /** Overrides the "Impact" eyebrow — use when the numbers are targets, not results. */
+  impactLabel?: string;
+  /** Overrides the "What this delivered" heading for the same reason. */
+  impactHeading?: string;
   reflection: Reflection;
 }
 
@@ -663,6 +667,207 @@ export const projects: Project[] = [
           "I underestimated the complexity of the housekeeping module. It became its own product inside the product. In hindsight, I'd have scoped it as a separate phase with its own discovery sprint.",
         learned:
           "Building full-stack solo forces you to design for your own edge cases. You can't throw ambiguity over the wall. Every design decision has a code consequence — and knowing both sides makes you a better designer and a better engineer.",
+      },
+    },
+  },
+  {
+    id: "returneasy",
+    slug: "returneasy",
+    number: "14",
+    title: "ReturnEasy — Online Returns & Refund Tracking",
+    description:
+      "Self-initiated mobile MVP for managing online returns. Eight screens, a wired prototype and a token-based design system — published mid-project, with the research left visibly unfinished rather than invented.",
+    pitch:
+      "Returning something you bought online is not one task. It is five handovers across a retailer app, a confirmation email, a printer, a courier site and eventually your bank — and nobody owns the whole journey. ReturnEasy pulls the deadline, the instructions, the drop-off code and the refund into a single flow, so the answer to \"where is my money\" stops being a research project.",
+    role: "Product Designer (solo)",
+    duration: "4 weeks",
+    team: "Solo",
+    stack: ["Figma", "Design Systems", "Prototyping", "Interaction Design"],
+    year: "2026",
+    tags: ["Mobile App", "E-commerce", "Design Systems", "Figma", "Self-initiated"],
+    gradient: "from-slate-900 via-emerald-950 to-slate-900",
+    prototypeUrl:
+      "https://www.figma.com/design/J0BsAc5femr51X6YxVFN56/ReturnEasy-%E2%80%94-Product-Design-Case-Study?node-id=1-11",
+    caseStudy: {
+      badge: "CASE STUDY 14 / 2026",
+      heroImage: "/case-studies/returneasy/hero-final-ui.png",
+      brief:
+        "Nobody designs the return. Retailers design the purchase, couriers design the delivery, and banks design the refund — so the person in the middle ends up stitching five services together from memory. They screenshot the QR code in case the email disappears. They set a calendar reminder for a deadline buried in a policy page. They check their bank on a Tuesday for money that was never coming that week. This is a self-initiated project: no client, no brief, no stakeholder to please. I picked it because the problem is ordinary enough that everyone has a story about it, and structured enough that one flow can carry the whole product.",
+      pullQuote:
+        "\"Processed\" in a retailer email and \"processed\" in a bank statement mean two completely different things — and nothing in the journey tells you which one you are looking at.",
+      goals: [
+        "Put every active return, its deadline and its refund in one place",
+        "Make the cost of a return visible while the choice is being made, not after it",
+        "Split the parcel journey from the money journey so \"where is it\" has a real answer",
+        "Keep version one to one flow and roughly eight screens — no accounts, no integrations",
+        "Write down what I believe before researching it, so the research can prove me wrong",
+      ],
+      colorPalette: [
+        { name: "Ink 900", hex: "#14181A", usage: "Primary text, headings, the primary button" },
+        { name: "Ink 500", hex: "#6E7570", usage: "Supporting copy, timestamps, helper text" },
+        { name: "Brand 500", hex: "#1D6B5C", usage: "Progress, selection, active steps, links" },
+        { name: "Warning", hex: "#B8770F", usage: "Deadlines — the only thing on screen that expires" },
+        { name: "Success", hex: "#2F7D4F", usage: "Free postage, completed tracker steps, refund done" },
+        { name: "Error", hex: "#B4392B", usage: "Late refunds and blocked returns" },
+      ],
+      typography: [
+        {
+          family: "Inter",
+          weights: "400, 500, 600, 700",
+          usage: "Eleven shared styles covering the entire product — Display through Micro",
+        },
+      ],
+      research: {
+        intro:
+          "This is the honest part. The research is planned, written and scheduled — and it has not happened. Five interviews are designed, the screener is set, the guide is written, and nobody has been recruited yet. So there are no findings on this page, no quotes, and no persona built out of thin air.",
+        paragraphs: [
+          "What exists instead is an assumptions map. Before writing a single question I put down thirteen things I believed about returns and coded them by type — four about users, four about the product, two about the business, three technical. Then I ran them through an importance-versus-uncertainty matrix, which pushed six into a research-first quadrant and parked the rest.",
+          "The riskiest one is P4: that people will add an order to the app by hand. Version one has no retailer integration, so if manual entry dies, the app has no data and every other screen is decoration. That single belief holds up the whole product, which is why it leads the interview guide rather than sitting somewhere in the middle.",
+          "Writing the beliefs down first did something I did not expect — it made the guide almost design itself. Once thirteen assumptions were on a wall with a matrix behind them, the questions stopped being a list of interesting things to ask and became a set of tests. Each of the six research-first beliefs is tagged to the question that checks it. And the four beliefs worth testing turned out not to be the four I would have picked by instinct.",
+          "There is also a page in the file listing questions I have banned myself from asking — \"would you use an app that manages returns?\" and its relatives. People are agreeable about hypotheticals. A yes to that tells me nothing except that someone is polite, and it would quietly become \"validation\" later.",
+        ],
+        insights: [
+          "Structural, not researched: a return is five handovers across five services, and every handover changes vocabulary. That much is observable without interviewing anyone.",
+          "Assumption, not finding — people forget the return deadline. High importance, high uncertainty, and the first thing the guide tests.",
+          "Assumption, not finding — nobody knows where their refund is. The parcel arriving and the money landing are treated as one event by every interface and as two by every user.",
+          "Open question I genuinely cannot answer yet: when someone reads \"refund processed\", do they picture the parcel or the money?",
+          "The interview guide is retrospective by design. Every question asks what someone did last month, because asking what they would do produces a polite guess.",
+        ],
+      },
+      keyDecisions: [
+        {
+          title: "Postage cost sits on the reason, not the receipt",
+          description:
+            "Choosing \"too small\" costs £2.95 off the refund. Choosing \"faulty\" is free. Most retailers reveal that after you have already committed, which is exactly where the resentment starts. Putting the price against each reason makes the screen denser and the choice honest — and it means the user is deciding with the trade-off in front of them rather than discovering it in a confirmation email. The cost is a busier screen. Worth it.",
+        },
+        {
+          title: "The tracker has five steps, not one status",
+          description:
+            "A single label reading \"return started\" cannot tell you whether the parcel moved or the money is coming. The tracker splits those into two journeys on one timeline — return started, parcel dropped off, received by retailer, refund issued, money in your account — with the expected amount and date pinned above it, because that is the actual question. The cost is vertical space and a lot more states to build.",
+        },
+        {
+          title: "Effort is shown as distance and hours",
+          description:
+            "Three drop-off options that all say \"free\" are not a real choice. Four minutes away and open twenty-four hours is a completely different product from twelve minutes away and closing at half five. Showing distance and opening hours on each option turns a list of logos into a decision someone can actually make. The cost is needing location data from day one.",
+        },
+        {
+          title: "Manual entry is a first-class path, not a fallback",
+          description:
+            "Adding an order by hand sits on the same screen as search, styled as an invitation rather than an apology. This is the riskiest assumption in the project wearing its consequences on its sleeve: if people will not do it, version one has no data. So it gets prominence rather than a footnote at the bottom of an empty state.",
+        },
+        {
+          title: "Four features cut, with the reason attached to each",
+          description:
+            "Login and accounts went because nothing in the core flow needs an identity. Retailer integrations went because they are an API partnership problem, not an interface problem — the most valuable feature and the least designable one. Multi-item returns went because they change the data model of every screen and belong in v2 rather than half-done in v1. Support chat went on principle: a returns app that needs a chat window has already failed at its actual job.",
+        },
+      ],
+      flow: {
+        title: "Experience journey and primary flow",
+        image: "/case-studies/returneasy/flow-primary.png",
+        caption:
+          "The top half maps the whole return end to end — nine stages, what the user is doing, what they are asking themselves, and how they feel — which is what surfaced the two stages nobody designs for: the handover and the wait. The bottom half is the nine-step product flow, with the four branch points drawn below the line, because failure cases are where returns actually break.",
+      },
+      wireframes: [
+        {
+          title: "Three ways the home screen could work",
+          label: "Concepts + low fidelity",
+          image: "/case-studies/returneasy/wireframes.png",
+          caption:
+            "Greyscale on purpose — colour only makes the winning idea look more convincing. Dashboard-first, timeline-first and action-first were compared against five criteria, then twelve low-fidelity screens were drawn from the winner, including the states that never make it into a portfolio: the empty home, the past deadline, the order that cannot be found.",
+          span: "full",
+          imgW: 2800,
+          imgH: 1670,
+        },
+        {
+          title: "The system underneath the screens",
+          label: "Design system",
+          image: "/case-studies/returneasy/design-system.png",
+          caption:
+            "Fifty-eight variables and eleven shared text styles, with components pointing at semantic roles rather than raw hex — theme/due-fg rather than a colour. On the final UI page, 424 of 455 fills are variable-bound and 154 of 170 text nodes use a shared style, so a rebrand is one edit rather than a find-and-replace.",
+          span: "full",
+          imgW: 2800,
+          imgH: 2042,
+        },
+      ],
+      screens: [
+        {
+          title: "Home — your returns",
+          image: "/case-studies/returneasy/screen-home.png",
+          caption:
+            "Active returns as cards, each carrying the deadline, the refund amount and the single next action. A banner at the top counts down the nearest closing return.",
+          decision:
+            "The deadline wins the hierarchy fight. It is the only thing on this screen that expires, so it takes the amber and the top of the card — above the product name, above the price.",
+          aspect: "mobile",
+        },
+        {
+          title: "Return reason",
+          image: "/case-studies/returneasy/screen-reason.png",
+          caption:
+            "Five reasons, each showing what it costs. \"Faulty or damaged\" is free and says who pays; \"too small\" is £2.95 and says where it comes from.",
+          decision:
+            "Putting the price on the option rather than the receipt is the decision I would defend hardest. It makes the screen busier and the product honest, and the running refund estimate at the bottom keeps the consequence visible while deciding.",
+          aspect: "mobile",
+        },
+        {
+          title: "Instructions and QR code",
+          image: "/case-studies/returneasy/screen-qr.png",
+          caption:
+            "The code, a save-to-phone action, and three numbered steps written in the order someone standing at a locker actually needs them.",
+          decision:
+            "This is the one screen that has to work offline, in a basement locker room, with no signal. The code is cached and renders without a network, and there is no tint behind it so it stays readable in bright light.",
+          aspect: "mobile",
+        },
+        {
+          title: "Refund tracker",
+          image: "/case-studies/returneasy/screen-tracker.png",
+          caption:
+            "The amount and the expected date sit above the timeline. Below, five steps separate the parcel journey from the money journey, with a help prompt that only appears once the retailer's own window has passed.",
+          decision:
+            "\"Refund issued\" and \"money in your account\" are deliberately two rows, up to five days apart. Collapsing them into one status is what makes people check their bank on the wrong day.",
+          aspect: "mobile",
+        },
+      ],
+      metrics: [
+        { value: "8", label: "Screens designed, end to end" },
+        { value: "13", label: "Assumptions logged before any research" },
+        { value: "5", label: "Interviews planned, none run yet" },
+        { value: "0", label: "Findings claimed without evidence" },
+      ],
+      impactLabel: "Targets",
+      impactHeading: "What I would measure",
+      impact: [
+        {
+          value: "80%",
+          label: "Finish setup unaided",
+          description:
+            "Complete the return setup without asking for help. A target, not a result — the flow has not been in front of anyone yet.",
+        },
+        {
+          value: "< 5s",
+          label: "Read the next step",
+          description:
+            "Time to understand what the app needs from you next, measured from screen load. Untested.",
+        },
+        {
+          value: "< 3 min",
+          label: "Start a return",
+          description:
+            "From opening the app to a submitted return, including adding the order by hand. Untested.",
+        },
+        {
+          value: "4 of 5",
+          label: "Know their refund status",
+          description:
+            "Correctly say where the money is and when it lands. This is the number the whole tracker exists to move. Untested.",
+        },
+      ],
+      reflection: {
+        proud:
+          "The hardest part of this project was not the interface — it was resisting the urge to fill the empty pages. Halfway through I could have written five plausible interviews. They would have read well, nobody would obviously have caught them, and the case study would have looked finished. I did not, because a fabricated insight cannot survive the follow-up question in an interview, and because a project that admits what it has not proven says more about how I work than one that quietly pretends. The synthesis page in the file is still empty on purpose, with a verdict table listing all thirteen assumptions and the word \"awaiting evidence\" next to every one of them.",
+        different:
+          "I would have run the interviews before designing eight screens, not after. The order I worked in — brief, assumptions, flows, wireframes, UI, prototype, and only then research — is backwards, and it happened because designing is more fun than recruiting. The design is defensible on reasoning, and the reasoning is written down, but it is still my reasoning rather than anything earned. Realistically, some of those screens will change once five people have talked at me for half an hour each, and the ones I am most confident about are probably the ones most at risk.",
+        learned:
+          "Writing the assumptions down before the research changed what the research was for. Once thirteen beliefs were on a wall with an importance-versus-uncertainty matrix behind them, the interview guide stopped being a list of nice questions and turned into a set of tests — each one tied to a specific belief that would cost something if it were wrong. The surprise was which beliefs made the cut: the four I would have tested on instinct were not the four the matrix picked. The other lesson is smaller and more practical — a case study with a visible hole in it is easier to talk about in an interview than a polished one, because you can explain the hole.",
       },
     },
   },
@@ -3761,6 +3966,7 @@ export const projects: Project[] = [
       },
     },
   },
+  
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {

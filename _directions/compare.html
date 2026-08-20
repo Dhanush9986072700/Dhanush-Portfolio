@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Direction Set 01–03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Public+Sans:wght@400;500&family=Fragment+Mono&family=Fraunces:opsz,wght,SOFT,WONK@9..144,300;9..144,400;9..144,500&family=Libre+Franklin:wght@400;500&family=Courier+Prime:wght@400;700&family=Familjen+Grotesk:wght@400;500;600&family=Archivo:wght@400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: #E6E2D8;
+    color: #17150F;
+    font-family: "Public Sans", system-ui, sans-serif;
+    padding: 0 0 96px;
+  }
+
+  /* ---------- page chrome ---------- */
+  .sheet { max-width: 1440px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 56px); }
+
+  .masthead {
+    display: flex; flex-wrap: wrap; gap: 12px 32px;
+    align-items: baseline; justify-content: space-between;
+    padding: 40px 0 18px;
+    border-bottom: 1px solid #17150F;
+  }
+  .masthead h1 {
+    font-family: "Fragment Mono", ui-monospace, monospace;
+    font-size: 13px; font-weight: 400; letter-spacing: .16em;
+    text-transform: uppercase; margin: 0;
+  }
+  .masthead .meta {
+    font-family: "Fragment Mono", ui-monospace, monospace;
+    font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+    color: #6B6154;
+  }
+
+  .preamble {
+    padding: 22px 0 40px;
+    border-bottom: 1px solid #C9C3B4;
+    max-width: 62ch;
+    font-size: 14.5px; line-height: 1.65; color: #46403A;
+  }
+  .preamble strong { font-weight: 500; color: #17150F; }
+
+  /* ---------- three columns ---------- */
+  .set {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    border-bottom: 1px solid #17150F;
+  }
+  .col {
+    border-right: 1px solid #C9C3B4;
+    background: var(--paper);
+    color: var(--ink);
+    padding: 0 clamp(14px, 1.8vw, 26px) 40px;
+  }
+  .col:last-child { border-right: 0; }
+
+  @media (max-width: 900px) {
+    .set { grid-template-columns: 1fr; }
+    .col { border-right: 0; border-bottom: 1px solid #17150F; }
+  }
+
+  /* palette tokens per direction */
+  .d1 { --paper:#F3EDE1; --raised:#EAE2D2; --ink:#191510; --accent:#7E4360; --muted:#6B6154; --hairline:#D6CCB9;
+        --display:"Newsreader", Georgia, serif; --body:"Public Sans", sans-serif; --mono:"Fragment Mono", monospace; }
+  .d2 { --paper:#F2EFE6; --raised:#E9E5D9; --ink:#181410; --accent:#7C3A33; --muted:#6E675C; --hairline:#DCD6C7;
+        --display:"Fraunces", Georgia, serif; --body:"Libre Franklin", sans-serif; --mono:"Courier Prime", monospace; }
+  .d3 { --paper:#F0EDE3; --raised:#E4E1D5; --ink:#17150F; --accent:#456455; --muted:#68675B; --hairline:#D5D2C4;
+        --display:"Familjen Grotesk", sans-serif; --body:"Archivo", sans-serif; --mono:"DM Mono", monospace; }
+
+  .d2 .disp { font-variation-settings: "SOFT" 0, "WONK" 1, "opsz" 100; }
+
+  /* ---------- column head ---------- */
+  .idx {
+    display: flex; align-items: baseline; gap: 10px;
+    padding: 26px 0 4px;
+    font-family: var(--mono); font-size: 11px; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .idx .n { color: var(--accent); }
+  .name {
+    font-family: var(--display);
+    font-size: clamp(26px, 2.4vw, 34px);
+    font-weight: 400; line-height: 1.05; margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .world {
+    font-family: var(--body); font-size: 13px; line-height: 1.6;
+    color: var(--muted); margin: 0 0 26px; max-width: 34ch;
+  }
+
+  .rule { height: 1px; background: var(--hairline); margin: 0 0 18px; }
+  .label {
+    font-family: var(--mono); font-size: 10px; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--muted); margin: 0 0 12px;
+  }
+
+  /* ---------- swatches ---------- */
+  .swatches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); margin-bottom: 22px; }
+  .sw { background: var(--paper); padding: 0; }
+  .sw .chip { height: 54px; display: block; }
+  .sw .txt { padding: 7px 8px 9px; }
+  .sw .role { font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); display: block; }
+  .sw .hex  { font-family: var(--mono); font-size: 11px; color: var(--ink); display: block; margin-top: 2px; }
+
+  .accentnote {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .06em;
+    color: var(--muted); margin: -8px 0 28px;
+  }
+  .accentnote b { color: var(--accent); font-weight: 400; }
+
+  /* ---------- type specimen ---------- */
+  .spec { border: 1px solid var(--hairline); background: var(--raised); padding: 20px 18px 22px; margin-bottom: 22px; }
+  .disp {
+    font-family: var(--display); font-weight: 400;
+    font-size: clamp(22px, 2vw, 29px); line-height: 1.14;
+    margin: 0 0 16px; letter-spacing: -0.015em;
+  }
+  .disp em { font-style: italic; color: var(--accent); }
+  .bodycopy {
+    font-family: var(--body); font-size: 13.5px; line-height: 1.68;
+    color: var(--ink); margin: 0 0 18px; max-width: 40ch;
+  }
+  .datarow {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted);
+    display: flex; flex-wrap: wrap; gap: 4px 14px;
+    padding-top: 14px; border-top: 1px solid var(--hairline);
+  }
+  .datarow .state { color: var(--accent); }
+  .stack {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--muted); line-height: 1.9;
+  }
+  .stack b { color: var(--ink); font-weight: 400; }
+
+  /* ---------- register mock ---------- */
+  .reg { border: 1px solid var(--hairline); margin-bottom: 22px; }
+  .reg .row {
+    display: grid; grid-template-columns: 34px 1fr auto;
+    gap: 10px; align-items: baseline;
+    padding: 9px 12px; border-bottom: 1px solid var(--hairline);
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .reg .row:last-child { border-bottom: 0; }
+  .reg .row .subj { font-family: var(--body); font-size: 13px; letter-spacing: 0; text-transform: none; color: var(--ink); }
+  .reg .row .st { color: var(--muted); }
+  .reg .row .st.live { color: var(--accent); }
+
+  .concept {
+    font-family: var(--body); font-size: 13px; line-height: 1.6; color: var(--muted);
+    border-top: 1px solid var(--hairline); padding-top: 16px; margin: 0;
+  }
+  .concept b { color: var(--ink); font-weight: 500; }
+
+  /* ---------- footer ---------- */
+  .footer { padding-top: 34px; max-width: 70ch; }
+  .footer h2 {
+    font-family: "Fragment Mono", monospace; font-size: 11px; letter-spacing: .18em;
+    text-transform: uppercase; font-weight: 400; color: #6B6154; margin: 0 0 14px;
+  }
+  .footer p { font-size: 14px; line-height: 1.7; color: #46403A; margin: 0 0 12px; }
+  .footer b { font-weight: 500; color: #17150F; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="masthead">
+    <h1>Portfolio &nbsp;/&nbsp; Direction Set 01–03</h1>
+    <div class="meta">Dhanush &middot; Bangalore &middot; 2026 &middot; Pick one</div>
+  </div>
+
+  <p class="preamble">
+    Three complete directions. Each borrows from a physical craft world where exactly one colour
+    carries meaning and everything else is neutral ruling — so the accent is <strong>information,
+    not decoration</strong>. Same structural system underneath all three (<strong>The Register</strong>):
+    projects as indexed entries with honest state, a visible grid, mono for data and sans for prose.
+  </p>
+
+  <div class="set">
+
+    <!-- ============ 01 ============ -->
+    <section class="col d1">
+      <div class="idx"><span class="n">01</span><span>Chart room · Admiralty</span></div>
+      <h2 class="name">Dead Reckoning</h2>
+      <p class="world">Buff chart paper, brown-black engraved linework, and one aniline overprint reserved for hazards and light sectors. Charts don't shout — they annotate.</p>
+
+      <p class="label">Palette</p>
+      <div class="swatches">
+        <div class="sw"><span class="chip" style="background:#F3EDE1"></span><span class="txt"><span class="role">paper</span><span class="hex">#F3EDE1</span></span></div>
+        <div class="sw"><span class="chip" style="background:#EAE2D2"></span><span class="txt"><span class="role">raised</span><span class="hex">#EAE2D2</span></span></div>
+        <div class="sw"><span class="chip" style="background:#191510"></span><span class="txt"><span class="role">ink</span><span class="hex">#191510</span></span></div>
+        <div class="sw"><span class="chip" style="background:#7E4360"></span><span class="txt"><span class="role">accent</span><span class="hex">#7E4360</span></span></div>
+        <div class="sw"><span class="chip" style="background:#6B6154"></span><span class="txt"><span class="role">muted</span><span class="hex">#6B6154</span></span></div>
+        <div class="sw"><span class="chip" style="background:#D6CCB9"></span><span class="txt"><span class="role">hairline</span><span class="hex">#D6CCB9</span></span></div>
+      </div>
+      <p class="accentnote"><b>Chart mulberry</b> · 6.3:1 on paper · violet-leaning, never reads warm-blog</p>
+
+      <p class="label">Type</p>
+      <div class="spec">
+        <p class="disp">The handoff gap is not a<br>process problem. It is a<br><em>drawing</em> problem.</p>
+        <p class="bodycopy">Newsreader carries every ounce of voice; Public Sans was drawn to have no opinion at all. The serif speaks, the sans stays silent.</p>
+        <div class="datarow">
+          <span>Index 004</span><span class="state">Shipped</span><span>React / TS</span><span>2025</span>
+        </div>
+      </div>
+      <p class="stack"><b>Newsreader</b> display &middot; sharp scotch serif<br><b>Public Sans</b> body &middot; silent workhorse<br><b>Fragment Mono</b> data &middot; quiet annotation</p>
+
+      <div class="rule" style="margin:24px 0 18px"></div>
+      <p class="label">Register</p>
+      <div class="reg">
+        <div class="row"><span>004</span><span class="subj">Payments console</span><span class="st live">Shipped</span></div>
+        <div class="row"><span>003</span><span class="subj">Agent trace viewer</span><span class="st">Concept</span></div>
+        <div class="row"><span>002</span><span class="subj">Bill book · Harmony Luxe</span><span class="st live">In service</span></div>
+      </div>
+      <p class="concept"><b>Concept:</b> a chart sheet — margin scale down the left edge, hazards in mulberry, everything else ruled and calm.</p>
+    </section>
+
+    <!-- ============ 02 ============ -->
+    <section class="col d2">
+      <div class="idx"><span class="n">02</span><span>Ledger · Bindery</span></div>
+      <h2 class="name">Rule &amp; Bind</h2>
+      <p class="world">Iron-gall ink oxidising brown-black, ruled columns, an index at the front of the volume, and oxblood buckram on the outside of the binding.</p>
+
+      <p class="label">Palette</p>
+      <div class="swatches">
+        <div class="sw"><span class="chip" style="background:#F2EFE6"></span><span class="txt"><span class="role">paper</span><span class="hex">#F2EFE6</span></span></div>
+        <div class="sw"><span class="chip" style="background:#E9E5D9"></span><span class="txt"><span class="role">raised</span><span class="hex">#E9E5D9</span></span></div>
+        <div class="sw"><span class="chip" style="background:#181410"></span><span class="txt"><span class="role">ink</span><span class="hex">#181410</span></span></div>
+        <div class="sw"><span class="chip" style="background:#7C3A33"></span><span class="txt"><span class="role">accent</span><span class="hex">#7C3A33</span></span></div>
+        <div class="sw"><span class="chip" style="background:#6E675C"></span><span class="txt"><span class="role">muted</span><span class="hex">#6E675C</span></span></div>
+        <div class="sw"><span class="chip" style="background:#DCD6C7"></span><span class="txt"><span class="role">hairline</span><span class="hex">#DCD6C7</span></span></div>
+      </div>
+      <p class="accentnote"><b>Oxblood</b> · 7.2:1 on paper · 26% lightness, half the chroma of terracotta</p>
+
+      <p class="label">Type</p>
+      <div class="spec">
+        <p class="disp">I keep an honest account<br>of what shipped and what<br>I <em>killed</em>.</p>
+        <p class="bodycopy">Fraunces' wonk appears at display size and disappears at text size — character in one place, expressed as a variable axis. Libre Franklin does the reading.</p>
+        <div class="datarow">
+          <span>Index 004</span><span class="state">Shipped</span><span>React / TS</span><span>2025</span>
+        </div>
+      </div>
+      <p class="stack"><b>Fraunces</b> display &middot; old-style, wonk on<br><b>Libre Franklin</b> body &middot; ledger grotesque<br><b>Courier Prime</b> data &middot; typewriter, small only</p>
+
+      <div class="rule" style="margin:24px 0 18px"></div>
+      <p class="label">Register</p>
+      <div class="reg">
+        <div class="row"><span>004</span><span class="subj">Payments console</span><span class="st live">Shipped</span></div>
+        <div class="row"><span>003</span><span class="subj">Agent trace viewer</span><span class="st">Concept</span></div>
+        <div class="row"><span>002</span><span class="subj">Bill book · Harmony Luxe</span><span class="st live">In service</span></div>
+      </div>
+      <p class="concept"><b>Concept:</b> a bound register — ruled columns, entries numbered in the margin, oxblood only on the spine of the page.</p>
+    </section>
+
+    <!-- ============ 03 ============ -->
+    <section class="col d3">
+      <div class="idx"><span class="n">03</span><span>Field geology · Drill record</span></div>
+      <h2 class="name">Core Log</h2>
+      <p class="world">Log card stock, graphite, a depth scale down the margin, and mineral green — ground malachite, one of the oldest pigments actually dug out of the ground.</p>
+
+      <p class="label">Palette</p>
+      <div class="swatches">
+        <div class="sw"><span class="chip" style="background:#F0EDE3"></span><span class="txt"><span class="role">paper</span><span class="hex">#F0EDE3</span></span></div>
+        <div class="sw"><span class="chip" style="background:#E4E1D5"></span><span class="txt"><span class="role">raised</span><span class="hex">#E4E1D5</span></span></div>
+        <div class="sw"><span class="chip" style="background:#17150F"></span><span class="txt"><span class="role">ink</span><span class="hex">#17150F</span></span></div>
+        <div class="sw"><span class="chip" style="background:#456455"></span><span class="txt"><span class="role">accent</span><span class="hex">#456455</span></span></div>
+        <div class="sw"><span class="chip" style="background:#68675B"></span><span class="txt"><span class="role">muted</span><span class="hex">#68675B</span></span></div>
+        <div class="sw"><span class="chip" style="background:#D5D2C4"></span><span class="txt"><span class="role">hairline</span><span class="hex">#D5D2C4</span></span></div>
+      </div>
+      <p class="accentnote"><b>Malachite</b> · 5.6:1 on paper · mineral, not "eco" — the difference is chroma discipline</p>
+
+      <p class="label">Type</p>
+      <div class="spec">
+        <p class="disp">A log records the barren<br>layers with the same care<br>as the <em>ore</em>.</p>
+        <p class="bodycopy">Familjen Grotesk is a tight, slightly odd Swedish grotesque — character without a trend. Archivo is flat and honest underneath it.</p>
+        <div class="datarow">
+          <span>Index 004</span><span class="state">Shipped</span><span>React / TS</span><span>2025</span>
+        </div>
+      </div>
+      <p class="stack"><b>Familjen Grotesk</b> display &middot; unusual grotesque<br><b>Archivo</b> body &middot; flat workhorse<br><b>DM Mono</b> data &middot; narrow, technical</p>
+
+      <div class="rule" style="margin:24px 0 18px"></div>
+      <p class="label">Register</p>
+      <div class="reg">
+        <div class="row"><span>004</span><span class="subj">Payments console</span><span class="st live">Shipped</span></div>
+        <div class="row"><span>003</span><span class="subj">Agent trace viewer</span><span class="st">Concept</span></div>
+        <div class="row"><span>002</span><span class="subj">Bill book · Harmony Luxe</span><span class="st live">In service</span></div>
+      </div>
+      <p class="concept"><b>Concept:</b> a drill record — depth scale in the margin, strata as sections, malachite marking only what was actually recovered.</p>
+    </section>
+
+  </div>
+
+  <div class="footer">
+    <h2>Shared system · The Register</h2>
+    <p><b>Projects are entries, not cards.</b> A real table: index, subject, surface, state, year. Density is the flex — eleven projects scannable in one screen.</p>
+    <p><b>State is honest and enumerated.</b> SHIPPED / IN SERVICE / SUNSET / CONCEPT / SPIKE. Failures render at the same weight as wins.</p>
+    <p><b>Handoff delta</b> — every entry carries <i>designed 100% · implemented 60%</i>. Your positioning as a per-project measurement rather than a claim.</p>
+    <p><b>A live margin rail.</b> Persistent mono scale at the left edge — ticks, current entry, current section — updating with scroll. Navigation that is also the thesis.</p>
+    <p><b>Hero = numbered clauses.</b> 01 / 02 / 03, written like a spec. No greeting, no floating shapes.</p>
+    <p><b>The risk:</b> no cards, no shadows, no rounded corners anywhere — depth comes only from paper→raised and 1px hairlines — and exactly one accent instance per viewport, enforced as a lint rule in the token layer.</p>
+  </div>
+
+</div>
+</body>
+</html>

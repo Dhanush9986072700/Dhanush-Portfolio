@@ -1,0 +1,46 @@
+/* ---------------------------------------------------------------------------
+   DEAD RECKONING — token layer
+   Borrowed from British Admiralty charts: buff paper, brown-black engraved
+   linework, and one aniline overprint reserved for hazards and light sectors.
+
+   THE RULE THIS FILE ENFORCES
+   ---------------------------
+   Mulberry is not a brand colour. It is the colour of a true statement.
+   It may mark: a live status, the reader's position, the reader's focus,
+   the link under the cursor. It may never mark a heading, a decoration,
+   or emphasis-for-its-own-sake.
+
+   Depth comes only from paper -> raised and 1px hairlines. To make that
+   structural rather than aspirational, the radius and shadow scales are
+   deleted below: `rounded-lg` and `shadow-md` do not compile in this project.
+   scripts/check-system.mjs enforces the rest.
+--------------------------------------------------------------------------- */
+
+@theme {
+  /* --- surface + ink ----------------------------------------------------- */
+  --color-paper: #f3ede1; /* chart buff                                      */
+  --color-raised: #eae2d2; /* one step up. the only "elevation" that exists  */
+  --color-ink: #191510; /* brown-black. never #000                           */
+  --color-muted: #6b6154; /* warm grey-brown, for prose that steps back      */
+  --color-hairline: #d6ccb9; /* the ruling                                   */
+
+  /* --- the single accent ------------------------------------------------- */
+  --color-accent: #7e4360; /* chart mulberry — 6.3:1 on paper               */
+  --color-accent-quiet: #b9a0ab; /* accent at rest, for inactive ticks only  */
+
+  /* --- type -------------------------------------------------------------- */
+  --font-display: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-fragment-mono), ui-monospace, "SFMono-Regular", monospace;
+
+  /* --- measure ----------------------------------------------------------- */
+  --spacing-rail: 4rem; /* width of the fixed margin rail                    */
+
+  /* --- deleted scales ---------------------------------------------------- */
+  /* The aesthetic risk, made structural: these utilities cease to exist.    */
+  --radius-*: initial;
+  --shadow-*: initial;
+  --drop-shadow-*: initial;
+  --inset-shadow-*: initial;
+  --text-shadow-*: initial;
+}

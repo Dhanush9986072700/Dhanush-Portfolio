@@ -1,0 +1,22 @@
+Harmony Luxe Bill Book — swapping in your real Figma frames
+===========================================================
+
+The 7 .png files here are LABELLED PLACEHOLDERS. The case study page already
+imports and displays them, so the site builds and looks intentional now. To
+show your real work, OVERWRITE each file with the export from Figma, keeping the
+exact same filename. No code change needed.
+
+In Figma: select the whole page/frame → right panel → Export → PNG, 2x → Export.
+Save into this folder, replacing the placeholder of the same name:
+
+  empathize.png    Page "01 · Empathize"          (frame node 64:2)
+  define.png       Page "02 · Define"              (frame node 68:2)
+  ideate.png       Page "03 · Ideate"              (frame node 71:2)
+  components.png   Page "04a · Component Library"   (whole page, node 75:5)
+  wireframes.png   Page "05 · Lo-fi Wireframes"     (node 1:6)
+  screens.png      Page "06 · Hi-fi Screens"        (node 1:7)
+  testing.png      Page "07 · Testing"              (frame node 33:2)
+
+These pages are very tall. If an export gets too large, it is fine to export a
+representative section instead — the caption under each figure describes what it
+should show. Overwrite, commit, done.

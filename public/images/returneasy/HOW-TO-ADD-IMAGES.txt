@@ -1,0 +1,21 @@
+ReturnEasy — swapping in your real Figma frames
+================================================
+
+The 8 .png files in this folder are LABELLED PLACEHOLDERS. The case study page
+already imports and displays them, so the site builds and looks intentional
+right now. To show your real design work, just OVERWRITE each file with the
+export from Figma — keep the exact same filename. No code change needed.
+
+In Figma: select the frame → right panel → Export → PNG, 2x → Export.
+Save into this folder, replacing the placeholder of the same name:
+
+  brief.png        01 · Project Brief
+  assumptions.png  01 · Assumptions Map + Prioritisation Matrix
+  research.png     02 · Research Plan + Interview Guide
+  definition.png   04 · Product Definition
+  flows.png        05 · Experience Journey + Primary Flow
+  concepts.png     06 · The three home-screen concepts + comparison
+  wireframes.png   06 · The twelve low-fidelity screens
+  final-ui.png     09 · The eight final UI screens
+
+That's it. Overwrite, commit, done.
